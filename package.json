@@ -1,0 +1,19 @@
+{
+  "name": "simplifyx",
+  "private": true,
+  "engines": {
+    "node": "25.6.1",
+    "npm": "11.9.0"
+  },
+  "engineStrict": true,
+  "devDependencies": {
+    "supabase": "2.117.0"
+  },
+  "toolchain": {
+    "_comment": "Not npm-installable; pinned here for reference so the whole stack is reproducible, not just node_modules. Update manually if you upgrade these tools.",
+    "docker": "29.2.0",
+    "deno": "2.9.6",
+    "git": "2.50.1",
+    "gh": "2.95.0"
+  }
+}
