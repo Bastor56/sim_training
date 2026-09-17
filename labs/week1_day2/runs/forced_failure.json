@@ -1,0 +1,26 @@
+{
+  "goal": "Investigate claim CLM-1042 for fraud (scripted forced-failure demo).",
+  "claim_id": "CLM-1042",
+  "max_iterations": 6,
+  "token_budget": 20000,
+  "wall_clock_budget_seconds": 60.0,
+  "observations": [
+    {
+      "tool": "check_repair_shop_reputation",
+      "args": {
+        "repair_shop_id": "SHOP-B"
+      },
+      "timestamp": 1789490591.604477,
+      "result": null,
+      "error": "repair shop reputation service unavailable (repair_shop_id='SHOP-B')"
+    }
+  ],
+  "iteration_count": 2,
+  "tokens_used": 0,
+  "started_at": 2696654.915351333,
+  "status": "terminated_success",
+  "final_decision": {
+    "decision": "escalate",
+    "reasoning": "repair shop reputation check failed even after retries; escalating to a human adjuster rather than deciding on incomplete evidence"
+  }
+}

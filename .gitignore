@@ -144,3 +144,7 @@ vite.config.ts.timestamp-*
 
 # Training instructions
 training_instructions/
+
+# Python
+__pycache__/
+*.pyc

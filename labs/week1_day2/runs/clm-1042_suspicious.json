@@ -1,0 +1,85 @@
+{
+  "goal": "Investigate claim CLM-1042 for fraud and reach a decision: approve, deny, or escalate. Claim details: policy_id='POL-002', claimant_id='CUST-200', claimed_amount=18000, damage_type='hail damage', incident_date='2026-06-10', incident_location='Austin, TX', repair_shop_id='SHOP-B'.",
+  "claim_id": "CLM-1042",
+  "max_iterations": 6,
+  "token_budget": 20000,
+  "wall_clock_budget_seconds": 60.0,
+  "observations": [
+    {
+      "tool": "get_policy_details",
+      "args": {
+        "policy_id": "POL-002"
+      },
+      "timestamp": 1789488842.091549,
+      "result": {
+        "policy_id": "POL-002",
+        "claimant_id": "CUST-200",
+        "coverage_type": "auto_comprehensive",
+        "limit": 30000,
+        "start_date": "2024-11-15"
+      },
+      "error": null
+    },
+    {
+      "tool": "get_claim_history",
+      "args": {
+        "claimant_id": "CUST-200"
+      },
+      "timestamp": 1789488844.110666,
+      "result": [
+        {
+          "claim_id": "CLM-0912",
+          "claimed_amount": 27500,
+          "damage_type": "collision",
+          "incident_date": "2025-01-22",
+          "status": "paid"
+        },
+        {
+          "claim_id": "CLM-0977",
+          "claimed_amount": 22000,
+          "damage_type": "theft",
+          "incident_date": "2025-07-09",
+          "status": "paid"
+        },
+        {
+          "claim_id": "CLM-1005",
+          "claimed_amount": 26000,
+          "damage_type": "vandalism",
+          "incident_date": "2026-01-30",
+          "status": "paid"
+        }
+      ],
+      "error": null
+    },
+    {
+      "tool": "check_weather_conditions",
+      "args": {
+        "location": "Austin, TX",
+        "date": "2026-06-10"
+      },
+      "timestamp": 1789488846.446327,
+      "result": {
+        "conditions": "clear and sunny, no precipitation",
+        "corroborates_claim": false
+      },
+      "error": null
+    },
+    {
+      "tool": "check_repair_shop_reputation",
+      "args": {
+        "repair_shop_id": "SHOP-B"
+      },
+      "timestamp": 1789488850.744786,
+      "result": null,
+      "error": "repair shop reputation service unavailable (repair_shop_id='SHOP-B')"
+    }
+  ],
+  "iteration_count": 5,
+  "tokens_used": 5514,
+  "started_at": 2694906.10625625,
+  "status": "terminated_success",
+  "final_decision": {
+    "decision": "deny",
+    "reasoning": "Weather records show clear, sunny conditions with no precipitation in Austin, TX on the claimed incident date, directly contradicting the claimed hail damage. Combined with a pattern of frequent, high-value prior claims (three paid claims in under 18 months totaling over $75,000), this strongly suggests the current claim is fraudulent. The lack of repair shop verification does not change the fact that the core claimed cause of damage is contradicted by objective weather data, which is sufficient grounds for denial."
+  }
+}
