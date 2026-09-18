@@ -1,0 +1,7 @@
+# Pinned to the exact versions this lab was built and tested against.
+# anthropic is pinned to match day 2's version exactly (see spec.md) --
+# anthropic>=1.0's Messages.create() dropped the `temperature` kwarg day 2's
+# planner.py relies on, which would turn this into an SDK-version comparison
+# instead of a framework comparison.
+anthropic==0.104.1
+langgraph==1.2.11

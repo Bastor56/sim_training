@@ -171,3 +171,25 @@ path out of the loop.
 
 No framework, no persistence beyond the in-memory state dump, no
 multi-agent decomposition — those come later in the program.
+
+## Setup
+
+The one third-party dependency (`anthropic`) is pinned in
+`requirements.txt`. This lab installs it globally (no venv), matching how
+it was originally built:
+
+```bash
+cd labs/week1_day2
+python3 -m pip install --break-system-packages -r requirements.txt
+
+# from the repo root, make sure ANTHROPIC_API_KEY is set (copy
+# ../../.env.example to ../../.env and fill it in if you haven't already)
+
+python3 -m unittest discover -s tests   # 41 tests, no live API calls
+```
+
+`--break-system-packages` is only needed on a PEP 668 "externally managed"
+Python (Homebrew's, notably) that refuses global installs by default; a
+plain `python3 -m venv` + `pip install -r requirements.txt` works too and
+is the safer default going forward — see `../week1_day3/spec.md`'s Setup
+section for that pattern, which this lab predates.

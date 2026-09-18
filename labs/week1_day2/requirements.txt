@@ -1,0 +1,3 @@
+# The only third-party dependency this lab's src/ and tests/ import.
+# Pinned to the version this lab was built and tested against.
+anthropic==0.104.1

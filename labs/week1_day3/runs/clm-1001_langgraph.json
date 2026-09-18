@@ -1,0 +1,76 @@
+{
+  "goal": "Investigate claim CLM-1001 for fraud and reach a decision: approve, deny, or escalate. Claim details: policy_id='POL-001', claimant_id='CUST-100', claimed_amount=3200, damage_type='hail damage', incident_date='2026-05-02', incident_location='Dallas, TX', repair_shop_id='SHOP-A'.",
+  "claim_id": "CLM-1001",
+  "max_iterations": 6,
+  "token_budget": 20000,
+  "wall_clock_budget_seconds": 60.0,
+  "observations": [
+    {
+      "tool": "get_policy_details",
+      "args": {
+        "policy_id": "POL-001"
+      },
+      "timestamp": 1789737728.815396,
+      "result": {
+        "policy_id": "POL-001",
+        "claimant_id": "CUST-100",
+        "coverage_type": "auto_comprehensive",
+        "limit": 25000,
+        "start_date": "2022-03-01"
+      },
+      "error": null
+    },
+    {
+      "tool": "get_claim_history",
+      "args": {
+        "claimant_id": "CUST-100"
+      },
+      "timestamp": 1789737731.352191,
+      "result": [
+        {
+          "claim_id": "CLM-0871",
+          "claimed_amount": 900,
+          "damage_type": "windshield chip",
+          "incident_date": "2024-08-14",
+          "status": "paid"
+        }
+      ],
+      "error": null
+    },
+    {
+      "tool": "check_weather_conditions",
+      "args": {
+        "location": "Dallas, TX",
+        "date": "2026-05-02"
+      },
+      "timestamp": 1789737732.9123461,
+      "result": {
+        "conditions": "severe thunderstorms with golf-ball-sized hail",
+        "corroborates_claim": true
+      },
+      "error": null
+    },
+    {
+      "tool": "check_repair_shop_reputation",
+      "args": {
+        "repair_shop_id": "SHOP-A"
+      },
+      "timestamp": 1789737739.204084,
+      "result": null,
+      "error": "repair shop reputation service unavailable (repair_shop_id='SHOP-A')"
+    }
+  ],
+  "iteration_count": 5,
+  "tokens_used": 5069,
+  "started_at": 2884598.578138791,
+  "status": "terminated_success",
+  "final_decision": {
+    "decision": "approve",
+    "reasoning": "Policy is valid and active, claimant has only one minor prior claim (no pattern of fraud), and weather data corroborates the claimed hail damage in Dallas, TX on the incident date. The repair shop reputation check failed due to a service outage, not due to any red flag on the shop itself, and there is no other evidence suggesting fraud. Given the corroborating weather evidence and clean claim history, the claim appears legitimate and should be approved."
+  },
+  "pending_action": {
+    "action": "terminate",
+    "decision": "approve",
+    "reasoning": "Policy is valid and active, claimant has only one minor prior claim (no pattern of fraud), and weather data corroborates the claimed hail damage in Dallas, TX on the incident date. The repair shop reputation check failed due to a service outage, not due to any red flag on the shop itself, and there is no other evidence suggesting fraud. Given the corroborating weather evidence and clean claim history, the claim appears legitimate and should be approved."
+  }
+}

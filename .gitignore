@@ -148,3 +148,4 @@ training_instructions/
 # Python
 __pycache__/
 *.pyc
+.venv/
