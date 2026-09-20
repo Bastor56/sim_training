@@ -1,0 +1,21 @@
+# Pinned to the exact versions this lab was built and tested against.
+#
+# anthropic and langgraph are pinned to match day 3's versions exactly (see
+# ../week1_day3/requirements.txt) -- anthropic>=1.0's Messages.create()
+# dropped the `temperature` kwarg the decision layer relies on, and keeping
+# langgraph at the same minor line as day 3 keeps this lab's use of
+# StateGraph consistent with the low-level-graph pattern day 3 established,
+# rather than reintroducing a framework-version variable day 3 already
+# settled.
+anthropic==0.104.1
+langgraph==1.2.11
+
+# The mock CRM (mock_crm/) and the tool layer that calls it (src/tool_client.py).
+# Pinned to the versions resolved when this lab was built.
+fastapi==0.141.1
+uvicorn==0.53.0
+httpx==0.28.1
+pydantic==2.13.5
+
+# Test runner.
+pytest==9.1.1

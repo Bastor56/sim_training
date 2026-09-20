@@ -1,0 +1,38 @@
+{
+  "session_id": "demo-multiturn-v3",
+  "customer_id": "CUST-1001",
+  "turns": [
+    {
+      "user_message": "what's the balance on my checking account?",
+      "referenced_account_id": "ACC-2001",
+      "tool_outcome": {
+        "status": "found",
+        "data": {
+          "account_id": "ACC-2001",
+          "customer_id": "CUST-1001",
+          "type": "checking",
+          "balance": 4210.55,
+          "status": "active"
+        },
+        "detail": null
+      },
+      "reply": "Your checking account (ACC-2001) has a balance of $4210.55 and is currently active."
+    },
+    {
+      "user_message": "and what about the other one?",
+      "referenced_account_id": "ACC-2002",
+      "tool_outcome": {
+        "status": "found",
+        "data": {
+          "account_id": "ACC-2002",
+          "customer_id": "CUST-1001",
+          "type": "savings",
+          "balance": 15320.1,
+          "status": "active"
+        },
+        "detail": null
+      },
+      "reply": "Your savings account (ACC-2002) has a balance of $15320.10 and is currently active."
+    }
+  ]
+}
