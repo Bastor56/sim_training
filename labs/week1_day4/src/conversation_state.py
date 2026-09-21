@@ -28,13 +28,16 @@ from tool_client import ToolOutcome
 class Turn:
     """One turn of the conversation. Fields fill in progressively as the
     turn moves through the graph's layers (Phase 5): user_message is set
-    immediately; referenced_account_id and tool_outcome are set only if
-    the decision layer decided this turn needed a tool call (both stay
-    None for a turn answered directly, e.g. "thanks"); reply is set last,
-    by the response layer."""
+    immediately; referenced_account_id, tool, and tool_outcome are set
+    only if the decision layer decided this turn needed data (all three
+    stay None for a turn answered directly, e.g. "thanks"); reply is set
+    last, by the response layer. tool records which CRM endpoint produced
+    tool_outcome, so a later turn can recall this one's data by matching
+    on it (see resolve_recall()) rather than only replaying it by eye."""
 
     user_message: str
     referenced_account_id: Optional[str] = None
+    tool: Optional[str] = None
     tool_outcome: Optional[ToolOutcome] = None
     reply: Optional[str] = None
 
@@ -92,4 +95,31 @@ def resolve_other_account(state: ConversationState, customer_account_ids: List[s
     remaining = [account_id for account_id in customer_account_ids if account_id not in referenced]
     if len(remaining) == 1:
         return remaining[0]
+    return None
+
+
+def resolve_recall(state: ConversationState, tool: str, account_id: Optional[str]) -> Optional[ToolOutcome]:
+    """Finds the most recent turn's cached ToolOutcome for `tool` and
+    `account_id` (None for a customer-scoped tool), so a follow-up that's
+    genuinely asking to be reminded of something already retrieved this
+    session doesn't need a second CRM call -- the recall counterpart to
+    resolve_other_account() above.
+
+    Walks most-recent-first and matches on both which tool was used and
+    which account it was about; only a "found" outcome counts as
+    something worth recalling, since a not_found or unavailable turn has
+    no data to replay. Returns None when nothing matches, meaning the
+    caller should fall back to an actual tool call rather than recall
+    something that was never actually fetched -- same "never invent"
+    principle resolve_other_account() applies to which account, applied
+    here to whether the data exists at all.
+    """
+    for turn in reversed(state.turns):
+        if (
+            turn.tool == tool
+            and turn.referenced_account_id == account_id
+            and turn.tool_outcome is not None
+            and turn.tool_outcome.status == "found"
+        ):
+            return turn.tool_outcome
     return None

@@ -84,13 +84,17 @@ def make_response_node(compose_fn: Callable[..., str] = compose_reply) -> Callab
     def response_node(state: GraphState) -> Dict[str, Any]:
         conv_state = _as_conversation_state(state)
         decision = state.pending_decision
-        outcome = state.pending_tool_outcome
+        # A recalled_outcome (see decision.py) means the tool node was
+        # skipped entirely -- this turn's "outcome" is a prior turn's
+        # cached data, not a fresh pending_tool_outcome.
+        outcome = decision.recalled_outcome if decision.recalled_outcome is not None else state.pending_tool_outcome
 
         reply = compose_fn(decision, outcome, state.pending_user_message, conv_state)
 
         new_turn = Turn(
             user_message=state.pending_user_message,
             referenced_account_id=decision.account_id,
+            tool=decision.tool,
             tool_outcome=outcome,
             reply=reply,
         )

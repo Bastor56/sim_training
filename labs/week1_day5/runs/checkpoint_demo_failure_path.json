@@ -1,0 +1,16 @@
+{
+  "session_id": "d3a5adff-00d2-44b8-8e40-e6ffd1dfc3a7",
+  "customer_id": "CUST-1003",
+  "turns": [
+    {
+      "user_message": "what's the current balance and status of my checking account?",
+      "referenced_account_id": "ACC-2004",
+      "tool_outcome": {
+        "status": "unavailable",
+        "data": null,
+        "detail": "The CRM backend encountered an internal error processing 'ACC-2004'."
+      },
+      "reply": "I'm having trouble reaching our account systems right now, so I can't pull that up. If you'd like, I can connect you with a specialist who can look into this further."
+    }
+  ]
+}

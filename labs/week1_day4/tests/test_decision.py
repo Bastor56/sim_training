@@ -8,6 +8,7 @@ import pytest
 
 from conversation_state import ConversationState
 from decision import DecisionContractError, decide, validate_decision
+from tool_client import ToolOutcome
 
 MARIA_ACCOUNTS = [
     {"account_id": "ACC-2001", "type": "checking"},
@@ -249,3 +250,138 @@ def test_well_formed_json_wrong_shape_raises_decision_contract_error():
     client = _fake_client({"action": "call_tool", "tool": "ghost_tool", "reasoning": "..."})
     with pytest.raises(DecisionContractError):
         decide(_state(), "hello", MARIA_ACCOUNTS, client=client)
+
+
+# -- validate_decision: the new third shape -------------------------------
+
+
+def test_validate_recall_from_history_account_scoped_passes():
+    action = {
+        "action": "recall_from_history",
+        "tool": "get_account",
+        "account_reference": "last_mentioned",
+        "explicit_account_hint": None,
+        "reasoning": "asking to be reminded of the balance just stated",
+    }
+    assert validate_decision(action) == action
+
+
+def test_validate_recall_from_history_customer_scoped_passes_without_account_reference():
+    action = {
+        "action": "recall_from_history",
+        "tool": "list_customer_accounts",
+        "reasoning": "asking to be reminded of the account list",
+    }
+    assert validate_decision(action) == action
+
+
+def test_validate_recall_from_history_invalid_reference_raises():
+    with pytest.raises(DecisionContractError):
+        validate_decision(
+            {
+                "action": "recall_from_history",
+                "tool": "get_account",
+                "account_reference": "guessed",
+                "reasoning": "...",
+            }
+        )
+
+
+# -- decide(): recall_from_history -- recall vs. fall back to a real call -
+
+
+def _state_with_recall(account_id, tool, data) -> ConversationState:
+    """A ConversationState with one prior turn whose data is available to
+    recall -- referenced_account_id, tool, and tool_outcome all set, the
+    three fields resolve_recall() matches on."""
+    state = ConversationState(session_id="sess-1", customer_id="CUST-1001")
+    turn = state.start_turn(user_message="what's my balance?")
+    turn.referenced_account_id = account_id
+    turn.tool = tool
+    turn.tool_outcome = ToolOutcome(status="found", data=data)
+    turn.reply = "Your checking account has a balance of $4210.55 and is currently active."
+    return state
+
+
+def test_recall_returns_cached_outcome_without_calling_a_tool():
+    state = _state_with_recall("ACC-2001", "get_account", {"balance": 4210.55})
+    client = _fake_client(
+        {
+            "action": "recall_from_history",
+            "tool": "get_account",
+            "account_reference": "last_mentioned",
+            "explicit_account_hint": None,
+            "reasoning": "asking to be reminded of the balance just stated",
+        }
+    )
+    result = decide(state, "what did you say my balance was?", MARIA_ACCOUNTS, client=client)
+    assert result.needs_tool is False
+    assert result.recalled_outcome is not None
+    assert result.recalled_outcome.data == {"balance": 4210.55}
+    assert result.account_id == "ACC-2001"
+
+
+def test_recall_falls_back_to_a_real_call_when_nothing_is_cached():
+    # Same conversation as above, but nothing has actually been fetched
+    # yet -- the LLM guessed recall was appropriate and was wrong.
+    client = _fake_client(
+        {
+            "action": "recall_from_history",
+            "tool": "get_account",
+            "account_reference": "explicit",
+            "explicit_account_hint": "ACC-2001",
+            "reasoning": "customer asked to be reminded, but nothing was fetched yet",
+        }
+    )
+    result = decide(_state(), "what did you say my balance was?", MARIA_ACCOUNTS, client=client)
+    assert result.needs_tool is True
+    assert result.recalled_outcome is None
+    assert result.account_id == "ACC-2001"
+    assert result.resolution_error is None
+
+
+def test_recall_falls_back_to_a_real_call_when_account_reference_unresolved():
+    client = _fake_client(
+        {
+            "action": "recall_from_history",
+            "tool": "get_account",
+            "account_reference": "none",
+            "explicit_account_hint": None,
+            "reasoning": "customer didn't say which account",
+        }
+    )
+    result = decide(_state(), "what did you say the balance was?", MARIA_ACCOUNTS, client=client)
+    assert result.needs_tool is True
+    assert result.recalled_outcome is None
+    assert result.resolution_error is not None
+
+
+def test_recall_customer_scoped_returns_cached_outcome():
+    state = ConversationState(session_id="sess-1", customer_id="CUST-1001")
+    turn = state.start_turn(user_message="what accounts do I have?")
+    turn.tool = "list_customer_accounts"
+    turn.tool_outcome = ToolOutcome(status="found", data=[{"account_id": "ACC-2001"}])
+
+    client = _fake_client(
+        {
+            "action": "recall_from_history",
+            "tool": "list_customer_accounts",
+            "reasoning": "asking to be reminded of the account list",
+        }
+    )
+    result = decide(state, "remind me what accounts I have?", MARIA_ACCOUNTS, client=client)
+    assert result.needs_tool is False
+    assert result.recalled_outcome.data == [{"account_id": "ACC-2001"}]
+
+
+def test_recall_customer_scoped_falls_back_when_nothing_cached():
+    client = _fake_client(
+        {
+            "action": "recall_from_history",
+            "tool": "list_customer_accounts",
+            "reasoning": "asking to be reminded, but nothing was fetched yet",
+        }
+    )
+    result = decide(_state(), "remind me what accounts I have?", MARIA_ACCOUNTS, client=client)
+    assert result.needs_tool is True
+    assert result.recalled_outcome is None

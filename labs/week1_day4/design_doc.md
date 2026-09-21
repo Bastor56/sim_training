@@ -18,7 +18,9 @@ Four layers, data flowing one way per customer turn:
 1. **Conversation** — session state and turn history. Passive: no model
    or CRM calls here.
 2. **Decision** — one model call per turn: does this need account data,
-   and if so, which CRM operation answers it?
+   and if so, which CRM operation answers it — or is it a fact already
+   retrieved and stated earlier this same conversation, answerable by
+   recalling that instead of calling the CRM again?
 3. **Tool** — the only layer that talks to the CRM. Owns timeouts, retry,
    and translates whatever the CRM actually returns into one of three
    outcomes: *found*, *not found*, *unavailable*.
@@ -66,7 +68,7 @@ Every response is validated against a schema the agent owns itself — a
 
 ```
 Session: session_id, customer_id, turns: [Turn, ...]
-Turn: customer_message, account_referenced, crm_result, agent_reply
+Turn: customer_message, account_referenced, tool_used, crm_result, agent_reply
 ```
 
 One session per identified customer, state persisted across turns, so
@@ -78,6 +80,19 @@ and a separate function matches that against the customer's known
 accounts and the conversation so far. If the match is ambiguous, the
 agent asks a clarifying question rather than guessing — the model is
 never in a position to invent an account identifier.
+
+The same discipline extends to *whether* the CRM needs to be called at
+all. The decision step can also classify a turn as asking to be reminded
+of something already retrieved this session (e.g. "what did you say the
+balance was?"), naming the same CRM operation and account reference a
+fresh lookup would use. A second deterministic function matches that
+against turn history — by which operation produced the data and which
+account it concerned — and replays the cached result if it finds one.
+A request that looks like a recall but doesn't actually match anything
+already retrieved falls back to an ordinary CRM call rather than
+answering from a guess: recalling is a data-driven match against what
+actually happened this session, never a model's guess about what it
+probably already said.
 
 ## 4. Failure handling policy
 
@@ -133,6 +148,10 @@ that validation:
 - **Customer's account list is fetched once per session**, not
   refreshed — an account opened or closed mid-conversation wouldn't be
   reflected until the next session.
+- **A recalled fact (e.g. a balance restated instead of re-fetched) is
+  only as fresh as when it was first retrieved this session** — the same
+  staleness assumption already made for the account list above, extended
+  to individual facts recalled later in the same conversation.
 - **Exactly one CRM call per turn** — a question needing two calls in one
   turn (e.g. comparing two accounts directly) is out of scope for the
   current architecture.

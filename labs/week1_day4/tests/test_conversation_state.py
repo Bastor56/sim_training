@@ -1,6 +1,7 @@
 import context  # noqa: F401  -- must be first: puts src/ and mock_crm/ on sys.path
 
-from conversation_state import ConversationState, resolve_other_account
+from conversation_state import ConversationState, resolve_other_account, resolve_recall
+from tool_client import ToolOutcome
 
 # Mirrors the fixture customer CUST-1001 (Maria Chen), who has exactly
 # two accounts in mock_crm/fixtures.py -- ACC-2001 and ACC-2002.
@@ -63,3 +64,70 @@ def test_resolve_other_account_none_when_more_than_one_remains():
 def test_resolve_other_account_none_when_every_account_already_referenced():
     state = _state_with_turns("ACC-2001", "ACC-2002")
     assert resolve_other_account(state, MARIA_ACCOUNT_IDS) is None
+
+
+# -- resolve_recall(): the "what did you say the balance was?" case -----
+
+
+def test_resolve_recall_finds_matching_prior_turn():
+    state = ConversationState(session_id="sess-1", customer_id="CUST-1001")
+    turn = state.start_turn(user_message="what's my balance?")
+    turn.referenced_account_id = "ACC-2001"
+    turn.tool = "get_account"
+    turn.tool_outcome = ToolOutcome(status="found", data={"balance": 4210.55})
+
+    recalled = resolve_recall(state, "get_account", "ACC-2001")
+    assert recalled is not None
+    assert recalled.data == {"balance": 4210.55}
+
+
+def test_resolve_recall_prefers_most_recent_matching_turn():
+    state = ConversationState(session_id="sess-1", customer_id="CUST-1001")
+    first = state.start_turn(user_message="what's my balance?")
+    first.referenced_account_id = "ACC-2001"
+    first.tool = "get_account"
+    first.tool_outcome = ToolOutcome(status="found", data={"balance": 100.00})
+    second = state.start_turn(user_message="what's my balance now?")
+    second.referenced_account_id = "ACC-2001"
+    second.tool = "get_account"
+    second.tool_outcome = ToolOutcome(status="found", data={"balance": 90.00})
+
+    recalled = resolve_recall(state, "get_account", "ACC-2001")
+    assert recalled.data == {"balance": 90.00}
+
+
+def test_resolve_recall_none_when_tool_never_called():
+    state = ConversationState(session_id="sess-1", customer_id="CUST-1001")
+    assert resolve_recall(state, "get_account", "ACC-2001") is None
+
+
+def test_resolve_recall_none_when_account_does_not_match():
+    state = ConversationState(session_id="sess-1", customer_id="CUST-1001")
+    turn = state.start_turn(user_message="what's my checking balance?")
+    turn.referenced_account_id = "ACC-2001"
+    turn.tool = "get_account"
+    turn.tool_outcome = ToolOutcome(status="found", data={"balance": 4210.55})
+
+    assert resolve_recall(state, "get_account", "ACC-2002") is None
+
+
+def test_resolve_recall_none_when_prior_turn_was_a_failure():
+    state = ConversationState(session_id="sess-1", customer_id="CUST-1001")
+    turn = state.start_turn(user_message="what's my balance?")
+    turn.referenced_account_id = "ACC-2004"
+    turn.tool = "get_account"
+    turn.tool_outcome = ToolOutcome(status="unavailable", detail="the CRM returned HTTP 500")
+
+    # Nothing to recall -- a failure never delivered data worth replaying.
+    assert resolve_recall(state, "get_account", "ACC-2004") is None
+
+
+def test_resolve_recall_matches_customer_scoped_tool_on_none_account():
+    state = ConversationState(session_id="sess-1", customer_id="CUST-1001")
+    turn = state.start_turn(user_message="what accounts do I have?")
+    turn.tool = "list_customer_accounts"
+    turn.tool_outcome = ToolOutcome(status="found", data=[{"account_id": "ACC-2001"}])
+
+    recalled = resolve_recall(state, "list_customer_accounts", None)
+    assert recalled is not None
+    assert recalled.data == [{"account_id": "ACC-2001"}]

@@ -10,12 +10,17 @@ Deliberately NOT one LLM call for every case. Split in two:
   templating it removes any chance of a model improvising reassuring but
   false detail on top of a failure, and makes the exact wording for each
   failure class testable byte-for-byte rather than testable only in
-  spirit.
+  spirit. A recalled_outcome (decision.py's recall_from_history path)
+  goes through this same found-template path -- it's the same data, just
+  sourced from an earlier turn instead of a fresh CRM call, so it earns
+  the exact same tested wording.
 - answer_directly (a greeting, thanks, a general question) is the one
   case that's genuinely open-ended enough to need generation, so that
   path alone makes an LLM call -- and its system prompt explicitly
   forbids stating any specific account fact, since this path never looks
-  anything up.
+  anything up. A recall is NOT routed here even though it also skips the
+  tool node: it has a real fact to state, and this path is specifically
+  the one barred from stating one.
 """
 
 from __future__ import annotations
@@ -50,6 +55,9 @@ def compose_reply(
     state: ConversationState,
     client: Optional[Any] = None,
 ) -> str:
+    if decision.recalled_outcome is not None:
+        return _compose_found(decision.tool, decision.recalled_outcome.data)
+
     if not decision.needs_tool:
         return _compose_direct_reply(user_message, state, client)
 
