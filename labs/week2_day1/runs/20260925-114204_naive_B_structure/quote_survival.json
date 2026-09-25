@@ -1,0 +1,380 @@
+[
+  {
+    "query": "q001",
+    "type": "exact_term",
+    "doc_id": "card_dispute_procedure",
+    "quote": "completes Form HCU-DSP-114 (Card Transaction Dispute) during the initial contact",
+    "state": "survived"
+  },
+  {
+    "query": "q002",
+    "type": "exact_term",
+    "doc_id": "business_fee_guide",
+    "quote": "earn an Earnings Credit Rate (ECR) of 0.35%",
+    "state": "survived"
+  },
+  {
+    "query": "q003",
+    "type": "exact_term",
+    "doc_id": "fraud_monitoring_thresholds",
+    "quote": "Velocity Rule VR-3 triggers when a single debit card has more than six (6) card-not-present authorizations within 30 minutes",
+    "state": "survived"
+  },
+  {
+    "query": "q004",
+    "type": "exact_term",
+    "doc_id": "account_closure_procedure",
+    "quote": "Obtain a signed Form HCU-ACL-220 (Account Closure Request) from every owner on the account",
+    "state": "survived"
+  },
+  {
+    "query": "q005",
+    "type": "exact_term",
+    "doc_id": "savings_terms",
+    "quote": "maintain a minimum daily balance of $100 in your Primary Share Account to earn dividends",
+    "state": "survived"
+  },
+  {
+    "query": "q006",
+    "type": "exact_term",
+    "doc_id": "share_certificate_disclosure",
+    "quote": "For certificates with terms longer than 12 months, a penalty equal to 180 days of dividends applies",
+    "state": "survived"
+  },
+  {
+    "query": "q007",
+    "type": "paraphrase",
+    "doc_id": "card_dispute_procedure",
+    "quote": "within 60 days of the statement date on which the transaction first appeared",
+    "state": "survived"
+  },
+  {
+    "query": "q008",
+    "type": "paraphrase",
+    "doc_id": "card_dispute_procedure",
+    "quote": "Provisional credit for the disputed amount is posted within 10 business days",
+    "state": "survived"
+  },
+  {
+    "query": "q009",
+    "type": "paraphrase",
+    "doc_id": "wire_transfer_policy",
+    "quote": "received and verified by 3:00 p.m. Eastern Time on a business day",
+    "state": "survived"
+  },
+  {
+    "query": "q009",
+    "type": "paraphrase",
+    "doc_id": "wire_transfer_policy_copy",
+    "quote": "received and verified by 3:00 p.m. Eastern Time on a business day",
+    "state": "n/a: duplicate of wire_transfer_policy"
+  },
+  {
+    "query": "q010",
+    "type": "paraphrase",
+    "doc_id": "online_banking_help",
+    "quote": "The standard daily limit for mobile check deposit is $5,000",
+    "state": "survived"
+  },
+  {
+    "query": "q011",
+    "type": "paraphrase",
+    "doc_id": "online_banking_help",
+    "quote": "After five (5) consecutive failed sign-in attempts your access is locked for 30 minutes",
+    "state": "survived"
+  },
+  {
+    "query": "q012",
+    "type": "paraphrase",
+    "doc_id": "loan_late_payment_policy",
+    "quote": "not received within 15 calendar days after the due date",
+    "state": "survived"
+  },
+  {
+    "query": "q013",
+    "type": "paraphrase",
+    "doc_id": "complaint_email_export",
+    "quote": "acknowledge every formal complaint within 2 business days",
+    "state": "survived"
+  },
+  {
+    "query": "q014",
+    "type": "paraphrase",
+    "doc_id": "lost_stolen_card_script",
+    "quote": "a replacement card typically arrives within 7 to 10 business days",
+    "state": "survived"
+  },
+  {
+    "query": "q015",
+    "type": "paraphrase",
+    "doc_id": "account_closure_procedure",
+    "quote": "the remaining balance is disbursed by official check mailed within 7 business days to the address on file",
+    "state": "survived"
+  },
+  {
+    "query": "q016",
+    "type": "scanned_table",
+    "doc_id": "fee_schedule_2026",
+    "quote": "Stop payment order $30.00",
+    "state": "LOST (doc quarantined)"
+  },
+  {
+    "query": "q017",
+    "type": "scanned_table",
+    "doc_id": "fee_schedule_2026",
+    "quote": "Debit card replacement expedited $35.00",
+    "state": "LOST (doc quarantined)"
+  },
+  {
+    "query": "q018",
+    "type": "scanned_table",
+    "doc_id": "deposit_rate_sheet_2026q3",
+    "quote": "24 months 4.05%",
+    "state": "LOST (doc quarantined)"
+  },
+  {
+    "query": "q019",
+    "type": "scanned_table",
+    "doc_id": "deposit_rate_sheet_2026q3",
+    "quote": "60 months 3.80%",
+    "state": "LOST (doc quarantined)"
+  },
+  {
+    "query": "q020",
+    "type": "scanned_table",
+    "doc_id": "auto_loan_comparison",
+    "quote": "New vehicle 37\u201360 4.49%",
+    "state": "LOST (doc quarantined)"
+  },
+  {
+    "query": "q021",
+    "type": "scanned_table",
+    "doc_id": "auto_loan_comparison",
+    "quote": "Used vehicle 110%",
+    "state": "LOST (doc quarantined)"
+  },
+  {
+    "query": "q022",
+    "type": "scanned_table",
+    "doc_id": "mortgage_heloc_rate_notice",
+    "quote": "30-Year Fixed 6.375%",
+    "state": "LOST (doc quarantined)"
+  },
+  {
+    "query": "q023",
+    "type": "scanned_table",
+    "doc_id": "mortgage_heloc_rate_notice",
+    "quote": "HELOC intro 12 months 5.99%",
+    "state": "LOST (doc quarantined)"
+  },
+  {
+    "query": "q024",
+    "type": "figure",
+    "doc_id": "auto_loan_comparison",
+    "quote": "mobile app 0.6 days",
+    "state": "LOST (doc quarantined)"
+  },
+  {
+    "query": "q025",
+    "type": "figure",
+    "doc_id": "auto_loan_comparison",
+    "quote": "dealer 2.8 days",
+    "state": "LOST (doc quarantined)"
+  },
+  {
+    "query": "q026",
+    "type": "reading_order",
+    "doc_id": "newsletter_summer_2026",
+    "quote": "the Carrow Bay branch will open to members on Monday, October 19, 2026",
+    "state": "LOST"
+  },
+  {
+    "query": "q027",
+    "type": "reading_order",
+    "doc_id": "newsletter_summer_2026",
+    "quote": "The Summer Saver 13-month certificate at 4.60% APY is available through September 30, 2026",
+    "state": "LOST"
+  },
+  {
+    "query": "q028",
+    "type": "version_trap",
+    "doc_id": "overdraft_policy_v3",
+    "quote": "a fee of $29 per item",
+    "state": "survived"
+  },
+  {
+    "query": "q029",
+    "type": "version_trap",
+    "doc_id": "overdraft_policy_v3",
+    "quote": "up to a maximum of three (3) items per business day",
+    "state": "survived"
+  },
+  {
+    "query": "q030",
+    "type": "version_trap",
+    "doc_id": "overdraft_policy_v3",
+    "quote": "carry a transfer fee of $5.00 per transfer",
+    "state": "survived"
+  },
+  {
+    "query": "q031",
+    "type": "version_trap",
+    "doc_id": "overdraft_policy_v3",
+    "quote": "receive a standard Courtesy Pay limit of $600",
+    "state": "survived"
+  },
+  {
+    "query": "q032",
+    "type": "multi_chunk",
+    "doc_id": "card_dispute_procedure",
+    "quote": "completes Form HCU-DSP-114 (Card Transaction Dispute) during the initial contact",
+    "state": "survived"
+  },
+  {
+    "query": "q032",
+    "type": "multi_chunk",
+    "doc_id": "card_dispute_procedure",
+    "quote": "Provisional credit for the disputed amount is posted within 10 business days",
+    "state": "survived"
+  },
+  {
+    "query": "q032",
+    "type": "multi_chunk",
+    "doc_id": "card_dispute_procedure",
+    "quote": "must be completed within 45 calendar days of receiving the dispute notice",
+    "state": "survived"
+  },
+  {
+    "query": "q032",
+    "type": "multi_chunk",
+    "doc_id": "card_dispute_procedure",
+    "quote": "notifies the member in writing within 3 business days of completing the investigation",
+    "state": "survived"
+  },
+  {
+    "query": "q033",
+    "type": "multi_chunk",
+    "doc_id": "account_closure_procedure",
+    "quote": "Obtain a signed Form HCU-ACL-220 (Account Closure Request) from every owner on the account",
+    "state": "survived"
+  },
+  {
+    "query": "q033",
+    "type": "multi_chunk",
+    "doc_id": "account_closure_procedure",
+    "quote": "placed in Closing status for a 30-day review period before final disbursement",
+    "state": "survived"
+  },
+  {
+    "query": "q033",
+    "type": "multi_chunk",
+    "doc_id": "account_closure_procedure",
+    "quote": "the remaining balance is disbursed by official check mailed within 7 business days to the address on file",
+    "state": "survived"
+  },
+  {
+    "query": "q034",
+    "type": "multi_chunk",
+    "doc_id": "lost_stolen_card_script",
+    "quote": "Place an immediate block on the card in CardCenter",
+    "state": "survived"
+  },
+  {
+    "query": "q034",
+    "type": "multi_chunk",
+    "doc_id": "lost_stolen_card_script",
+    "quote": "transfer the call to the Fraud Response Team at extension 4417",
+    "state": "survived"
+  },
+  {
+    "query": "q034",
+    "type": "multi_chunk",
+    "doc_id": "lost_stolen_card_script",
+    "quote": "a replacement card typically arrives within 7 to 10 business days",
+    "state": "survived"
+  },
+  {
+    "query": "q035",
+    "type": "multi_chunk",
+    "doc_id": "loan_late_payment_policy",
+    "quote": "not received within 15 calendar days after the due date",
+    "state": "survived"
+  },
+  {
+    "query": "q035",
+    "type": "multi_chunk",
+    "doc_id": "loan_late_payment_policy",
+    "quote": "5% of the scheduled payment amount or $25.00, whichever is less",
+    "state": "survived"
+  },
+  {
+    "query": "q036",
+    "type": "duplicate_source",
+    "doc_id": "member_faq",
+    "quote": "A minimum deposit of $5.00 in a Primary Share Account establishes your membership",
+    "state": "survived"
+  },
+  {
+    "query": "q036",
+    "type": "duplicate_source",
+    "doc_id": "member_faq_copy",
+    "quote": "A minimum deposit of $5.00 in a Primary Share Account establishes your membership",
+    "state": "n/a: duplicate of member_faq"
+  },
+  {
+    "query": "q037",
+    "type": "duplicate_source",
+    "doc_id": "wire_transfer_policy",
+    "quote": "Outgoing international wires from Retail accounts are charged $45.00 per wire",
+    "state": "survived"
+  },
+  {
+    "query": "q037",
+    "type": "duplicate_source",
+    "doc_id": "wire_transfer_policy_copy",
+    "quote": "Outgoing international wires from Retail accounts are charged $45.00 per wire",
+    "state": "n/a: duplicate of wire_transfer_policy"
+  },
+  {
+    "query": "q038",
+    "type": "tenant_filter",
+    "doc_id": "wire_transfer_policy",
+    "quote": "The fee for an outgoing domestic wire from a Retail account is $25.00 per wire",
+    "state": "survived"
+  },
+  {
+    "query": "q038",
+    "type": "tenant_filter",
+    "doc_id": "wire_transfer_policy_copy",
+    "quote": "The fee for an outgoing domestic wire from a Retail account is $25.00 per wire",
+    "state": "n/a: duplicate of wire_transfer_policy"
+  },
+  {
+    "query": "q039",
+    "type": "tenant_filter",
+    "doc_id": "debit_card_limits",
+    "quote": "the standard daily ATM cash withdrawal limit is $500",
+    "state": "survived"
+  },
+  {
+    "query": "q040",
+    "type": "encoding",
+    "doc_id": "privacy_notice",
+    "quote": "Once we\u2019ve received your request, your opt-out choice takes effect within 30 days",
+    "state": "survived"
+  },
+  {
+    "query": "q041",
+    "type": "encoding",
+    "doc_id": "debit_card_limits",
+    "quote": "The card\u2019s daily point-of-sale purchase limit is $3,000",
+    "state": "survived"
+  },
+  {
+    "query": "q042",
+    "type": "pii_adjacent",
+    "doc_id": "call_notes_2026_08",
+    "quote": "have the member schedule the payment from the desktop online banking site",
+    "state": "survived"
+  }
+]

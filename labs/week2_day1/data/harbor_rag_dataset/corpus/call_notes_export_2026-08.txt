@@ -1,0 +1,103 @@
+HARBOR CREDIT UNION - MEMBER CONTACT CENTRE
+CALL NOTES EXPORT  |  Queue: General Service  |  Period: 08/01/2026 - 08/31/2026
+Exported by: wfm-reporting (scheduled job CN-EXP-02)  |  Records: 13
+CONFIDENTIAL - CONTAINS MEMBER PERSONAL INFORMATION - DO NOT FORWARD
+
+SUPERVISOR NOTE (posted 08/12/2026, updated 08/19/2026)
+Known issue: in the mobile app, bill pay returns error BP-503 when a member schedules a payment more than 30 days in the future. The fix ships in app release 7.14.
+Workaround for error BP-503: have the member schedule the payment from the desktop online banking site, which is not affected by the error.
+Do not advise members to delete and reinstall the app; it does not clear the error. Log each occurrence with wrap-up code DIG-BP503.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-03-00400 | Date: 08/03/2026 09:14 | Agent: T. Okafor (ext. 4302)
+Member: Marisol Vega | Member #: HCU-018342 | DOB: 03/22/1981
+Acct: 7730-0045-2219 | SSN (verified): 912-45-6789 | Phone: (555) 555-0142
+Email: m.vega81@example.com | Address: 1427 Larkspur Lane, Port Alden, ME 04631
+Notes: Member called about a debit card declined at a gas station. Card was fine; merchant pre-authorization exceeded available balance. Explained holds. No action needed.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-05-00437 | Date: 08/05/2026 11:02 | Agent: J. Reyes (ext. 4315)
+Member: Gregory Tan | Member #: HCU-022917 | DOB: 11/04/1974
+Acct: 7730-0061-8830 | SSN (verified): 931-20-4417 | Phone: (555) 555-0119
+Email: gtan.home@example.org | Address: 310 Beacon Hill Road, Westmere, ME 04602
+Notes: Requested Courtesy Pay limit increase. Explained limit set by policy; no manual increases. Member satisfied.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-07-00474 | Date: 08/07/2026 14:37 | Agent: T. Okafor (ext. 4302)
+Member: Aisha Kamara | Member #: HCU-009475 | DOB: 07/19/1990
+Acct: 7730-0017-3362 | SSN (verified): 904-77-1203 | Phone: (555) 555-0163
+Email: akamara@example.com | Address: 76 Quarry Street, Carrow Bay, ME 04640
+Notes: Lost card reported. Blocked in CardCenter (code 41), read disclosure, member acknowledged. Replacement ordered standard mail.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-12-00511 | Date: 08/12/2026 10:21 | Agent: M. Hughes (ext. 4327)
+Member: Peter Lindqvist | Member #: HCU-031208 | DOB: 01/30/1962
+Acct: 7730-0082-5514 | SSN (verified): 948-11-6620 | Phone: (555) 555-0107
+Email: plindqvist@example.org | Address: 9 Saltmarsh Court, Port Alden, ME 04631
+Notes: Bill pay in mobile app failing with error BP-503 on electricity bill scheduled for 09/20. Walked member through the desktop workaround; payment scheduled successfully.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-12-00548 | Date: 08/12/2026 16:48 | Agent: J. Reyes (ext. 4315)
+Member: Rosa Delgado-Pierce | Member #: HCU-015566 | DOB: 05/08/1985
+Acct: 7730-0039-7001 | SSN (verified): 957-38-2291 | Phone: (555) 555-0188
+Email: rosadp@example.com | Address: 221 Fairweather Drive, Westmere, ME 04602
+Notes: Asked why wire could not be placed by phone. Explained wires accepted in branch or online only. Member will visit Westmere branch.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-13-00585 | Date: 08/13/2026 08:55 | Agent: S. Patel (ext. 4309)
+Member: Owen Fitzgerald | Member #: HCU-027003 | DOB: 09/12/1999
+Acct: 7730-0070-1149 | SSN (verified): 920-64-5538 | Phone: (555) 555-0151
+Email: owen.fitz@example.com | Address: 58 Keel Avenue, Carrow Bay, ME 04640
+Notes: BP-503 again, rent payment scheduled 40 days out. Used desktop workaround. Member unhappy about app; logged feedback.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-14-00622 | Date: 08/14/2026 13:30 | Agent: M. Hughes (ext. 4327)
+Member: Hannah Brightwater | Member #: HCU-004102 | DOB: 12/01/1958
+Acct: 7730-0008-9927 | SSN (verified): 963-02-7745 | Phone: (555) 555-0126
+Email: hbrightwater@example.org | Address: 14 Lantern Way, Port Alden, ME 04631
+Notes: Member disputes $89.99 subscription charge. Completed dispute form, routed to Card Services queue.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-17-00659 | Date: 08/17/2026 09:47 | Agent: S. Patel (ext. 4309)
+Member: Samuel Oduya | Member #: HCU-035591 | DOB: 04/27/1993
+Acct: 7730-0094-6618 | SSN (verified): 909-85-3346 | Phone: (555) 555-0174
+Email: soduya@example.com | Address: 402 Mill Pond Road, Westmere, ME 04602
+Notes: Address change request by phone declined per procedure; member to use online banking Profile. Member verified OK.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-18-00696 | Date: 08/18/2026 15:12 | Agent: T. Okafor (ext. 4302)
+Member: Linh Tran | Member #: HCU-012884 | DOB: 08/15/1988
+Acct: 7730-0031-4402 | SSN (verified): 976-50-8812 | Phone: (555) 555-0139
+Email: linh.tran@example.org | Address: 67 Pilot Street, Carrow Bay, ME 04640
+Notes: Mobile deposit rejected: check over daily limit. Advised branch or ATM deposit.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-19-00733 | Date: 08/19/2026 10:05 | Agent: K. Lindgren (ext. 4333)
+Member: Frank Moretti | Member #: HCU-020450 | DOB: 02/09/1970
+Acct: 7730-0056-2275 | SSN (verified): 915-29-0034 | Phone: (555) 555-0195
+Email: fmoretti@example.com | Address: 5 Harborview Lane, Port Alden, ME 04631
+Notes: BP-503 reported; confirmed app release 7.14 not yet installed on member device. Scheduled payment via desktop site.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-24-00770 | Date: 08/24/2026 12:40 | Agent: J. Reyes (ext. 4315)
+Member: Keisha Holloway | Member #: HCU-029936 | DOB: 10/23/1996
+Acct: 7730-0077-8841 | SSN (verified): 941-73-5169 | Phone: (555) 555-0112
+Email: kholloway@example.org | Address: 118 Spinnaker Drive, Westmere, ME 04602
+Notes: Complaint about international wire delay and fee. Escalated to supervisor J. Albright; complaint reference to follow by e-mail.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-27-00807 | Date: 08/27/2026 17:22 | Agent: K. Lindgren (ext. 4333)
+Member: Victor Albescu | Member #: HCU-016647 | DOB: 06/06/1979
+Acct: 7730-0042-0096 | SSN (verified): 988-16-2257 | Phone: (555) 555-0167
+Email: valbescu@example.com | Address: 33 Tern Court, Carrow Bay, ME 04640
+Notes: Member wants to close joint checking. Explained both owners must sign closure form. Form mailed to address on file.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-31-00844 | Date: 08/31/2026 09:03 | Agent: M. Hughes (ext. 4327)
+Member: Maureen O'Shea | Member #: HCU-007733 | DOB: 03/03/1955
+Acct: 7730-0013-5580 | SSN (verified): 926-41-9983 | Phone: (555) 555-0180
+Email: moshea@example.org | Address: 240 Gull Rock Road, Port Alden, ME 04631
+Notes: Locked out of online banking after failed sign-ins. Explained lockout period, member reset password via Forgot Password.
+
+------------------------------------------------------------------------------
+END OF EXPORT

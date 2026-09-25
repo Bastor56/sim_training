@@ -1,0 +1,30 @@
+{
+  "decisions": {
+    "files": 27,
+    "cleaned": 22,
+    "dropped": 4,
+    "quarantined": 1,
+    "match": 27,
+    "expected_difference": 0,
+    "mismatch": 0
+  },
+  "quote_survival": {
+    "survived": 50,
+    "scored": 50
+  },
+  "pii": {
+    "recall": {
+      "account": "15/15",
+      "address": "15/15",
+      "dob": "13/13",
+      "email": "18/18",
+      "member": "15/15",
+      "name": "15/15",
+      "phone": "14/14",
+      "ssn": "13/13"
+    },
+    "found": 118,
+    "planted": 118,
+    "not_in_inventory": 1
+  }
+}

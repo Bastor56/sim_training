@@ -1,0 +1,8 @@
+# Rebuildable outputs: per-stage caches and the Chroma/BM25 indexes.
+cache/stages/
+index/
+runs/*/tmp/
+
+# cache/captions/ is committed on purpose: it is what lets the eval run
+# offline and reproducibly without re-calling the Claude API (spec.md,
+# "Figure captioning").

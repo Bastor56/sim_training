@@ -1,0 +1,99 @@
+{
+  "_about": "Every model this lab depends on, pinned. Re-embedding is the expensive operation, so a changed embedding revision means the Chroma index must be rebuilt. HF models load from the default Hugging Face cache; set HF_HUB_OFFLINE=1 to guarantee nothing is re-fetched.",
+  "recorded": "2026-09-23",
+  "environment": {
+    "python": "3.12.13",
+    "platform": "macOS 26.2, Apple M5 (arm64), torch MPS backend"
+  },
+  "models": [
+    {
+      "id": "embedder",
+      "purpose": "Dense embeddings for chunks and queries (vector half of hybrid search)",
+      "model": "BAAI/bge-small-en-v1.5",
+      "source": "huggingface",
+      "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+      "loaded_via": "sentence-transformers==6.1.0",
+      "embedding_dimension": 384,
+      "max_seq_length_tokens": 512,
+      "notes": "Normalize embeddings (normalize_embeddings=True) and use cosine distance in Chroma. BGE recommends the query prefix 'Represent this sentence for searching relevant passages: ' for short queries.",
+      "cache_location": "~/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5",
+      "approx_size_mb": 135
+    },
+    {
+      "id": "reranker",
+      "purpose": "Cross-encoder reranking of the fused (BM25 + vector) candidate set",
+      "model": "BAAI/bge-reranker-base",
+      "source": "huggingface",
+      "revision": "2cfc18c9415c912f9d8155881c133215df768a70",
+      "loaded_via": "sentence-transformers==6.1.0 (CrossEncoder)",
+      "notes": "CrossEncoder.predict() returns sigmoid scores in 0-1 for this single-label model; only the ordering matters.",
+      "cache_location": "~/.cache/huggingface/hub/models--BAAI--bge-reranker-base",
+      "approx_size_mb": 1110
+    },
+    {
+      "id": "docling_layout",
+      "purpose": "Page layout analysis: finds text blocks, headings, tables, pictures and their reading order",
+      "model": "docling-project/docling-layout-heron",
+      "source": "huggingface",
+      "revision": "8f39ad3c0b4c58e9c2d2c84a38465abf757272d8",
+      "loaded_via": "docling==2.130.0 (default layout model)",
+      "notes": "Docling 2.130.0 requests revision 'main'; this is the commit 'main' resolved to on the recorded date. To freeze it, pass this hash via LayoutOptions(model_spec=...) or run offline.",
+      "cache_location": "~/.cache/huggingface/hub/models--docling-project--docling-layout-heron",
+      "approx_size_mb": 164
+    },
+    {
+      "id": "docling_tableformer",
+      "purpose": "Table structure recognition (rows, columns, cells) for detected tables, including gridless ones",
+      "model": "docling-project/docling-models (TableFormer, 'accurate' mode by default)",
+      "source": "huggingface",
+      "revision": "fc0f2d45e2218ea24bce5045f58a389aed16dc23",
+      "revision_tag": "v2.3.0",
+      "loaded_via": "docling==2.130.0 / docling-ibm-models==4.0.3",
+      "cache_location": "~/.cache/huggingface/hub/models--docling-project--docling-models",
+      "approx_size_mb": 342
+    },
+    {
+      "id": "ocr_primary",
+      "purpose": "OCR for the image-only PDFs inside Docling",
+      "model": "Apple Vision text recognition (via ocrmac)",
+      "source": "macOS system framework",
+      "package_version": "ocrmac==1.0.1",
+      "revision": null,
+      "notes": "Chosen engine: Docling's auto OCR selects it first on macOS. No download, runs on the Apple Neural Engine, fastest and cleanest output in smoke tests. Caveat: the underlying Vision model is versioned with macOS (26.2 here), not by pip, so it is pinned only as tightly as the OS.",
+      "cache_location": "none (part of macOS)",
+      "approx_size_mb": 0
+    },
+    {
+      "id": "ocr_fallback",
+      "purpose": "Portable OCR fallback for non-macOS machines (Docling RapidOcrOptions(backend='onnxruntime'))",
+      "model": "RapidOCR PP-OCRv6 det/rec small + ch_ppocr_mobile_v2.0 cls (ONNX)",
+      "source": "bundled in the rapidocr wheel",
+      "package_version": "rapidocr==3.9.2",
+      "revision": null,
+      "cache_location": ".venv/lib/python3.12/site-packages/rapidocr/models",
+      "approx_size_mb": 31
+    },
+    {
+      "id": "pii_ner",
+      "purpose": "Named-entity recognition (PERSON, LOCATION, DATE_TIME) behind Presidio's analyzer",
+      "model": "en_core_web_lg",
+      "source": "spaCy model wheel (GitHub release)",
+      "package_version": "en_core_web_lg==3.8.0 (spacy==3.8.16)",
+      "revision": null,
+      "cache_location": ".venv/lib/python3.12/site-packages/en_core_web_lg",
+      "approx_size_mb": 433
+    },
+    {
+      "id": "figure_captioner",
+      "purpose": "Captions figures/charts that Docling detects as picture elements (e.g. the auto-loan bar chart)",
+      "model": "claude-opus-5",
+      "source": "Anthropic API (hosted)",
+      "package_version": "anthropic==0.104.1",
+      "revision": null,
+      "notes": "API-hosted, nothing downloaded. Pinned by model ID; requires ANTHROPIC_API_KEY. Server-side refusal fallbacks are enabled (beta server-side-fallback-2026-07-01, fallbacks='default'), so each cached caption records the model that actually served it. Captions are cached by (image hash, model ID, prompt version), so the eval never calls the API.",
+      "cache_location": "none (API-hosted)",
+      "approx_size_mb": 0
+    }
+  ],
+  "total_local_download_mb": 2215
+}

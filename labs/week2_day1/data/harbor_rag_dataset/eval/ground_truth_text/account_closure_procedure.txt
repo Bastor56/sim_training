@@ -1,0 +1,45 @@
+Account Closure Procedure
+
+Procedure ID: MS-PRO-012 | Version 1.4 | Effective: June 1, 2026 | Owner: Member Services | Classification: Internal
+
+1. Purpose
+
+This procedure explains how Member Service Representatives (MSRs) and Member Contact Centre agents close Retail share and checking accounts at a member's request, and how remaining funds are returned. It does not cover closures initiated by Harbor for risk or policy reasons, which follow the Involuntary Closure Standard.
+
+2. Before You Begin
+
+Confirm that the request comes from an owner of the account. For joint accounts, every owner must consent to the closure. Review the account for linked services that will fail once the account is closed, including direct deposits, automatic loan payments, bill pay payees, and person-to-person payment enrollments, and explain to the member which services they need to redirect.
+
+Closing the Primary Share Account ends the member's membership. If the member has an open loan, the Primary Share Account cannot be closed until the loan is paid in full.
+
+3. Closure Steps
+
+Step | Action | Owner
+1 | Verify the member's identity using two forms of identification in branch or the three-factor authentication script by phone. | MSR or agent
+2 | Obtain a signed Form HCU-ACL-220 (Account Closure Request) from every owner on the account. | MSR
+3 | Review pending items, holds and scheduled transfers in the core system and note them on the form. | MSR
+4 | Cancel debit cards, stop recurring transfers and remove bill pay payees linked to the account. | MSR
+5 | Move the account to Closing status and record the requested disbursement method. | MSR
+6 | Complete the pending items review described in Section 4. | Deposit Operations
+7 | Disburse the remaining balance as described in Section 5 and set the account to Closed. | Deposit Operations
+8 | Send the closure confirmation letter and retain the form in the member file. | Deposit Operations
+
+Phone requests may be accepted for single-owner accounts only, and the signed form must be returned by mail or secure upload before step 5 can be completed.
+
+4. Pending Items Review
+
+Accounts with outstanding checks, pending ACH debits or unresolved card disputes are placed in Closing status for a 30-day review period before final disbursement. During the review period, deposits are rejected and items presented for payment are paid only up to the remaining balance. Accounts with no pending items may be disbursed on the next business day.
+
+5. Disbursement of Remaining Funds
+
+After the review period, the remaining balance is disbursed by official check mailed within 7 business days to the address on file. At the member's request, funds may instead be transferred to another Harbor member's account with that member's consent, or paid out in cash in branch if the balance is under $2,500. Dividends are paid through the date of closure.
+
+If the account is overdrawn at closure, do not complete the closure. Refer the member to the Overdraft Policy and create a recovery case.
+
+6. Worked Example
+
+Example for training purposes: member [REDACTED-NAME] (member number [REDACTED-MEMBER]) called on 06/14/2026 to close Basic Checking account [REDACTED-ACCOUNT]. The agent verified identity, noted one outstanding check for $182.40, and mailed Form HCU-ACL-220 to [REDACTED-ADDRESS]. The signed form was returned on 06/19/2026. The check cleared on 06/22/2026, the review period ended, and a closing check for $1,006.18 was mailed on 07/21/2026.
+
+7. Records
+
+Form HCU-ACL-220 and the closure confirmation letter are retained for five years after closure. Closed accounts are reported to the account screening agency only where the account was closed with a negative balance.

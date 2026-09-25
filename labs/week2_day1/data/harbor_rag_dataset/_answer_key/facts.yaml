@@ -1,0 +1,503 @@
+# Planted facts for the Harbor Credit Union RAG corpus (corpus_version 1).
+# locations = where the fact is stated. distractors = similar-but-different values elsewhere that retrieval must not confuse with the fact.
+# match follows eval/golden_set.yaml match_rules. Quotes are checked against eval/ground_truth_text/<doc_id>.txt.
+facts:
+  - fact_id: "f001"
+    statement: "Retail overdraft fee is $29 per item (Overdraft Policy v3)."
+    tags: ["version_in_force"]
+    locations:
+      - doc_id: "overdraft_policy_v3"
+        quote: "a fee of $29 per item"
+        match: "substring"
+    distractors:
+      - doc_id: "overdraft_policy_v2"
+        quote: "an overdraft fee of $32 for each item paid into overdraft"
+        match: "substring"
+        note: "superseded v2 value"
+      - doc_id: "business_fee_guide"
+        quote: "Business overdraft items are charged $35.00 each"
+        match: "substring"
+        note: "business tenant value"
+  - fact_id: "f002"
+    statement: "At most three overdraft fees are charged per business day (Overdraft Policy v3)."
+    tags: ["version_in_force"]
+    locations:
+      - doc_id: "overdraft_policy_v3"
+        quote: "up to a maximum of three (3) items per business day"
+        match: "substring"
+    distractors:
+      - doc_id: "overdraft_policy_v2"
+        quote: "no more than four (4) such fees assessed per business day"
+        match: "substring"
+        note: "superseded v2 value"
+      - doc_id: "business_fee_guide"
+        quote: "up to five (5) per business day"
+        match: "substring"
+        note: "business tenant value"
+  - fact_id: "f003"
+    statement: "Overdraft Transfer Protection transfer fee is $5.00 per transfer (Overdraft Policy v3)."
+    tags: ["version_in_force"]
+    locations:
+      - doc_id: "overdraft_policy_v3"
+        quote: "carry a transfer fee of $5.00 per transfer"
+        match: "substring"
+    distractors:
+      - doc_id: "overdraft_policy_v2"
+        quote: "is subject to a $10.00 transfer fee"
+        match: "substring"
+        note: "superseded v2 value"
+      - doc_id: "business_fee_guide"
+        quote: "linked business savings account to cover an overdraft are charged $12.00 per transfer"
+        match: "substring"
+        note: "business tenant value"
+  - fact_id: "f004"
+    statement: "Standard Courtesy Pay limit is $600 (Overdraft Policy v3)."
+    tags: ["version_in_force"]
+    locations:
+      - doc_id: "overdraft_policy_v3"
+        quote: "receive a standard Courtesy Pay limit of $600"
+        match: "substring"
+    distractors:
+      - doc_id: "overdraft_policy_v2"
+        quote: "Eligible accounts are assigned a Courtesy Pay limit of $500"
+        match: "substring"
+        note: "superseded v2 value"
+  - fact_id: "f005"
+    statement: "Card disputes must be reported within 60 days of the statement date on which the transaction first appeared."
+    tags: []
+    locations:
+      - doc_id: "card_dispute_procedure"
+        quote: "within 60 days of the statement date on which the transaction first appeared"
+        match: "substring"
+    distractors:
+      - doc_id: "card_dispute_procedure"
+        quote: "no later than 120 calendar days after the transaction settlement date"
+        match: "substring"
+        note: "network chargeback deadline, not the member reporting window"
+  - fact_id: "f006"
+    statement: "Provisional credit is posted within 10 business days of receiving the dispute notice."
+    tags: []
+    locations:
+      - doc_id: "card_dispute_procedure"
+        quote: "Provisional credit for the disputed amount is posted within 10 business days"
+        match: "substring"
+    distractors:
+      - doc_id: "card_dispute_procedure"
+        quote: "provisional credit is posted within 20 business days"
+        match: "substring"
+        note: "new-account exception"
+  - fact_id: "f007"
+    statement: "Agents complete Form HCU-DSP-114 (Card Transaction Dispute) during the initial contact."
+    tags: []
+    locations:
+      - doc_id: "card_dispute_procedure"
+        quote: "completes Form HCU-DSP-114 (Card Transaction Dispute) during the initial contact"
+        match: "substring"
+  - fact_id: "f008"
+    statement: "Dispute investigations must finish within 45 calendar days (90 for POS/foreign/new accounts) and the member is notified in writing within 3 business days of completion."
+    tags: ["multi_section"]
+    locations:
+      - doc_id: "card_dispute_procedure"
+        quote: "must be completed within 45 calendar days of receiving the dispute notice"
+        match: "substring"
+      - doc_id: "card_dispute_procedure"
+        quote: "notifies the member in writing within 3 business days of completing the investigation"
+        match: "substring"
+  - fact_id: "f009"
+    statement: "Retail outgoing domestic wire fee is $25.00 per wire."
+    tags: ["duplicated"]
+    locations:
+      - doc_id: "wire_transfer_policy"
+        quote: "The fee for an outgoing domestic wire from a Retail account is $25.00 per wire"
+        match: "substring"
+      - doc_id: "wire_transfer_policy_copy"
+        quote: "The fee for an outgoing domestic wire from a Retail account is $25.00 per wire"
+        match: "substring"
+    distractors:
+      - doc_id: "business_fee_guide"
+        quote: "Outgoing domestic wires from Business accounts are charged $20.00 per wire"
+        match: "substring"
+        note: "business tenant value"
+  - fact_id: "f010"
+    statement: "Retail outgoing international wire fee is $45.00 per wire."
+    tags: ["duplicated"]
+    locations:
+      - doc_id: "wire_transfer_policy"
+        quote: "Outgoing international wires from Retail accounts are charged $45.00 per wire"
+        match: "substring"
+      - doc_id: "wire_transfer_policy_copy"
+        quote: "Outgoing international wires from Retail accounts are charged $45.00 per wire"
+        match: "substring"
+    distractors:
+      - doc_id: "business_fee_guide"
+        quote: "Outgoing international wires from Business accounts are charged $40.00 per wire"
+        match: "substring"
+        note: "business tenant value"
+  - fact_id: "f011"
+    statement: "Domestic wires received and verified by 3:00 p.m. ET on a business day go out the same day."
+    tags: ["duplicated"]
+    locations:
+      - doc_id: "wire_transfer_policy"
+        quote: "received and verified by 3:00 p.m. Eastern Time on a business day"
+        match: "substring"
+      - doc_id: "wire_transfer_policy_copy"
+        quote: "received and verified by 3:00 p.m. Eastern Time on a business day"
+        match: "substring"
+    distractors:
+      - doc_id: "wire_transfer_policy"
+        quote: "must be received and verified by 1:00 p.m. Eastern Time"
+        match: "substring"
+        note: "international cutoff"
+      - doc_id: "business_fee_guide"
+        quote: "The same-day cutoff for business domestic wires submitted through Business Online is 4:00 p.m. Eastern Time"
+        match: "substring"
+        note: "business tenant value"
+  - fact_id: "f012"
+    statement: "Online wire requests above $25,000 require callback verification."
+    tags: ["duplicated"]
+    locations:
+      - doc_id: "wire_transfer_policy"
+        quote: "Any online wire request above $25,000 requires a callback verification"
+        match: "substring"
+      - doc_id: "wire_transfer_policy_copy"
+        quote: "Any online wire request above $25,000 requires a callback verification"
+        match: "substring"
+    distractors:
+      - doc_id: "fraud_monitoring_thresholds"
+        quote: "scores every outgoing wire above $15,000 for account takeover risk"
+        match: "substring"
+        note: "restricted monitoring threshold"
+  - fact_id: "f013"
+    statement: "Stop payment order fee is $30.00 per request."
+    tags: ["scanned_table_only"]
+    locations:
+      - doc_id: "fee_schedule_2026"
+        quote: "Stop payment order $30.00"
+        match: "all_tokens"
+    distractors:
+      - doc_id: "business_fee_guide"
+        quote: "Stop payment order: $35.00 per request"
+        match: "substring"
+        note: "business tenant value"
+  - fact_id: "f014"
+    statement: "Expedited debit card replacement costs $35.00."
+    tags: ["scanned_table_only"]
+    locations:
+      - doc_id: "fee_schedule_2026"
+        quote: "Debit card replacement expedited $35.00"
+        match: "all_tokens"
+    distractors:
+      - doc_id: "fee_schedule_2026"
+        quote: "Debit card replacement standard $10.00"
+        match: "all_tokens"
+        note: "standard replacement row"
+  - fact_id: "f015"
+    statement: "Dormant account fee is $5.00 per month after 12 months of inactivity."
+    tags: ["scanned_table_only"]
+    locations:
+      - doc_id: "fee_schedule_2026"
+        quote: "Dormant account $5.00 per month"
+        match: "all_tokens"
+  - fact_id: "f016"
+    statement: "Out-of-network ATM withdrawal fee is $2.50 per withdrawal."
+    tags: ["scanned_table_only"]
+    locations:
+      - doc_id: "fee_schedule_2026"
+        quote: "Out-of-network ATM withdrawal $2.50"
+        match: "all_tokens"
+  - fact_id: "f017"
+    statement: "24-month certificate APY for $50,000+ is 4.05%."
+    tags: ["scanned_table_only"]
+    locations:
+      - doc_id: "deposit_rate_sheet_2026q3"
+        quote: "24 months 4.05%"
+        match: "all_tokens"
+    distractors:
+      - doc_id: "deposit_rate_sheet_2026q3"
+        quote: "12 months 4.20%"
+        match: "all_tokens"
+        note: "adjacent 12-month cell"
+      - doc_id: "deposit_rate_sheet_2026q3"
+        quote: "24 months 4.00%"
+        match: "all_tokens"
+        note: "adjacent balance tier"
+  - fact_id: "f018"
+    statement: "12-month certificate APY for $50,000+ is 4.20%."
+    tags: ["scanned_table_only"]
+    locations:
+      - doc_id: "deposit_rate_sheet_2026q3"
+        quote: "12 months 4.20%"
+        match: "all_tokens"
+    distractors:
+      - doc_id: "newsletter_summer_2026"
+        quote: "The Summer Saver 13-month certificate at 4.60% APY"
+        match: "substring"
+        note: "promotional 13-month rate"
+  - fact_id: "f019"
+    statement: "60-month certificate APY for $10,000-$49,999 is 3.80%."
+    tags: ["scanned_table_only"]
+    locations:
+      - doc_id: "deposit_rate_sheet_2026q3"
+        quote: "60 months 3.80%"
+        match: "all_tokens"
+    distractors:
+      - doc_id: "deposit_rate_sheet_2026q3"
+        quote: "60 months 3.90%"
+        match: "all_tokens"
+        note: "adjacent $50,000+ tier"
+  - fact_id: "f020"
+    statement: "Money Market APY for balances of $25,000 and above is 3.25%."
+    tags: ["scanned_table_only"]
+    locations:
+      - doc_id: "deposit_rate_sheet_2026q3"
+        quote: "Money Market $25,000 and above 3.25%"
+        match: "all_tokens"
+    distractors:
+      - doc_id: "deposit_rate_sheet_2026q3"
+        quote: "Money Market $2,500 to $24,999 2.50%"
+        match: "all_tokens"
+        note: "lower tier"
+  - fact_id: "f021"
+    statement: "New vehicle 37-60 month loans start at 4.49% APR for Tier A+."
+    tags: ["scanned_table_only"]
+    locations:
+      - doc_id: "auto_loan_comparison"
+        quote: "New vehicle 37–60 4.49%"
+        match: "all_tokens"
+    distractors:
+      - doc_id: "auto_loan_comparison"
+        quote: "New vehicle up to 36 mo 4.24%"
+        match: "all_tokens"
+        note: "shorter-term row"
+  - fact_id: "f022"
+    statement: "Maximum LTV for used vehicle loans is 110%."
+    tags: ["scanned_table_only"]
+    locations:
+      - doc_id: "auto_loan_comparison"
+        quote: "Used vehicle 110%"
+        match: "all_tokens"
+    distractors:
+      - doc_id: "auto_loan_comparison"
+        quote: "Refinance up to 72 mo 115%"
+        match: "all_tokens"
+        note: "refinance LTV"
+  - fact_id: "f023"
+    statement: "Average auto loan approval time via the mobile app is 0.6 business days (chart only)."
+    tags: ["figure_only"]
+    locations:
+      - doc_id: "auto_loan_comparison"
+        quote: "mobile app 0.6 days"
+        match: "all_tokens"
+  - fact_id: "f024"
+    statement: "Average auto loan approval time via dealer (indirect) is 2.8 business days (chart only)."
+    tags: ["figure_only"]
+    locations:
+      - doc_id: "auto_loan_comparison"
+        quote: "dealer 2.8 days"
+        match: "all_tokens"
+  - fact_id: "f025"
+    statement: "30-year fixed mortgage rate is 6.375% (APR 6.521%)."
+    tags: ["scanned_table_only"]
+    locations:
+      - doc_id: "mortgage_heloc_rate_notice"
+        quote: "30-Year Fixed 6.375%"
+        match: "all_tokens"
+    distractors:
+      - doc_id: "mortgage_heloc_rate_notice"
+        quote: "20-Year Fixed 6.125%"
+        match: "all_tokens"
+        note: "adjacent row"
+  - fact_id: "f026"
+    statement: "HELOC introductory rate is 5.99% for the first 12 months."
+    tags: ["scanned_table_only"]
+    locations:
+      - doc_id: "mortgage_heloc_rate_notice"
+        quote: "HELOC intro 12 months 5.99%"
+        match: "all_tokens"
+  - fact_id: "f027"
+    statement: "A $5.00 deposit in a Primary Share Account establishes membership."
+    tags: ["duplicated"]
+    locations:
+      - doc_id: "member_faq"
+        quote: "A minimum deposit of $5.00 in a Primary Share Account establishes your membership"
+        match: "substring"
+      - doc_id: "member_faq_copy"
+        quote: "A minimum deposit of $5.00 in a Primary Share Account establishes your membership"
+        match: "substring"
+  - fact_id: "f028"
+    statement: "Member Contact Centre hours are Mon-Fri 7 a.m.-8 p.m. and Sat 9 a.m.-1 p.m. ET."
+    tags: ["duplicated"]
+    locations:
+      - doc_id: "member_faq"
+        quote: "available Monday through Friday from 7:00 a.m. to 8:00 p.m."
+        match: "substring"
+      - doc_id: "member_faq_copy"
+        quote: "available Monday through Friday from 7:00 a.m. to 8:00 p.m."
+        match: "substring"
+  - fact_id: "f029"
+    statement: "Retail mobile check deposit limit is $5,000 per day."
+    tags: []
+    locations:
+      - doc_id: "online_banking_help"
+        quote: "The standard daily limit for mobile check deposit is $5,000"
+        match: "substring"
+    distractors:
+      - doc_id: "business_fee_guide"
+        quote: "The standard Business mobile deposit limit is $25,000 per business day"
+        match: "substring"
+        note: "business tenant value"
+      - doc_id: "online_banking_help"
+        quote: "Members with accounts open less than 90 days have a daily limit of $1,500"
+        match: "substring"
+        note: "new-account limit"
+  - fact_id: "f030"
+    statement: "Online banking locks for 30 minutes after five consecutive failed sign-in attempts."
+    tags: []
+    locations:
+      - doc_id: "online_banking_help"
+        quote: "After five (5) consecutive failed sign-in attempts your access is locked for 30 minutes"
+        match: "substring"
+  - fact_id: "f031"
+    statement: "Privacy opt-out takes effect within 30 days of receipt."
+    tags: ["encoding"]
+    locations:
+      - doc_id: "privacy_notice"
+        quote: "Once we’ve received your request, your opt-out choice takes effect within 30 days"
+        match: "substring"
+    distractors:
+      - doc_id: "privacy_notice"
+        quote: "we can begin sharing your information 30 days from the date we sent this notice"
+        match: "substring"
+        note: "new-member sharing window"
+  - fact_id: "f032"
+    statement: "Standard daily debit card ATM withdrawal limit is $500."
+    tags: ["encoding"]
+    locations:
+      - doc_id: "debit_card_limits"
+        quote: "the standard daily ATM cash withdrawal limit is $500"
+        match: "substring"
+    distractors:
+      - doc_id: "business_fee_guide"
+        quote: "Business debit cards have a daily ATM withdrawal limit of $1,000"
+        match: "substring"
+        note: "business tenant value"
+  - fact_id: "f033"
+    statement: "Daily debit card point-of-sale purchase limit is $3,000."
+    tags: ["encoding"]
+    locations:
+      - doc_id: "debit_card_limits"
+        quote: "The card’s daily point-of-sale purchase limit is $3,000"
+        match: "substring"
+    distractors:
+      - doc_id: "business_fee_guide"
+        quote: "a daily purchase limit of $7,500"
+        match: "substring"
+        note: "business tenant value"
+  - fact_id: "f034"
+    statement: "Loan payments are late after a 15-day grace period; late fee is 5% of the payment or $25.00, whichever is less."
+    tags: ["multi_section"]
+    locations:
+      - doc_id: "loan_late_payment_policy"
+        quote: "not received within 15 calendar days after the due date"
+        match: "substring"
+      - doc_id: "loan_late_payment_policy"
+        quote: "5% of the scheduled payment amount or $25.00, whichever is less"
+        match: "substring"
+  - fact_id: "f035"
+    statement: "Closure requires signed Form HCU-ACL-220 from every owner; accounts with pending items get a 30-day review; remaining balance is mailed by official check within 7 business days."
+    tags: ["multi_section"]
+    locations:
+      - doc_id: "account_closure_procedure"
+        quote: "Obtain a signed Form HCU-ACL-220 (Account Closure Request) from every owner on the account"
+        match: "substring"
+      - doc_id: "account_closure_procedure"
+        quote: "placed in Closing status for a 30-day review period before final disbursement"
+        match: "substring"
+      - doc_id: "account_closure_procedure"
+        quote: "the remaining balance is disbursed by official check mailed within 7 business days to the address on file"
+        match: "substring"
+    distractors:
+      - doc_id: "account_closure_procedure"
+        quote: "Accounts with no pending items may be disbursed on the next business day"
+        match: "substring"
+        note: "no-pending-items path"
+  - fact_id: "f036"
+    statement: "A replacement card by standard mail typically arrives within 7 to 10 business days."
+    tags: []
+    locations:
+      - doc_id: "lost_stolen_card_script"
+        quote: "a replacement card typically arrives within 7 to 10 business days"
+        match: "substring"
+    distractors:
+      - doc_id: "fee_schedule_2026"
+        quote: "Debit card replacement expedited Delivered in 2 business days"
+        match: "all_tokens"
+        note: "expedited delivery"
+  - fact_id: "f037"
+    statement: "Unauthorized-transaction calls are transferred to the Fraud Response Team at extension 4417."
+    tags: []
+    locations:
+      - doc_id: "lost_stolen_card_script"
+        quote: "transfer the call to the Fraud Response Team at extension 4417"
+        match: "substring"
+  - fact_id: "f038"
+    statement: "Workaround for mobile bill pay error BP-503: schedule the payment from the desktop online banking site."
+    tags: ["pii_adjacent"]
+    locations:
+      - doc_id: "call_notes_2026_08"
+        quote: "have the member schedule the payment from the desktop online banking site"
+        match: "substring"
+  - fact_id: "f039"
+    statement: "Formal complaints are acknowledged within 2 business days (target resolution 15 business days)."
+    tags: []
+    locations:
+      - doc_id: "complaint_email_export"
+        quote: "acknowledge every formal complaint within 2 business days"
+        match: "substring"
+  - fact_id: "f040"
+    statement: "A $100 minimum daily balance in the Primary Share Account is required to earn dividends."
+    tags: []
+    locations:
+      - doc_id: "savings_terms"
+        quote: "maintain a minimum daily balance of $100 in your Primary Share Account to earn dividends"
+        match: "substring"
+  - fact_id: "f041"
+    statement: "The Carrow Bay branch opens on Monday, October 19, 2026."
+    tags: ["reading_order_only"]
+    locations:
+      - doc_id: "newsletter_summer_2026"
+        quote: "the Carrow Bay branch will open to members on Monday, October 19, 2026"
+        match: "substring"
+  - fact_id: "f042"
+    statement: "The Summer Saver 13-month certificate (4.60% APY) is available through September 30, 2026."
+    tags: ["reading_order_only"]
+    locations:
+      - doc_id: "newsletter_summer_2026"
+        quote: "The Summer Saver 13-month certificate at 4.60% APY is available through September 30, 2026"
+        match: "substring"
+  - fact_id: "f043"
+    statement: "Business Analysis Checking earns an Earnings Credit Rate of 0.35%."
+    tags: ["business_tenant"]
+    locations:
+      - doc_id: "business_fee_guide"
+        quote: "earn an Earnings Credit Rate (ECR) of 0.35%"
+        match: "substring"
+  - fact_id: "f044"
+    statement: "Velocity Rule VR-3 fires on more than six card-not-present authorizations within 30 minutes (restricted)."
+    tags: ["restricted"]
+    locations:
+      - doc_id: "fraud_monitoring_thresholds"
+        quote: "Velocity Rule VR-3 triggers when a single debit card has more than six (6) card-not-present authorizations within 30 minutes"
+        match: "substring"
+  - fact_id: "f045"
+    statement: "Early withdrawal penalty on Share Certificates longer than 12 months is 180 days of dividends."
+    tags: []
+    locations:
+      - doc_id: "share_certificate_disclosure"
+        quote: "For certificates with terms longer than 12 months, a penalty equal to 180 days of dividends applies"
+        match: "substring"
+    distractors:
+      - doc_id: "share_certificate_disclosure"
+        quote: "a penalty equal to 90 days of dividends applies to certificates with terms of 12 months or less"
+        match: "substring"
+        note: "12-months-or-less penalty"

@@ -1,0 +1,103 @@
+HARBOR CREDIT UNION - MEMBER CONTACT CENTRE
+CALL NOTES EXPORT  |  Queue: General Service  |  Period: 08/01/2026 - 08/31/2026
+Exported by: wfm-reporting (scheduled job CN-EXP-02)  |  Records: 13
+CONFIDENTIAL - CONTAINS MEMBER PERSONAL INFORMATION - DO NOT FORWARD
+
+SUPERVISOR NOTE (posted 08/12/2026, updated 08/19/2026)
+Known issue: in the mobile app, bill pay returns error BP-503 when a member schedules a payment more than 30 days in the future. The fix ships in app release 7.14.
+Workaround for error BP-503: have the member schedule the payment from the desktop online banking site, which is not affected by the error.
+Do not advise members to delete and reinstall the app; it does not clear the error. Log each occurrence with wrap-up code DIG-BP503.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-03-00400 | Date: 08/03/2026 09:14 | Agent: T. Okafor (ext. 4302)
+Member: [REDACTED-NAME] | Member #: [REDACTED-MEMBER] | DOB: [REDACTED-DOB]
+Acct: [REDACTED-ACCOUNT] | SSN (verified): [REDACTED-SSN] | Phone: [REDACTED-PHONE]
+Email: [REDACTED-EMAIL] | Address: [REDACTED-ADDRESS]
+Notes: Member called about a debit card declined at a gas station. Card was fine; merchant pre-authorization exceeded available balance. Explained holds. No action needed.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-05-00437 | Date: 08/05/2026 11:02 | Agent: J. Reyes (ext. 4315)
+Member: [REDACTED-NAME] | Member #: [REDACTED-MEMBER] | DOB: [REDACTED-DOB]
+Acct: [REDACTED-ACCOUNT] | SSN (verified): [REDACTED-SSN] | Phone: [REDACTED-PHONE]
+Email: [REDACTED-EMAIL] | Address: [REDACTED-ADDRESS]
+Notes: Requested Courtesy Pay limit increase. Explained limit set by policy; no manual increases. Member satisfied.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-07-00474 | Date: 08/07/2026 14:37 | Agent: T. Okafor (ext. 4302)
+Member: [REDACTED-NAME] | Member #: [REDACTED-MEMBER] | DOB: [REDACTED-DOB]
+Acct: [REDACTED-ACCOUNT] | SSN (verified): [REDACTED-SSN] | Phone: [REDACTED-PHONE]
+Email: [REDACTED-EMAIL] | Address: [REDACTED-ADDRESS]
+Notes: Lost card reported. Blocked in CardCenter (code 41), read disclosure, member acknowledged. Replacement ordered standard mail.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-12-00511 | Date: 08/12/2026 10:21 | Agent: M. Hughes (ext. 4327)
+Member: [REDACTED-NAME] | Member #: [REDACTED-MEMBER] | DOB: [REDACTED-DOB]
+Acct: [REDACTED-ACCOUNT] | SSN (verified): [REDACTED-SSN] | Phone: [REDACTED-PHONE]
+Email: [REDACTED-EMAIL] | Address: [REDACTED-ADDRESS]
+Notes: Bill pay in mobile app failing with error BP-503 on electricity bill scheduled for 09/20. Walked member through the desktop workaround; payment scheduled successfully.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-12-00548 | Date: 08/12/2026 16:48 | Agent: J. Reyes (ext. 4315)
+Member: [REDACTED-NAME] | Member #: [REDACTED-MEMBER] | DOB: [REDACTED-DOB]
+Acct: [REDACTED-ACCOUNT] | SSN (verified): [REDACTED-SSN] | Phone: [REDACTED-PHONE]
+Email: [REDACTED-EMAIL] | Address: [REDACTED-ADDRESS]
+Notes: Asked why wire could not be placed by phone. Explained wires accepted in branch or online only. Member will visit Westmere branch.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-13-00585 | Date: 08/13/2026 08:55 | Agent: S. Patel (ext. 4309)
+Member: [REDACTED-NAME] | Member #: [REDACTED-MEMBER] | DOB: [REDACTED-DOB]
+Acct: [REDACTED-ACCOUNT] | SSN (verified): [REDACTED-SSN] | Phone: [REDACTED-PHONE]
+Email: [REDACTED-EMAIL] | Address: [REDACTED-ADDRESS]
+Notes: BP-503 again, rent payment scheduled 40 days out. Used desktop workaround. Member unhappy about app; logged feedback.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-14-00622 | Date: 08/14/2026 13:30 | Agent: M. Hughes (ext. 4327)
+Member: [REDACTED-NAME] | Member #: [REDACTED-MEMBER] | DOB: [REDACTED-DOB]
+Acct: [REDACTED-ACCOUNT] | SSN (verified): [REDACTED-SSN] | Phone: [REDACTED-PHONE]
+Email: [REDACTED-EMAIL] | Address: [REDACTED-ADDRESS]
+Notes: Member disputes $89.99 subscription charge. Completed dispute form, routed to Card Services queue.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-17-00659 | Date: 08/17/2026 09:47 | Agent: S. Patel (ext. 4309)
+Member: [REDACTED-NAME] | Member #: [REDACTED-MEMBER] | DOB: [REDACTED-DOB]
+Acct: [REDACTED-ACCOUNT] | SSN (verified): [REDACTED-SSN] | Phone: [REDACTED-PHONE]
+Email: [REDACTED-EMAIL] | Address: [REDACTED-ADDRESS]
+Notes: Address change request by phone declined per procedure; member to use online banking Profile. Member verified OK.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-18-00696 | Date: 08/18/2026 15:12 | Agent: T. Okafor (ext. 4302)
+Member: [REDACTED-NAME] | Member #: [REDACTED-MEMBER] | DOB: [REDACTED-DOB]
+Acct: [REDACTED-ACCOUNT] | SSN (verified): [REDACTED-SSN] | Phone: [REDACTED-PHONE]
+Email: [REDACTED-EMAIL] | Address: [REDACTED-ADDRESS]
+Notes: Mobile deposit rejected: check over daily limit. Advised branch or ATM deposit.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-19-00733 | Date: 08/19/2026 10:05 | Agent: K. Lindgren (ext. 4333)
+Member: [REDACTED-NAME] | Member #: [REDACTED-MEMBER] | DOB: [REDACTED-DOB]
+Acct: [REDACTED-ACCOUNT] | SSN (verified): [REDACTED-SSN] | Phone: [REDACTED-PHONE]
+Email: [REDACTED-EMAIL] | Address: [REDACTED-ADDRESS]
+Notes: BP-503 reported; confirmed app release 7.14 not yet installed on member device. Scheduled payment via desktop site.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-24-00770 | Date: 08/24/2026 12:40 | Agent: J. Reyes (ext. 4315)
+Member: [REDACTED-NAME] | Member #: [REDACTED-MEMBER] | DOB: [REDACTED-DOB]
+Acct: [REDACTED-ACCOUNT] | SSN (verified): [REDACTED-SSN] | Phone: [REDACTED-PHONE]
+Email: [REDACTED-EMAIL] | Address: [REDACTED-ADDRESS]
+Notes: Complaint about international wire delay and fee. Escalated to supervisor J. Albright; complaint reference to follow by e-mail.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-27-00807 | Date: 08/27/2026 17:22 | Agent: K. Lindgren (ext. 4333)
+Member: [REDACTED-NAME] | Member #: [REDACTED-MEMBER] | DOB: [REDACTED-DOB]
+Acct: [REDACTED-ACCOUNT] | SSN (verified): [REDACTED-SSN] | Phone: [REDACTED-PHONE]
+Email: [REDACTED-EMAIL] | Address: [REDACTED-ADDRESS]
+Notes: Member wants to close joint checking. Explained both owners must sign closure form. Form mailed to address on file.
+
+------------------------------------------------------------------------------
+Call ID: 2026-08-31-00844 | Date: 08/31/2026 09:03 | Agent: M. Hughes (ext. 4327)
+Member: [REDACTED-NAME] | Member #: [REDACTED-MEMBER] | DOB: [REDACTED-DOB]
+Acct: [REDACTED-ACCOUNT] | SSN (verified): [REDACTED-SSN] | Phone: [REDACTED-PHONE]
+Email: [REDACTED-EMAIL] | Address: [REDACTED-ADDRESS]
+Notes: Locked out of online banking after failed sign-ins. Explained lockout period, member reset password via Forgot Password.
+
+------------------------------------------------------------------------------
+END OF EXPORT

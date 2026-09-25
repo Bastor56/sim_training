@@ -1,0 +1,2142 @@
+{
+  "corpus_version": 1,
+  "golden_version": 1,
+  "k_values": [
+    5,
+    10
+  ],
+  "rows": [
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.225,
+          "precision@5": 0.4,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.8333,
+          "recall@5": 0.7708
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0333,
+          "precision@5": 0.0667,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.3333,
+          "recall@5": 0.3333
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.1,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 0.5
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "A_fixed",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "bm25",
+      "n_queries": 41,
+      "parser": "naive",
+      "precision@10": 0.0683,
+      "precision@5": 0.1268,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.5447,
+      "recall@5": 0.5142,
+      "row": 1,
+      "superseded_filter": true,
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.25,
+          "precision@5": 0.35,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.9167,
+          "recall@5": 0.6042
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0889,
+          "precision@5": 0.1333,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.8889,
+          "recall@5": 0.6667
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.05,
+          "precision@5": 0.1,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.5,
+          "recall@5": 0.5
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "A_fixed",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "vector",
+      "n_queries": 41,
+      "parser": "naive",
+      "precision@10": 0.0805,
+      "precision@5": 0.1366,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.6504,
+      "recall@5": 0.5711,
+      "row": 2,
+      "superseded_filter": true,
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.25,
+          "precision@5": 0.45,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.9167,
+          "recall@5": 0.8333
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0667,
+          "precision@5": 0.1111,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.6667,
+          "recall@5": 0.5556
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.1,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 0.5
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "A_fixed",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "hybrid",
+      "n_queries": 41,
+      "parser": "naive",
+      "precision@10": 0.078,
+      "precision@5": 0.1415,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.626,
+      "recall@5": 0.5691,
+      "row": 3,
+      "superseded_filter": true,
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.275,
+          "precision@5": 0.4,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 1.0,
+          "recall@5": 0.6875
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0556,
+          "precision@5": 0.1111,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.5556,
+          "recall@5": 0.5556
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "A_fixed",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "hybrid_rerank",
+      "n_queries": 41,
+      "parser": "naive",
+      "precision@10": 0.078,
+      "precision@5": 0.1415,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.6098,
+      "recall@5": 0.5793,
+      "row": 4,
+      "superseded_filter": true,
+      "unanswerable": {
+        "answerable_below_best_unanswerable": 11,
+        "answerable_top1_median": 0.6402,
+        "answerable_top1_min": 0.0008,
+        "top1_rerank": {
+          "q043": 0.0072,
+          "q044": 0.014,
+          "q045": 0.0954
+        }
+      },
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.16,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 0.8
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.25,
+          "precision@5": 0.45,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.8333,
+          "recall@5": 0.75
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0333,
+          "precision@5": 0.0444,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.3333,
+          "recall@5": 0.2222
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "B_structure",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "bm25",
+      "n_queries": 41,
+      "parser": "naive",
+      "precision@10": 0.0707,
+      "precision@5": 0.1268,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.5447,
+      "recall@5": 0.4878,
+      "row": 5,
+      "superseded_filter": true,
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.275,
+          "precision@5": 0.45,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.9167,
+          "recall@5": 0.75
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0889,
+          "precision@5": 0.1333,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.8889,
+          "recall@5": 0.6667
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.1,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 0.5
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "B_structure",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "vector",
+      "n_queries": 41,
+      "parser": "naive",
+      "precision@10": 0.0854,
+      "precision@5": 0.1463,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.6748,
+      "recall@5": 0.5854,
+      "row": 6,
+      "superseded_filter": true,
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.25,
+          "precision@5": 0.45,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.8333,
+          "recall@5": 0.75
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0778,
+          "precision@5": 0.1556,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.7778,
+          "recall@5": 0.7778
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "B_structure",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "hybrid",
+      "n_queries": 41,
+      "parser": "naive",
+      "precision@10": 0.0805,
+      "precision@5": 0.1561,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.6423,
+      "recall@5": 0.6341,
+      "row": 7,
+      "superseded_filter": true,
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.25,
+          "precision@5": 0.45,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.8333,
+          "recall@5": 0.75
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.1,
+          "precision@5": 0.1111,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 0.5556
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.0,
+          "precision@5": 0.0,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.0,
+          "recall@5": 0.0
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "B_structure",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "hybrid_rerank",
+      "n_queries": 41,
+      "parser": "naive",
+      "precision@10": 0.0854,
+      "precision@5": 0.1463,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.6911,
+      "recall@5": 0.5854,
+      "row": 8,
+      "superseded_filter": true,
+      "unanswerable": {
+        "answerable_below_best_unanswerable": 11,
+        "answerable_top1_median": 0.8085,
+        "answerable_top1_min": 0.0004,
+        "top1_rerank": {
+          "q043": 0.0024,
+          "q044": 0.0031,
+          "q045": 0.0393
+        }
+      },
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.25,
+          "precision@5": 0.4,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.9167,
+          "recall@5": 0.7708
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0444,
+          "precision@5": 0.0667,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.4444,
+          "recall@5": 0.3333
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.0875,
+          "precision@5": 0.175,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.875,
+          "recall@5": 0.875
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.1,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 0.5
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "A_fixed",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "bm25",
+      "n_queries": 41,
+      "parser": "layout",
+      "precision@10": 0.1,
+      "precision@5": 0.1805,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.8455,
+      "recall@5": 0.7825,
+      "row": 9,
+      "superseded_filter": true,
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.25,
+          "precision@5": 0.35,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.9167,
+          "recall@5": 0.6042
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0889,
+          "precision@5": 0.1333,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.8889,
+          "recall@5": 0.6667
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.05,
+          "precision@5": 0.1,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.5,
+          "recall@5": 0.5
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "A_fixed",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "vector",
+      "n_queries": 41,
+      "parser": "layout",
+      "precision@10": 0.1098,
+      "precision@5": 0.1951,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.9431,
+      "recall@5": 0.8638,
+      "row": 10,
+      "superseded_filter": true,
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.25,
+          "precision@5": 0.45,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.9167,
+          "recall@5": 0.8333
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0667,
+          "precision@5": 0.1111,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.6667,
+          "recall@5": 0.5556
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.1,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 0.5
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "A_fixed",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "hybrid",
+      "n_queries": 41,
+      "parser": "layout",
+      "precision@10": 0.1073,
+      "precision@5": 0.2,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.9187,
+      "recall@5": 0.8618,
+      "row": 11,
+      "superseded_filter": true,
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.275,
+          "precision@5": 0.4,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 1.0,
+          "recall@5": 0.6875
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0778,
+          "precision@5": 0.1111,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.7778,
+          "recall@5": 0.5556
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "A_fixed",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "hybrid_rerank",
+      "n_queries": 41,
+      "parser": "layout",
+      "precision@10": 0.1122,
+      "precision@5": 0.2,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.9512,
+      "recall@5": 0.872,
+      "row": 12,
+      "superseded_filter": true,
+      "unanswerable": {
+        "answerable_below_best_unanswerable": 12,
+        "answerable_top1_median": 0.8959,
+        "answerable_top1_min": 0.0008,
+        "top1_rerank": {
+          "q043": 0.0167,
+          "q044": 0.0036,
+          "q045": 0.5406
+        }
+      },
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.25,
+          "precision@5": 0.45,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.8333,
+          "recall@5": 0.75
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0333,
+          "precision@5": 0.0444,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.3333,
+          "recall@5": 0.2222
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.0875,
+          "precision@5": 0.15,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.875,
+          "recall@5": 0.75
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "B_structure",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "bm25",
+      "n_queries": 41,
+      "parser": "layout",
+      "precision@10": 0.0976,
+      "precision@5": 0.1805,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.813,
+      "recall@5": 0.7561,
+      "row": 13,
+      "superseded_filter": true,
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.275,
+          "precision@5": 0.45,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.9167,
+          "recall@5": 0.75
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0889,
+          "precision@5": 0.1333,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.8889,
+          "recall@5": 0.6667
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "B_structure",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "vector",
+      "n_queries": 41,
+      "parser": "layout",
+      "precision@10": 0.1146,
+      "precision@5": 0.2098,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.9675,
+      "recall@5": 0.9024,
+      "row": 14,
+      "superseded_filter": true,
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.25,
+          "precision@5": 0.45,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.8333,
+          "recall@5": 0.75
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0778,
+          "precision@5": 0.1556,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.7778,
+          "recall@5": 0.7778
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.1,
+          "precision@5": 0.175,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 0.875
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "B_structure",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "hybrid",
+      "n_queries": 41,
+      "parser": "layout",
+      "precision@10": 0.1098,
+      "precision@5": 0.2098,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.935,
+      "recall@5": 0.9024,
+      "row": 15,
+      "superseded_filter": true,
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.25,
+          "precision@5": 0.45,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.8333,
+          "recall@5": 0.75
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0889,
+          "precision@5": 0.1333,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.8889,
+          "recall@5": 0.6667
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "B_structure",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 0,
+        "wrong_tenant": 0
+      },
+      "mode": "hybrid_rerank",
+      "n_queries": 41,
+      "parser": "layout",
+      "precision@10": 0.1122,
+      "precision@5": 0.2098,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.9593,
+      "recall@5": 0.9024,
+      "row": 16,
+      "superseded_filter": true,
+      "unanswerable": {
+        "answerable_below_best_unanswerable": 12,
+        "answerable_top1_median": 0.9487,
+        "answerable_top1_min": 0.0004,
+        "top1_rerank": {
+          "q043": 0.0024,
+          "q044": 0.0029,
+          "q045": 0.549
+        }
+      },
+      "version_trap_recall@5": 1.0
+    },
+    {
+      "best_of": 14,
+      "by_type": {
+        "duplicate_source": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "encoding": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "exact_term": {
+          "n_queries": 5,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "figure": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "multi_chunk": {
+          "n_queries": 4,
+          "precision@10": 0.275,
+          "precision@5": 0.45,
+          "precision_ceiling@10": 0.3,
+          "precision_ceiling@5": 0.6,
+          "recall@10": 0.9167,
+          "recall@5": 0.75
+        },
+        "paraphrase": {
+          "n_queries": 9,
+          "precision@10": 0.0889,
+          "precision@5": 0.1333,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 0.8889,
+          "recall@5": 0.6667
+        },
+        "pii_adjacent": {
+          "n_queries": 1,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "reading_order": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "scanned_table": {
+          "n_queries": 8,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        },
+        "tenant_filter": {
+          "n_queries": 2,
+          "precision@10": 0.1,
+          "precision@5": 0.1,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 0.5
+        },
+        "version_trap": {
+          "n_queries": 4,
+          "precision@10": 0.1,
+          "precision@5": 0.2,
+          "precision_ceiling@10": 0.1,
+          "precision_ceiling@5": 0.2,
+          "recall@10": 1.0,
+          "recall@5": 1.0
+        }
+      },
+      "chunker": "B_structure",
+      "leaks": {
+        "restricted": 0,
+        "superseded": 39,
+        "wrong_tenant": 0
+      },
+      "mode": "vector",
+      "n_queries": 41,
+      "parser": "layout",
+      "precision@10": 0.1146,
+      "precision@5": 0.2049,
+      "precision_ceiling@10": 0.1195,
+      "precision_ceiling@5": 0.239,
+      "q003_clearance": "OK",
+      "q003_leak_check": "PASS",
+      "recall@10": 0.9675,
+      "recall@5": 0.878,
+      "row": 17,
+      "superseded_filter": false,
+      "version_trap_recall@5": 1.0
+    }
+  ]
+}

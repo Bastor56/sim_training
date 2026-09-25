@@ -1,0 +1,42 @@
+Mobile and Online Banking Help
+
+Use this page to get started with Harbor online banking and the Harbor mobile app, and to troubleshoot common issues.
+
+Signing In
+
+I forgot my password. What should I do?
+
+Select Forgot Password on the sign-in screen. We will send a one-time passcode to the phone number or e-mail address on file. Your new password must be at least 12 characters and cannot match any of your last five passwords.
+
+Why is my access locked?
+
+After five (5) consecutive failed sign-in attempts your access is locked for 30 minutes. After the lockout period you can try again, or reset your password immediately using Forgot Password. If you did not attempt to sign in, contact us, because someone else may be trying to access your account.
+
+Can I use fingerprint or face recognition?
+
+Yes. After you sign in with your password once on a device, go to Settings and turn on biometric sign-in. Biometric sign-in is tied to the device, so you will need to enable it again on a new phone.
+
+Mobile Check Deposit
+
+Question | Answer
+How much can I deposit? | The standard daily limit for mobile check deposit is $5,000 per member, with a rolling 30-day limit of $15,000. Members with accounts open less than 90 days have a daily limit of $1,500.
+When will funds be available? | Deposits received before 6:00 p.m. Eastern Time on a business day are generally available the next business day. Some deposits may be held longer; we will notify you if a hold is placed.
+What should I write on the check? | Endorse the back with your signature and the words "For mobile deposit at Harbor CU only". Keep the paper check for 30 days, then destroy it.
+
+Paying People and Bills
+
+How much can I send with Harbor Pay?
+
+Harbor Pay person-to-person payments are limited to $1,000 per day and $3,000 per rolling 30 days. Payments to a recipient you have paid before usually arrive within minutes.
+
+When will my bill payment arrive?
+
+Electronic bill payments are delivered within two business days. Payees that cannot accept electronic payments receive a paper check, which can take up to five business days. Schedule payments at least five business days before the due date to be safe.
+
+Alerts and Security
+
+Turn on balance, deposit and transaction alerts in Settings under Alerts. Harbor will never ask you for your password, full card number or one-time passcode by phone, e-mail or text. If you receive a request like this, do not respond and contact us using the number on the back of your card.
+
+Supported Devices and Browsers
+
+The Harbor mobile app supports the two most recent major versions of iOS and Android. Online banking supports the current and previous versions of Chrome, Edge, Firefox and Safari. Older browsers may display pages incorrectly or be blocked for security reasons.

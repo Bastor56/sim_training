@@ -1,0 +1,28 @@
+filename,doc_id,parser,status,stage,reason
+Account Closure Procedure v1.4.docx,account_closure_procedure,layout,cleaned,clean,"removed 3 tracked-change leftovers; redacted 4 PII values (account 1, address 1, member 1, name 1)"
+Auto_Loan_Product_Comparison_Sept2026.pdf,auto_loan_comparison,layout,cleaned,clean,OCR + table extraction on image-only scan (layout parser)
+Business_Account_Fee_Guide_2026.md,business_fee_guide,layout,cleaned,clean,no defects found; standard .md extraction
+CC_Script_Lost_Stolen_Card_v2.2.md,lost_stolen_card_script,layout,cleaned,clean,no defects found; standard .md extraction
+Card Dispute Procedure CS-PRO-031 rev5.docx,card_dispute_procedure,layout,cleaned,clean,no defects found; standard .docx extraction
+Debit Card Limits and Controls.txt,debit_card_limits,layout,cleaned,clean,repaired 19 mojibake sequences
+FW_ RE_ Complaint - international wire delayed and fee.eml,complaint_email_export,layout,cleaned,clean,"email: unquoted 15 reply lines, removed 10 address-header lines, 3 disclaimers, 1 repeated blocks; redacted 8 PII values (account 1, address 1, email 1, member 1, name 3, phone 1)"
+HCU_Fee_Schedule_2026.pdf,fee_schedule_2026,layout,cleaned,clean,OCR + table extraction on image-only scan (layout parser)
+Harbor_Currents_Summer_2026.pdf,newsletter_summer_2026,layout,cleaned,clean,"layout parser: reading order recovered, running headers/footers excluded as page furniture"
+Holiday_Schedule_2026.txt,holiday_schedule_2026,layout,dropped,clean,"near-empty: 15 words; placeholder text (""content to follow"")"
+Loan_Late_Payment_and_Collections_Policy_v1.6.md,loan_late_payment_policy,layout,cleaned,clean,"normalised whitespace (non-breaking spaces, tabs)"
+Mortgage HELOC Rate Notice 09-2026.pdf,mortgage_heloc_rate_notice,layout,cleaned,clean,OCR + table extraction on image-only scan (layout parser); deskewed -3.0 deg
+Overdraft_Policy_v2.md,overdraft_policy_v2,layout,cleaned,clean,no defects found; standard .md extraction
+Overdraft_Policy_v3_FINAL.md,overdraft_policy_v3,layout,cleaned,clean,stripped UTF-8 BOM
+PAY-WT-004 Wire Transfer Policy.docx,wire_transfer_policy_copy,layout,dropped,dedupe,near-duplicate (Jaccard=0.96) of wire_transfer_policy (Wire_Transfer_Policy_Rev2026-02.pdf)
+Privacy_Notice_Rev01-2026.txt,privacy_notice,layout,cleaned,clean,decoded as cp1252 (not valid UTF-8; detector guessed cp775)
+RSK-FRD-009 Fraud Monitoring Thresholds v4.1.md,fraud_monitoring_thresholds,layout,cleaned,clean,no defects found; standard .md extraction
+Rate Sheet Q2 2026 - Deposits.pdf,rate_sheet_2026q2,layout,quarantined,parse,unreadable pdf: ValueError: ConversionError: Conversion failed for: Rate Sheet Q2 2026 - Deposits.pdf with status: failure. Errors: docling-parse could not load document 15998d1413461868b44301eeef90ec5ceb1a690a04f2f7b69a8d704134732def: Failed to; route to manual review
+Rate Sheet Q3 2026 - Deposits.pdf,deposit_rate_sheet_2026q3,layout,cleaned,clean,OCR + table extraction on image-only scan (layout parser)
+Savings Account Terms and Conditions.rtf,savings_terms,layout,cleaned,clean,converted legacy RTF to text
+Share_Certificate_Disclosure_DEP-DSC-017.md,share_certificate_disclosure,layout,cleaned,clean,no defects found; standard .md extraction
+Wire_Transfer_Policy_Rev2026-02.pdf,wire_transfer_policy,layout,cleaned,clean,"layout parser: reading order recovered, running headers/footers excluded as page furniture"
+branch_locations.csv,branch_locations,layout,dropped,load,empty file (0 bytes)
+call_notes_export_2026-08.txt,call_notes_2026_08,layout,cleaned,clean,"normalised whitespace (repeated spaces); redacted 104 PII values (account 13, address 13, dob 13, email 13, member 13, name 13, phone 13, ssn 13)"
+faq (1).html,member_faq_copy,layout,dropped,load,exact duplicate of member_faq (faq.html); identical SHA-256
+faq.html,member_faq,layout,cleaned,clean,"removed 50 boilerplate blocks (nav, cookie banner, sidebar, footer, ...)"
+online-banking-help.html,online_banking_help,layout,cleaned,clean,"removed 50 boilerplate blocks (nav, cookie banner, sidebar, footer, ...)"

@@ -1,0 +1,50 @@
+Wire Transfer Policy
+
+Policy number: PAY-WT-004 | Revision 2026-02 | Effective date: February 16, 2026 | Owner: Payments Operations | Applies to: Retail accounts
+
+1. Purpose
+
+This policy establishes the requirements Harbor Credit Union follows when sending and receiving funds transfers by wire on behalf of Retail members. Wire transfers are generally final once sent and are a frequent target of fraud, so the controls in this policy are designed to confirm that every outgoing wire is authorized by the member, is accurate, and complies with applicable law, including Article 4A of the Uniform Commercial Code, the Bank Secrecy Act, and sanctions screening requirements.
+
+2. Scope
+
+This policy applies to domestic and international wire transfers initiated from or received into Retail share and checking accounts. Business accounts are subject to the Business Account Fee Guide and the Business Services Agreement. Automated Clearing House (ACH) transfers, person-to-person payments, and internal transfers between Harbor accounts are not wire transfers and are outside the scope of this policy.
+
+3. Definitions
+
+- Business day means Monday through Friday, excluding Federal Reserve holidays.
+- Domestic wire means a funds transfer to a beneficiary account at a financial institution located in the United States.
+- International wire means a funds transfer to a beneficiary account at a financial institution located outside the United States, in US dollars or a foreign currency.
+- Callback verification means a telephone call placed by Harbor staff to a phone number already on file for the member, not a number supplied in the wire request.
+
+4. Authorized Channels
+
+Members may request an outgoing wire in person at any Harbor branch or through online banking once the member has enrolled in online wire service. The Member Contact Centre may answer questions about a wire but does not accept wire instructions by telephone, e-mail or text message. Instructions received by e-mail must be treated as a potential fraud attempt and reported to the Fraud Response Team.
+
+Online wire service is available to members whose account has been open for at least 90 days and who have completed enhanced authentication enrollment. The online daily limit for outgoing wires is $50,000 per member. Requests above this limit must be completed in branch with valid government-issued photo identification.
+
+5. Processing Cutoff Times
+
+Domestic wire requests received and verified by 3:00 p.m. Eastern Time on a business day are processed the same business day. Requests received after the cutoff, or on a day that is not a business day, are processed on the next business day. International wire requests must be received and verified by 1:00 p.m. Eastern Time to be released the same business day; delivery to the beneficiary may take one to five business days depending on the destination country and intermediary banks.
+
+6. Fees
+
+The fee for an outgoing domestic wire from a Retail account is $25.00 per wire. Outgoing international wires from Retail accounts are charged $45.00 per wire, plus any intermediary or beneficiary bank charges deducted from the transferred amount. Incoming wires credited to a Retail account are charged $15.00 per wire. Fees are debited from the funding account at the time the wire is sent or received and are not refunded if a wire is returned by the receiving institution.
+
+7. Verification and Fraud Controls
+
+Any online wire request above $25,000 requires a callback verification before release. Branch wire requests require the member to sign the wire request form in the presence of staff after the details have been read back. Every outgoing wire is screened against the Office of Foreign Assets Control (OFAC) sanctions lists before release; a potential match places the wire on hold until Compliance clears or rejects it.
+
+Staff must place a wire on hold and escalate to the Fraud Response Team if the member appears to be acting under instruction from a third party, if the request follows a recent change to the member's contact details, or if the beneficiary details were supplied in an e-mail claiming to be from a title company, employer or government agency.
+
+8. Errors, Recalls and Returns
+
+A member who believes a wire was sent in error must notify Harbor as soon as possible. Harbor will request a recall from the receiving institution but cannot guarantee the return of funds once a wire has been released. Returned funds are credited to the member's account net of any charges imposed by the receiving or intermediary institutions.
+
+9. Recordkeeping
+
+Wire request forms, callback records, OFAC screening results and confirmation messages are retained for five years from the date of the transfer. Records must be retrievable by the member's account number and by the wire reference number.
+
+10. Exceptions
+
+Exceptions to this policy, including fee waivers above $100 in a calendar year for a single member, require written approval from the Payments Operations Manager. Exceptions to the verification requirements in Section 7 are not permitted.

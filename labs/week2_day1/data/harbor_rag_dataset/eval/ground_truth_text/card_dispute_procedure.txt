@@ -1,0 +1,47 @@
+Card Dispute Procedure
+
+Procedure ID: CS-PRO-031 | Revision 5 | Effective: April 15, 2026 | Owner: Card Services | Classification: Internal
+
+1. Purpose
+
+This procedure sets out how Member Contact Centre agents and Card Services analysts receive, classify, investigate and resolve disputes on Harbor debit and credit cards. It is designed to meet the error-resolution requirements of Regulation E for debit cards and Regulation Z for credit cards, and the chargeback rules of the card network.
+
+2. Intake and Timeframes
+
+Members must report an unauthorized or disputed card transaction within 60 days of the statement date on which the transaction first appeared. Disputes received after this period are still logged, but Harbor's liability protections and the member's right to provisional credit may be limited.
+
+For every dispute, the agent completes Form HCU-DSP-114 (Card Transaction Dispute) during the initial contact, whether the contact is by phone, in branch, or through secure message. The form captures the transaction date, amount, merchant descriptor, the member's explanation, and whether the card is still in the member's possession.
+
+1. Verify the caller using the standard three-factor authentication script.
+2. Confirm the transaction details against the card processing system.
+3. If fraud is suspected, block the card immediately and order a replacement.
+4. Complete Form HCU-DSP-114 and read the dispute acknowledgment disclosure.
+5. Route the case to the Card Services dispute queue in the case management system.
+
+3. Classification
+
+Card Services classifies each dispute within one business day of intake. Unauthorized transactions (lost, stolen or counterfeit card; card-not-present fraud) follow the fraud path. Authorized transactions with a merchant problem (goods not received, not as described, duplicate processing, credit not processed) follow the merchant dispute path. Where the member has not first tried to resolve a merchant dispute with the merchant, the analyst documents the reason in the case notes.
+
+4. Provisional Credit
+
+Provisional credit for the disputed amount is posted within 10 business days of receiving the dispute notice if the investigation has not been completed by then. For accounts opened less than 30 days before the first disputed transaction, provisional credit is posted within 20 business days. The member is notified of the provisional credit, including the amount and date, within two business days of posting.
+
+Provisional credit is not required for credit card disputes, where the disputed amount is instead suspended from the balance and excluded from finance charges while the investigation is open.
+
+5. Investigation
+
+The investigation must be completed within 45 calendar days of receiving the dispute notice. The period is extended to 90 calendar days for point-of-sale transactions, foreign-initiated transactions, and transactions on accounts opened within the previous 30 days. The analyst reviews authorization data, device and location information, prior dispute history, and any documents supplied by the member or the merchant.
+
+Where a chargeback is appropriate, Card Services submits it to the network no later than 120 calendar days after the transaction settlement date. Supporting documents are attached to the case record, not stored on shared drives.
+
+6. Resolution and Member Notification
+
+Card Services notifies the member in writing within 3 business days of completing the investigation. If the dispute is resolved in the member's favour, any provisional credit becomes final. If Harbor determines that no error occurred, the notice explains the findings, the member's right to request the documents relied upon, and the date on which provisional credit will be reversed, which must be at least 5 business days after the notice is sent.
+
+7. Records Retention
+
+Dispute case records, including Form HCU-DSP-114, correspondence and network submissions, are retained for a minimum of two years from the date of resolution, or longer where litigation or a regulatory examination is pending.
+
+8. Escalation
+
+Disputes over $5,000, disputes involving a Harbor employee, and any case where the member alleges that Harbor itself made the error are escalated to the Card Services Manager on the day of classification. Complaints about the handling of a dispute are logged in the complaint register in accordance with the Complaint Handling Standard.

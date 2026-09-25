@@ -1,0 +1,64 @@
+# Pinned to the exact versions this lab was built and tested against
+# (Python 3.12 via uv -- see .python-version; torch and docling have no
+# wheels for the system Python 3.14 yet).
+#
+# Install:  uv venv --python 3.12 .venv && uv pip install --python .venv/bin/python -r requirements.txt
+# Models are NOT pip packages (except the spaCy model below): they are pinned
+# by Hugging Face commit hash in model_manifest.json and downloaded to
+# ~/.cache/huggingface/hub on first use.
+
+# Figure captioning (Claude vision). Pinned to match week1_day3/day4 exactly
+# (see ../week1_day4/requirements.txt) so the Messages API surface is the
+# same one earlier labs used.
+anthropic==0.104.1
+
+# Index: Chroma is the vector store (embeddings + chunk metadata for
+# filtering and citation); rank_bm25 is the lexical half of hybrid search.
+chromadb==1.5.9
+rank-bm25==0.2.2
+
+# Embedder (BAAI/bge-small-en-v1.5) and cross-encoder reranker
+# (BAAI/bge-reranker-base) both load through sentence-transformers.
+# torch and transformers are transitive, but pinned here too: they compute
+# the embeddings, so a silent upgrade could change vectors already in the
+# index. torch uses Apple's MPS (GPU) backend automatically on this Mac.
+sentence-transformers==6.1.0
+transformers==5.17.0
+torch==2.14.0
+
+# Layout-aware parsing for the scanned PDFs: OCR, reading order, table
+# structure, picture detection. Docling also reads .docx, .html, .md and
+# .csv (it pulls in python-docx, beautifulsoup4 and openpyxl).
+# ocrmac = Apple Vision OCR, which Docling's auto mode picks first on macOS
+# (no model download, fastest here). rapidocr + onnxruntime come in with
+# docling and are the portable fallback (RapidOcrOptions) on non-Mac machines.
+docling==2.130.0
+ocrmac==1.0.1
+rapidocr==3.9.2
+onnxruntime==1.30.0
+
+# Naive-extraction baseline (page.get_text()), which returns empty text for
+# the image-only PDFs. Also used by the dataset's verify_dataset.py.
+pymupdf==1.28.2
+
+# PII detection and scrubbing before embedding. Presidio's default NLP
+# engine is spaCy's en_core_web_lg (large model = best PERSON/LOCATION NER);
+# the model must match spaCy's minor version (3.8.x), so both are pinned.
+presidio-analyzer==2.2.364
+presidio-anonymizer==2.2.364
+spacy==3.8.16
+en_core_web_lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl
+
+# Messy-format helpers. .eml uses the stdlib `email` package; .txt/.csv use
+# the stdlib too, after encoding detection.
+striprtf==0.0.33              # .rtf -> plain text
+ftfy==6.3.1                   # repair mojibake ("â€™" -> "'")
+charset-normalizer==3.5.1     # detect cp1252 vs utf-8 before decoding
+pyyaml==6.0.3                 # golden_set.yaml, facts.yaml
+# The loaders import these directly (plan milestone 5), so they are pinned
+# here rather than left as docling's transitive dependencies.
+beautifulsoup4==4.15.0        # .html -> headings, paragraphs, table rows
+python-docx==1.2.0            # .docx -> heading styles, lists, tables
+
+# Test runner.
+pytest==9.1.1

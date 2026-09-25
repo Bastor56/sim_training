@@ -1,0 +1,31 @@
+Fraud Monitoring Thresholds
+
+Standard ID: RSK-FRD-009 | Version 4.1 | Effective: July 1, 2026 | Owner: Enterprise Fraud Risk | Classification: RESTRICTED. Do not share with members or third parties. Do not quote in member communications.
+
+1. Purpose
+
+This standard documents the rule thresholds used by the real-time fraud monitoring platform for Retail accounts. Disclosure of these thresholds would allow fraudsters to structure activity to avoid detection. Access is limited to Enterprise Fraud Risk, the Fraud Response Team, Internal Audit and designated Information Security staff.
+
+2. Card Velocity Rules
+
+Velocity Rule VR-3 triggers when a single debit card has more than six (6) card-not-present authorizations within 30 minutes. A VR-3 alert declines further card-not-present authorizations and sends a two-way text alert to the member.
+
+Velocity Rule VR-5 triggers when a card is used at ATMs in two different states within 90 minutes. Velocity Rule VR-7 triggers when three (3) or more declined PIN attempts occur within 24 hours at different terminals.
+
+3. Account Takeover Indicators
+
+An account takeover score of 720 or above places an online banking session in step-up authentication. A change of phone number or e-mail address followed within 72 hours by an external transfer of more than $2,000 generates a priority alert for manual review.
+
+4. Payment Thresholds
+
+Outgoing ACH transfers from Retail accounts above $7,500 in a single business day are held for review when the receiving account was added within the previous 10 days. Person-to-person payments above $800 to a first-time recipient are delayed by four hours. Wire requests are governed by the Wire Transfer Policy; the monitoring platform additionally scores every outgoing wire above $15,000 for account takeover risk.
+
+Card-not-present authorizations from merchants on the internal high-risk merchant list are scored with an additional risk weighting and are declined outright when the account takeover score is 650 or above. First-use international card-present transactions in countries on the elevated-risk list generate a text alert but are not declined unless another rule also triggers.
+
+5. Tuning and Review
+
+Thresholds are reviewed monthly by the Fraud Rules Committee using false-positive rates, confirmed fraud losses and member friction metrics. Changes are documented in the rules change log and approved by the Chief Risk Officer. Emergency changes may be made by the Fraud Response Team lead and must be ratified at the next committee meeting.
+
+6. Handling
+
+This document must not be stored in member-facing knowledge bases, attached to e-mails sent outside Harbor, or quoted in scripts. Contact centre agents who receive questions about why a transaction was declined should use the approved response in the Declined Transaction Script without referencing any threshold.
