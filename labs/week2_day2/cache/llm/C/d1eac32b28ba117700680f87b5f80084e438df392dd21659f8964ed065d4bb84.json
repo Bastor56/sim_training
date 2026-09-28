@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:07:59.334+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "rewrite_v1",
+  "purpose": "rewrite",
+  "stop_reason": "end_turn",
+  "text": "{\"search_query\": \"RV loan early payment terms conditions disclosure\", \"reason\": \"Broadened from prepayment penalty specifically to product disclosure or terms documents that would cover RV loan conditions, since the previous narrow query found no relevant results.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 669,
+    "output_tokens": 56
+  }
+}

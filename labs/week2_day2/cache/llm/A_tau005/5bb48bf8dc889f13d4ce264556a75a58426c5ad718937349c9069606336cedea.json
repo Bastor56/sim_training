@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T22:57:24.763+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v1",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"retrieve\", \"reason\": \"The member is asking about Harbor's dispute or fraud reporting deadline for unauthorized card charges, which is specific to Harbor's policies and procedures.\", \"search_query\": \"unauthorized charge dispute reporting deadline time limit card\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 689,
+    "output_tokens": 56
+  }
+}

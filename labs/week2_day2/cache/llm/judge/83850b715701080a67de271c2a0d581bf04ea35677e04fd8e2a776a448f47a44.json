@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:45:19.821+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"Assistant matches the reference date (September 30, 2026), term (13-month), and APY (4.60%), with extra non-contradictory details.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 974,
+    "output_tokens": 61
+  }
+}

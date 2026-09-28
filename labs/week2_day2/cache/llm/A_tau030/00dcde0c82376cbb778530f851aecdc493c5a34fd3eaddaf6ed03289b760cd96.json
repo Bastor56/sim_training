@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T23:03:32.535+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"answered\", \"answer\": \"For a Share Certificate with a term longer than 12 months, the early withdrawal penalty is 180 days of dividends, calculated on the amount withdrawn at the dividend rate in effect on the certificate. The penalty may reduce principal if dividends earned are less than the penalty. The penalty is waived if a withdrawal is made because the owner has died or been declared legally incompetent by a court.\", \"cited_chunk_ids\": [\"share_certificate_disclosure::layout::B_structure::0004\"], \"reason\": \"The passage directly specifies the early withdrawal penalty for Share Certificates with terms longer than 12 months.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1426,
+    "output_tokens": 146
+  }
+}

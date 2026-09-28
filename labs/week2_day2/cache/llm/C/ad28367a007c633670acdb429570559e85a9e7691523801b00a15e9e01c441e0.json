@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:00:59.675+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Please report an unauthorised or disputed card transaction within 60 days of the statement date on which the charge first appeared — that's the reporting window under the Card Dispute Procedure, Rev 5. If you report it later, we'll still log the dispute, but Harbor's liability protections and your right to provisional credit may be limited. Before calling, it helps to check with anyone else who uses the card and look for a merchant name that differs from the store name; if you still don't recognise it, contact us right away.\",\"cited_chunk_ids\":[\"card_dispute_procedure::layout::B_structure::0001\",\"member_faq::layout::B_structure::0004\"],\"reason\":\"The Card Dispute Procedure Rev 5 intake section states the 60-day reporting deadline and the consequence of late reporting.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 1378,
+    "output_tokens": 268
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T23:00:31.288+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"answered\", \"answer\": \"Under the Account Closure Procedure v1.4, here are the key steps:\\n\\n**Initial Steps:** Verify the member's identity, obtain a signed Account Closure Request form (HCU-ACL-220) from all account owners, review pending items and holds, cancel debit cards, stop recurring transfers, and remove bill pay payees.\\n\\n**Processing:** Move the account to Closing status, complete a pending items review, then disburse remaining funds and set the account to Closed.\\n\\n**Timeline:** Remaining funds are mailed by official check within 7 business days to the address on file. For phone requests on single-owner accounts, the signed form must be returned by mail or secure upload before processing can continue.\\n\\n**Important:** If the Primary Share Account is being closed, membership ends. If there's an open loan, the Primary Share Account cannot be closed until the loan is paid in full. If the account is overdrawn at closure, the closure cannot be completed.\", \"cited_chunk_ids\": [\"account_closure_procedure::layout::B_structure::0002\", \"account_closure_procedure::layout::B_structure::0001\", \"account_closure_procedure::layout::B_structure::0004\"], \"reason\": \"The passages provide complete details on the account closure steps, timeline for fund disbursement, and key conditions affecting closure for retail member accounts.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1632,
+    "output_tokens": 322
+  }
+}

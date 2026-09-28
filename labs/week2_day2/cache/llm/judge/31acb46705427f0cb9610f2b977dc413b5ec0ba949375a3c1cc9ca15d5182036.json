@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:49:57.883+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"incorrect\",\"reason\":\"Reference states 15 calendar days before a payment counts as behind, but the assistant states 30 days for delinquency reporting, contradicting the key number.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1009,
+    "output_tokens": 66
+  }
+}

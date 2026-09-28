@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:01:50.863+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v1",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"retrieve\", \"reason\": \"The answer depends on Harbor's specific loan policies and definitions of delinquency, which vary by institution and loan agreement.\", \"search_query\": \"auto loan delinquency grace period days late payment\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 690,
+    "output_tokens": 57
+  }
+}

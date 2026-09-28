@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T22:57:49.178+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"answered\", \"answer\": \"The standard daily limit for mobile check deposit is $5,000 per day. However, if your account has been open for less than 90 days, your daily limit is $1,500. There's also a rolling 30-day limit of $15,000 across all your deposits.\", \"cited_chunk_ids\": [\"online_banking_help::layout::B_structure::0001\"], \"reason\": \"The passage directly answers the question about daily mobile check deposit limits for retail members.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1632,
+    "output_tokens": 120
+  }
+}

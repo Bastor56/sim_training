@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:56:59.753+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Card Dispute Procedure Rev 5 and the Contact Centre Script: Lost or Stolen Card v2.2, the agent should: 1) block the card immediately and order a replacement since fraud is suspected; 2) review recent transactions (last 10 days) with the member and note any unauthorized ones; 3) read the compliance disclosure verbatim and get a verbal 'yes' acknowledgment, recording it in the call notes; 4) complete Form HCU-DSP-114 (Card Transaction Dispute); and 5) after the disclosure, warm-transfer the call to the Fraud Response Team at extension 4417, summarizing the case for the analyst first. The member should be told that they will not be responsible for unauthorized transactions made after this call, and that for unauthorized debit card transactions made before the call, their liability may depend on how quickly they reported the loss, as explained in their Electronic Fund Transfer Agreement and Disclosure. Harbor will investigate any disputed transactions and contact the member in writing with the results.\",\"cited_chunk_ids\":[\"card_dispute_procedure::layout::B_structure::0001\",\"lost_stolen_card_script::layout::B_structure::0003\",\"lost_stolen_card_script::layout::B_structure::0005\",\"lost_stolen_card_script::layout::B_structure::0004\"],\"reason\":\"The lost/stolen card script and card dispute procedure together specify the required agent steps (block card, review activity, disclosure, dispute form, fraud transfer) and the exact wording to tell the member about liability on the new/existing card.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2337,
+    "output_tokens": 535
+  }
+}

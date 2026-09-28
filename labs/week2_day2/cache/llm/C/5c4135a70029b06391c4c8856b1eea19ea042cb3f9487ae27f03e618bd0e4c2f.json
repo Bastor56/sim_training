@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:02:23.602+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v1",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"retrieve\", \"reason\": \"The question asks about Harbor's specific procedure for handling leftover funds when a membership is closed, which depends on Harbor's policies and procedures.\", \"search_query\": \"close membership shut down account leftover funds refund\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 687,
+    "output_tokens": 58
+  }
+}

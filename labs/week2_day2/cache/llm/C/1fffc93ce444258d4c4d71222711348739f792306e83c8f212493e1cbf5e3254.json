@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:04:34.862+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Overdraft Policy v3.0 (effective 1 January 2026), the overdraft fee is $29 per item for items paid through Courtesy Pay, capped at a maximum of 3 items per business day. You won't be charged an overdraft fee if your account is overdrawn by $25.00 or less at the end of the business day, and there's no fee for items Harbor returns unpaid (a returned item/NSF fee of $27.00 per item applies instead, per the Schedule of Fees and Charges: Retail Accounts, 2026). Note this fee was reduced from $32 under the previous version 2.0.\",\"cited_chunk_ids\":[\"overdraft_policy_v3::layout::B_structure::0004\",\"overdraft_policy_v3::layout::B_structure::0009\",\"fee_schedule_2026::layout::B_structure::0001\"],\"reason\":\"The current Overdraft Policy v3 states the per-item fee and its conditions directly.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 1661,
+    "output_tokens": 326
+  }
+}

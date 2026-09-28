@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T23:05:36.059+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"answered\", \"answer\": \"According to the Auto Loan Product Comparison v2026-09, auto loan approvals through a car dealer (indirect channel) take an average of 2.8 business days.\", \"cited_chunk_ids\": [\"auto_loan_comparison::layout::B_structure::0003\"], \"reason\": \"The passage contains a chart showing average approval times by application channel, which directly answers the question about dealer approvals.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 959,
+    "output_tokens": 103
+  }
+}

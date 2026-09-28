@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+runs/*/tmp/
+
+# Committed on purpose (spec.md "Cache" and "Spend guard"):
+#   cache/llm/               replaying a reported run costs $0 and gives identical results
+#   runs/spend_ledger.jsonl  every provider dollar spent today

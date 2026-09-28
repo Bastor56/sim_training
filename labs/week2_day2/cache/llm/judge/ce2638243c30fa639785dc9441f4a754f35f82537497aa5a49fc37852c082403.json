@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:50:14.612+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"incorrect\",\"reason\":\"The assistant mislabels 6.375% as the APR when the reference states 6.375% is the base rate and 6.521% is the APR, a fact-to-label mismatch.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1011,
+    "output_tokens": 73
+  }
+}

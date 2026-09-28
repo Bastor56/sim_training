@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:57:16.951+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v1",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"incorrect\",\"reason\":\"Assistant fails to state the required late fee amount (5% of payment or $25, whichever is less), instead claiming it's not stated.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 927,
+    "output_tokens": 60
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:59:20.489+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "direct_answer_v1",
+  "purpose": "direct_answer",
+  "stop_reason": "end_turn",
+  "text": "{\"answer\":\"A leap year has 366 days — that extra day (February 29th) is added roughly every four years to keep our calendar in sync with Earth's orbit around the sun.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 535,
+    "output_tokens": 59
+  }
+}

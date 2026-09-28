@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T23:01:52.119+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"not_in_corpus\", \"answer\": \"\", \"cited_chunk_ids\": [], \"reason\": \"The provided passages contain only retail account fees for checking and savings products, with no information about safe deposit box rental fees.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1803,
+    "output_tokens": 54
+  }
+}

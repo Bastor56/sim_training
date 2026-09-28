@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T22:23:59.640+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"answered\", \"answer\": \"Under the Account Closure Procedure v1.4, every owner on the account has to sign Form HCU-ACL-220 (Account Closure Request).\", \"cited_chunk_ids\": [\"account_closure_procedure::layout::B_structure::0002\"], \"reason\": \"The passage clearly states that the MSR must obtain a signed Form HCU-ACL-220 from every owner on the account as part of the closure process.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1310,
+    "output_tokens": 113
+  }
+}

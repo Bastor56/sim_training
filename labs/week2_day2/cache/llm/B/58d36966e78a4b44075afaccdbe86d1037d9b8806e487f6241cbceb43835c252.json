@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:55:26.826+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v1",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"retrieve\", \"reason\": \"The member is asking about Harbor's specific auto loan approval timeline through dealers, which depends on Harbor's procedures and policies.\", \"search_query\": \"auto loan approval time car dealer\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 685,
+    "output_tokens": 50
+  }
+}

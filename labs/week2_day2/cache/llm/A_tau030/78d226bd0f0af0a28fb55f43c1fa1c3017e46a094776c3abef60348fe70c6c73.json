@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T23:08:09.057+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "rewrite_v1",
+  "purpose": "rewrite",
+  "stop_reason": "end_turn",
+  "text": "{\"search_query\": \"RV loan terms conditions prepayment\", \"reason\": \"The previous query was too specific to 'penalty' which may not be the exact term used; broadening to 'terms conditions' and dropping 'early payoff' will help find the RV loan agreement or disclosure that covers prepayment rules.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 669,
+    "output_tokens": 76
+  }
+}

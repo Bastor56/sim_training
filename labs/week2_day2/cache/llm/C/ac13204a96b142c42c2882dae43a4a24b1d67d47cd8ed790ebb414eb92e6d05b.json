@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:08:22.314+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "direct_answer_v1",
+  "purpose": "direct_answer",
+  "stop_reason": "end_turn",
+  "text": "{\"answer\":\"No — I'm Harbor Credit Union's automated assistant, not a person. I'm happy to help with questions about your accounts, cards, loans, fees or our policies, and I can connect you with a member of our team whenever you'd like.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 515,
+    "input_tokens": 19,
+    "output_tokens": 91
+  }
+}

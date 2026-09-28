@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:55:21.241+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"not_in_corpus\",\"answer\":\"\",\"cited_chunk_ids\":[],\"reason\":\"The approval-time figures appear only in a model-generated image caption, not in the actual policy text, so this is not reliable corpus evidence to cite to a member.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1263,
+    "output_tokens": 86
+  }
+}

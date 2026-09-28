@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:04:25.827+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"You can open the Summer Saver 13-month certificate (4.60% APY) through September 30, 2026, with a minimum opening deposit of $1,000. After that date, new certificates will get the standard rates from the Deposit Rate Sheet. (Harbor Currents Member Newsletter, Summer 2026 edition.)\",\"cited_chunk_ids\":[\"newsletter_summer_2026::layout::B_structure::0003\"],\"reason\":\"The newsletter passage states the offer's end date, rate and minimum deposit.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 274,
+    "output_tokens": 186
+  }
+}

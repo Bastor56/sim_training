@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:06:18.213+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"A minimum deposit of $5.00 into a Primary Share Account establishes your Harbor Credit Union membership (per our member FAQ). You also need to be eligible \\ne\\nanyone who lives, works, worships or attends school in our service area, plus their immediate family. You can open membership online in about ten minutes or at any branch.\",\"cited_chunk_ids\":[\"member_faq::layout::B_structure::0000\"],\"reason\":\"The FAQ passage directly states the $5.00 minimum deposit in a Primary Share Account to establish membership.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 1341,
+    "output_tokens": 192
+  }
+}

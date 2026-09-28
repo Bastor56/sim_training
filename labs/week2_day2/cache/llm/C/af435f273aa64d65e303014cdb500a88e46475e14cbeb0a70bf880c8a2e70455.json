@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:05:50.990+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"On a lost/stolen card call where unauthorized transactions are reported, under the Contact Centre Script: Lost or Stolen Card v2.2 the agent must: note the transactions the member doesn't recognize (after reading the last 10 days of activity), read the Step 5 compliance disclosure verbatim, wait for a verbal \\\"yes\\\" and record the acknowledgment in the call notes, then warm-transfer the call to the Fraud Response Team at extension 4417, summarising the case for the analyst before connecting the member. The disclosure tells the member they are not responsible for unauthorized transactions made after the call, that liability for unauthorized debit card transactions before the call may depend on how quickly the loss was reported (per the Electronic Fund Transfer Agreement and Disclosure), and that Harbor will investigate and write to them with the results. Under the Card Dispute Procedure Rev 5, the agent also verifies the caller with the three-factor script, confirms the transaction details, blocks the card immediately and orders a replacement where fraud is suspected, completes Form HCU-DSP-114 during the initial contact, and routes the case to the Card Services dispute queue; disputes should be reported within 60 days of the statement date on which the transaction first appeared. What the member should be told about the new card itself (for example delivery timing or activation) is not covered by the material I have.\",\"cited_chunk_ids\":[\"lost_stolen_card_script::layout::B_structure::0003\",\"lost_stolen_card_script::layout::B_structure::0004\",\"lost_stolen_card_script::layout::B_structure::0005\",\"card_dispute_procedure::layout::B_structure::0001\"],\"reason\":\"The passages cover the agent's required steps and disclosures, but contain no detail on what to tell the member about the replacement card beyond that one is ordered.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 1485,
+    "output_tokens": 803
+  }
+}

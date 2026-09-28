@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:01:54.310+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Loan Late Payment and Collections Policy v1.6, your payment counts as late only if it isn't received within 15 calendar days after the due date on your billing statement. If that 15th day falls on a weekend or a Federal Reserve holiday, you have until the next business day. Payments made within that grace period are treated as on time for fee purposes, though interest keeps accruing daily on simple-interest loans until the payment arrives. Note also that a payment 30 or more days past due is reported as delinquent to the credit bureaus.\",\"cited_chunk_ids\":[\"loan_late_payment_policy::layout::B_structure::0002\",\"loan_late_payment_policy::layout::B_structure::0005\"],\"reason\":\"The policy directly states the 15-day grace period before a payment is considered late, plus the weekend/holiday extension and credit-reporting threshold.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 923,
+    "output_tokens": 311
+  }
+}

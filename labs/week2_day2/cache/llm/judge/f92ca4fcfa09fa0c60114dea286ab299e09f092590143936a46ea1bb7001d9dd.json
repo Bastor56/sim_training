@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T22:57:53.155+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v1",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\": \"correct\", \"reason\": \"Assistant states the same $5,000 per day figure as the reference, with additional non-contradicting details.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 787,
+    "output_tokens": 49
+  }
+}

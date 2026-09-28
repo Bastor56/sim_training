@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:53:20.670+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Loan Late Payment and Collections Policy v1.6, a payment is considered late if it's not received within 15 calendar days after the due date on your billing statement. If that 15th day falls on a weekend or Federal Reserve holiday, the grace period extends to the next business day.\",\"cited_chunk_ids\":[\"loan_late_payment_policy::layout::B_structure::0002\"],\"reason\":\"The Grace Period section directly states the 15-day threshold for a payment to be considered late, applicable to loans generally including car payments.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1775,
+    "output_tokens": 186
+  }
+}

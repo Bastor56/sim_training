@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:02:16.461+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"A replacement card sent by standard mail typically arrives within 7 to 10 business days (Contact Centre Script: Lost or Stolen Card, version 2.2). It goes to the address we have on file \\\" we can't change the mailing address on this call, as that needs separate verification. If you need it faster, expedited delivery arrives in 2 business days for $35.00; standard replacement is $10.00, with your first replacement each year free (Schedule of Fees and Charges: Retail Accounts, version 2026). You can add the new card to your mobile wallet as soon as it's activated.\",\"cited_chunk_ids\":[\"lost_stolen_card_script::layout::B_structure::0006\",\"fee_schedule_2026::layout::B_structure::0001\"],\"reason\":\"The script states the standard 7\\\"10 business day delivery window and the retail fee schedule gives expedited timing and costs.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 1349,
+    "output_tokens": 300
+  }
+}

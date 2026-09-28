@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:02:49.899+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v1",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\": \"correct\", \"reason\": \"States the same fee ($35.00) and delivery time (2 business days) as the reference, with extra non-contradictory details.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 817,
+    "output_tokens": 55
+  }
+}

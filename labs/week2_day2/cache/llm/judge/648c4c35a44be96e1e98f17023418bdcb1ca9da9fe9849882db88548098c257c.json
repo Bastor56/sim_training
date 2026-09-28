@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:47:25.817+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"All reference facts (Form HCU-DSP-114, 10 business days provisional credit, 45-day investigation with 90-day extension, 3-business-day outcome notice) are present and match, with extra true details not contradicting the reference.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1602,
+    "output_tokens": 91
+  }
+}

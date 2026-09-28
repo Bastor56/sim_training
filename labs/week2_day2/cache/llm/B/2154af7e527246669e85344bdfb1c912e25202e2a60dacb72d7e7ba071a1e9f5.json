@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:52:17.423+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"You must keep at least $100 as your minimum daily balance in your Primary Share Account to earn dividends, per the Savings Account Terms and Conditions v DEP-TC-003. Harbor uses the daily balance method, so any day your balance falls below $100 earns no dividends for that day.\",\"cited_chunk_ids\":[\"savings_terms::layout::B_structure::0001\"],\"reason\":\"The Savings Account Terms and Conditions directly states the $100 minimum daily balance requirement for dividends on the Primary Share Account.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2659,
+    "output_tokens": 188
+  }
+}

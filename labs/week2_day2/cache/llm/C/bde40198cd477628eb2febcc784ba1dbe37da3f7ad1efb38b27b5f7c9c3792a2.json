@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:01:10.188+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Card Dispute Procedure (Rev 5), if we haven't finished investigating by then, we post provisional credit for the disputed amount within 10 business days of receiving your dispute. If your account was opened less than 30 days before the first disputed transaction, it's within 20 business days. We'll tell you the amount and date of the credit within two business days of posting it. For credit card disputes, provisional credit isn't given \\\\u2014 instead the disputed amount is suspended from your balance and excluded from finance charges while we investigate. Note: disputes should be reported within 60 days of the statement date the transaction first appeared; later reports are still logged but your right to provisional credit may be limited.\",\"cited_chunk_ids\":[\"card_dispute_procedure::layout::B_structure::0003\",\"card_dispute_procedure::layout::B_structure::0001\"],\"reason\":\"The provisional credit section directly states the timeframes and conditions.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 718,
+    "output_tokens": 316
+  }
+}

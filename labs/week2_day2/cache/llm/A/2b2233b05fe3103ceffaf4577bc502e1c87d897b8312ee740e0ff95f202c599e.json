@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T22:29:21.713+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v1",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"answer_direct\", \"reason\": \"This is a sign-off and expression of gratitude requiring no document lookup.\", \"search_query\": \"\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 676,
+    "output_tokens": 38
+  }
+}

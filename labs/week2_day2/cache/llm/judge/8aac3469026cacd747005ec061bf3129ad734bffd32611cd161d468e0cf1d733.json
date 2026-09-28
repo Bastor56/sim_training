@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:43:40.911+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"All reference facts—signed Form HCU-ACL-220 from every owner, 30-day review for pending items, and balance mailed by official check within 7 business days—are present and match without contradiction.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1300,
+    "output_tokens": 77
+  }
+}

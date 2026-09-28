@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:46:42.010+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"Matches the $30.00 per request fee; extra detail about 6-month validity is additional information not contradicting the reference.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 929,
+    "output_tokens": 54
+  }
+}

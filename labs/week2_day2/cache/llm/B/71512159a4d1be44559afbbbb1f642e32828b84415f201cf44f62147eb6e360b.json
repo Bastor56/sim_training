@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:52:52.144+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"For a domestic wire to another bank, it must be received and verified by 3:00 p.m. Eastern Time on a business day to be processed that same day; anything after that cutoff (or on a non-business day) goes out the next business day. This is under the Wire Transfer Policy, Rev 2026-02, for retail accounts. (Note: international wires have an earlier cutoff of 1:00 p.m. Eastern Time.)\",\"cited_chunk_ids\":[\"wire_transfer_policy::layout::B_structure::0004\"],\"reason\":\"The Wire Transfer Policy directly states the same-day processing cutoff times for domestic and international wires for retail accounts.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1435,
+    "output_tokens": 230
+  }
+}

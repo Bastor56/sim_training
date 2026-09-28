@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:44:35.991+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"States 5 failed attempts and a 30-minute lockout, matching the reference; extra detail about Forgot Password does not contradict.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 961,
+    "output_tokens": 59
+  }
+}

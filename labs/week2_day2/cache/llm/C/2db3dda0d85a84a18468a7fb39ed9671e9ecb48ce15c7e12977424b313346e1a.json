@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:05:34.803+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under Harbor's Account Closure Procedure v1.4 (MS-PRO-012, effective June 1, 2026), closing a retail share or checking account works like this:\\n\\nBefore starting: the request must come from an account owner, and on joint accounts every owner must consent. We'll review linked services that will fail (direct deposits, automatic loan payments, bill pay payees, P2P enrollments) so you can redirect them. Note that closing the Primary Share Account ends membership, and it can't be closed while you have an open loan \\ninch it must be paid in full first.\\n\\nSteps:\\n1. Identity verification \\nsic two forms of ID in branch, or the three-factor authentication script by phone.\\n2. A signed Form HCU-ACL-220 (Account Closure Request) from every owner.\\n3. Review of pending items, holds and scheduled transfers, noted on the form.\\n4. Cancel debit cards, stop recurring transfers, remove bill pay payees.\\n5. Account moved to Closing status and disbursement method recorded.\\n6. Deposit Operations completes the pending items review.\\n7. Remaining balance disbursed and account set to Closed.\\n8. Closure confirmation letter sent; form retained in the member file.\\n\\nTimelines: phone requests are accepted only for single-owner accounts, and the signed form must be returned by mail or secure upload before step 5. After the pending-items review period, the balance is disbursed by official check mailed within 7 business days to the address on file; alternatively it can be transferred to another Harbor member's account with their consent, or paid in cash in branch if the balance is under $2,500. Dividends are paid through the date of closure. If the account is overdrawn, the closure is not completed \\nsic it's referred under the Overdraft Policy with a recovery case. The form and confirmation letter are kept for five years after closure.\\n\\nOne part I can't confirm from the material I have: the exact length of the pending-items review period in Section 4.\",\"cited_chunk_ids\":[\"account_closure_procedure::layout::B_structure::0000\",\"account_closure_procedure::layout::B_structure::0001\",\"account_closure_procedure::layout::B_structure::0002\",\"account_closure_procedure::layout::B_structure::0004\",\"account_closure_procedure::layout::B_structure::0006\"],\"reason\":\"The passages set out the full step list, consent/ID requirements and disbursement timing, though the Section 4 review-period length is not included.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 1349,
+    "output_tokens": 867
+  }
+}

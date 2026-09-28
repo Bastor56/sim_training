@@ -1,0 +1,32 @@
+# Cache-equivalence probes (spec.md "Cache", "Hit-rate reporting").
+# Run AFTER the golden set, in the SAME cache namespace, so each probe's source question is cached.
+# Not part of any quality average: each probe is scored only on whether the cache behaved as expected.
+#   surface       same question, different case / spacing / trailing punctuation  -> must HIT
+#   paraphrase    same meaning, different words                                  -> will MISS (the known price of exact-match)
+#   tenant_swap   same question under the other tenant                           -> must MISS
+#   corpus_change same question under a changed corpus version (simulated)       -> must MISS
+version: 1
+created: "2026-09-25"
+probes:
+  # --- surface variants: must hit ---
+  - {id: "r001", source_id: "q016", variant: "surface",   expect_cache: "hit",  query: "how much does a stop payment order cost"}
+  - {id: "r002", source_id: "q028", variant: "surface",   expect_cache: "hit",  query: "WHAT IS THE CURRENT OVERDRAFT FEE PER ITEM?"}
+  - {id: "r003", source_id: "q011", variant: "surface",   expect_cache: "hit",  query: "I keep typing my password wrong.   How many tries before I'm shut out, and for how long"}
+  - {id: "r004", source_id: "q021", variant: "surface",   expect_cache: "hit",  query: "  What is the maximum loan-to-value on a used vehicle loan?? "}
+  - {id: "r005", source_id: "q026", variant: "surface",   expect_cache: "hit",  query: "when does the new carrow bay branch open?"}
+  - {id: "r006", source_id: "q036", variant: "surface",   expect_cache: "hit",  query: "What is the minimum deposit needed to become a Harbor member!"}
+  - {id: "r007", source_id: "q041", variant: "surface",   expect_cache: "hit",  query: "What is the daily point-of-sale purchase limit on a Harbor debit card."}
+  - {id: "r008", source_id: "q009", variant: "surface",   expect_cache: "hit",  query: "what's the latest time of day i can send money to another bank and have it go out today"}
+  # --- paraphrases: will miss ---
+  - {id: "r009", source_id: "q016", variant: "paraphrase", expect_cache: "miss", query: "What's the price of stopping a payment?"}
+  - {id: "r010", source_id: "q028", variant: "paraphrase", expect_cache: "miss", query: "How much is an overdraft charge now?"}
+  - {id: "r011", source_id: "q026", variant: "paraphrase", expect_cache: "miss", query: "What date does the Carrow Bay location open?"}
+  - {id: "r012", source_id: "q039", variant: "paraphrase", expect_cache: "miss", query: "How much cash can I take out of an ATM per day?"}
+  - {id: "r013", source_id: "q036", variant: "paraphrase", expect_cache: "miss", query: "How much do I need to deposit to join Harbor?"}
+  # --- tenant swaps: must miss (retail and business answers can differ) ---
+  - {id: "r014", source_id: "q038", variant: "tenant_swap", expect_cache: "miss", tenant: "business", query: "What does Harbor charge to send a domestic wire from my personal checking account?"}
+  - {id: "r015", source_id: "q028", variant: "tenant_swap", expect_cache: "miss", tenant: "business", query: "What is the current overdraft fee per item?"}
+  - {id: "r016", source_id: "q016", variant: "tenant_swap", expect_cache: "miss", tenant: "business", query: "How much does a stop payment order cost?"}
+  # --- corpus changes: must miss (a re-ingested corpus invalidates every answer) ---
+  - {id: "r017", source_id: "q041", variant: "corpus_change", expect_cache: "miss", corpus_version: "2-simulated", query: "What is the daily point-of-sale purchase limit on a Harbor debit card?"}
+  - {id: "r018", source_id: "q021", variant: "corpus_change", expect_cache: "miss", corpus_version: "2-simulated", query: "What is the maximum loan-to-value on a used vehicle loan?"}

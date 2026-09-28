@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T22:58:04.723+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v1",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"retrieve\", \"reason\": \"The answer depends on Harbor's complaint handling procedures, timelines, and service level commitments, which are specific to Harbor's policies.\", \"search_query\": \"complaint gripe response time timeline procedures\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 686,
+    "output_tokens": 54
+  }
+}

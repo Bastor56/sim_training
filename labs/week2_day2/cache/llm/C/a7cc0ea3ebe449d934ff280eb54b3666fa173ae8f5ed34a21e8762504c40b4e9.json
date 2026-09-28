@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:08:30.451+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "direct_answer_v1",
+  "purpose": "direct_answer",
+  "stop_reason": "end_turn",
+  "text": "{\"answer\":\"APR stands for Annual Percentage Rate — it expresses the yearly cost of borrowing, including interest and certain fees, as a percentage. If you'd like the APR on a specific Harbor account or loan, I can look that up for you.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 515,
+    "input_tokens": 17,
+    "output_tokens": 85
+  }
+}

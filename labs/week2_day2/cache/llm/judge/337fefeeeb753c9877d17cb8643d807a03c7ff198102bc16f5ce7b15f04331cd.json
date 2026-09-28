@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:42:47.080+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"The assistant states the official check disbursement mailed within 7 business days to the address on file, matching the reference, and the additional details do not contradict it.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1003,
+    "output_tokens": 61
+  }
+}

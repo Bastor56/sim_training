@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T16:38:29.153+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "rewrite_v1",
+  "purpose": "rewrite",
+  "stop_reason": "end_turn",
+  "text": "{\"search_query\": \"recreational vehicle loan disclosure prepayment\", \"reason\": \"Switched to product disclosure language and use 'recreational vehicle' as the full term since 'RV' may not be indexed, and disclosure documents typically contain prepayment penalty terms.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 781,
+    "output_tokens": 61
+  }
+}

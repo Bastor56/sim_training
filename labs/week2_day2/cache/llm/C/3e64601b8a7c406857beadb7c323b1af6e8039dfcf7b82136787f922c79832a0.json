@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:05:09.471+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Overdraft Policy v3.0 (effective 1 January 2026), the standard Courtesy Pay limit for eligible retail checking accounts is $600. That limit includes both the overdraft amount and any fees charged. To be eligible, the account must have been open at least 60 days, the primary owner must be at least 18, and the account must have received recurring deposits totalling at least $250 in each of the two most recent calendar months. The limit can be reduced or suspended if the account isn't brought back to a positive balance \\\\u2014 Courtesy Pay is suspended if the account stays overdrawn for 35 consecutive days. You can see your current limit in online banking under Account Services.\",\"cited_chunk_ids\":[\"overdraft_policy_v3::layout::B_structure::0003\",\"overdraft_policy_v3::layout::B_structure::0007\"],\"reason\":\"Section 3 of the current Overdraft Policy v3.0 states the standard Courtesy Pay limit of $600 with eligibility conditions.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 1723,
+    "output_tokens": 346
+  }
+}

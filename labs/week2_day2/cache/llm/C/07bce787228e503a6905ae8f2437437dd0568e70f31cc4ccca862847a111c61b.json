@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:02:04.931+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Harbor Credit Union acknowledges every formal complaint within 2 business days, and aims to resolve it within 15 business days. When your complaint is logged you'll be given a reference number (for example, CMP-2026-xxxx). This is based on the wording in our Member Complaint Email Export (effective 2026-08-25) rather than a numbered policy document.\",\"cited_chunk_ids\":[\"complaint_email_export::layout::B_structure::0000\"],\"reason\":\"The passage states the acknowledgement (2 business days) and resolution (15 business days) timeframes for formal complaints.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 418,
+    "output_tokens": 256
+  }
+}

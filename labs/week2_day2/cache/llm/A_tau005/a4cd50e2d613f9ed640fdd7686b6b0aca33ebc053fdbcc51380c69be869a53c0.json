@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T23:02:12.628+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"not_in_corpus\", \"answer\": \"\", \"cited_chunk_ids\": [], \"reason\": \"The passage covers auto loans, not RV loans, so it does not answer the question about RV loan prepayment penalties.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 800,
+    "output_tokens": 57
+  }
+}

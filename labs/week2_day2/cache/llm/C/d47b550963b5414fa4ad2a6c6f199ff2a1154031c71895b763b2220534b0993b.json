@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:00:06.416+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Business Analysis Checking earns an Earnings Credit Rate (ECR) of 0.35%, which offsets your monthly service charges. Any service charges not covered by the earnings credit are debited from the account after each month ends, and the account has a $15.00 monthly maintenance fee (Business Account Fee Guide, version 2026).\",\"cited_chunk_ids\":[\"business_fee_guide::layout::B_structure::0001\"],\"reason\":\"The Business Account Fee Guide v2026 states the ECR for Business Analysis Checking directly.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 336,
+    "output_tokens": 194
+  }
+}

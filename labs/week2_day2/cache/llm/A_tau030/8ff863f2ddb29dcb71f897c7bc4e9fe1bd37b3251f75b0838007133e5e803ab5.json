@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T23:08:30.914+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "direct_answer_v1",
+  "purpose": "direct_answer",
+  "stop_reason": "end_turn",
+  "text": "{\"answer\": \"APR stands for Annual Percentage Rate, which shows the yearly cost of borrowing money expressed as a percentage. If you'd like to know Harbor's specific APRs for any of our products, I'd be happy to look that up for you!\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 392,
+    "output_tokens": 60
+  }
+}

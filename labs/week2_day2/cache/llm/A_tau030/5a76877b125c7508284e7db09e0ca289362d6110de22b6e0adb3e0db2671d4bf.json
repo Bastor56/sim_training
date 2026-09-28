@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T23:06:39.078+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"answered\", \"answer\": \"When a member reports unauthorized transactions on a lost card, you must: (1) review recent transactions from the last 10 days and note any unauthorized ones, (2) read the compliance disclosure verbatim explaining the member will not be responsible for unauthorized transactions made after the call and that liability for earlier transactions depends on how quickly they reported the loss, (3) confirm the member understands, and (4) transfer the call to the Fraud Response Team at extension 4417 using a warm transfer after summarizing the case. Regarding the new card, the evidence does not specify what the member should be told about it.\", \"cited_chunk_ids\": [\"lost_stolen_card_script::layout::B_structure::0003\", \"lost_stolen_card_script::layout::B_structure::0005\", \"lost_stolen_card_script::layout::B_structure::0004\"], \"reason\": \"The passages cover the agent's required actions and the disclosure for unauthorized transactions, but do not describe what information should be given about the replacement card itself.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1873,
+    "output_tokens": 239
+  }
+}

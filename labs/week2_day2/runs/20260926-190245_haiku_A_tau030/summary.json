@@ -1,0 +1,111 @@
+{
+  "run_id": "20260926-190245_haiku_A_tau030",
+  "questions": 55,
+  "errors": 0,
+  "cost_per_interaction": {
+    "mean": 0.002738,
+    "p50": 0.002845,
+    "p95": 0.004139,
+    "max": 0.004525
+  },
+  "latency_ms": {
+    "p50": 4987.0,
+    "p95": 9103.82,
+    "max": 10655.8
+  },
+  "llm_latency_ms_mean": 3442.7,
+  "local_latency_ms_mean": 1581.6,
+  "interaction_cost_total": 0.150586,
+  "cost_by_purpose_total": {
+    "direct_answer": 0.00602,
+    "gate": 0.052449,
+    "generate": 0.082961,
+    "retrieve": 0.0,
+    "rewrite": 0.009156
+  },
+  "rounds_distribution": {
+    "0": 10,
+    "1": 40,
+    "2": 1,
+    "3": 4
+  },
+  "llm_calls": 116,
+  "local_cache_hit_rate": 0.0,
+  "provider_cache_read_tokens": 0,
+  "output_tokens_per_generate_mean": 137.1,
+  "provider_spend_this_run": 0.220476,
+  "judge_spend_this_run": 0.06989,
+  "ledger_total_after_run": 0.895972,
+  "quality": {
+    "questions": 55,
+    "task_success": 0.9273,
+    "task_success_count": 51,
+    "gate_accuracy": 1.0,
+    "gate_confusion": {
+      "answer_direct->answer_direct": 10,
+      "retrieve->retrieve": 45
+    },
+    "outcome_correct": 1.0,
+    "answerable_answered": 1.0,
+    "judge_verdicts": {
+      "correct": 37,
+      "incorrect": 2,
+      "partial": 2
+    },
+    "judge_correct_of_answerable": 0.9024,
+    "citation_hit_of_answerable": 0.9756,
+    "not_in_corpus_recall": 1.0,
+    "not_in_corpus_precision": 1.0,
+    "not_in_corpus_false_declines": 0,
+    "direct_correct": 1.0,
+    "direct_no_dollar": 1.0,
+    "version_check": 1.0,
+    "version_quoted": 1.0,
+    "version_in_prose": 1.0,
+    "source_line_violations": 0,
+    "leaks": 0,
+    "declined_rounds": 1,
+    "ungrounded_rounds": 0,
+    "rewrite_helped": 1,
+    "rescued_after_decline": 0
+  },
+  "quality_judge_v1": {
+    "questions": 55,
+    "task_success": 0.9273,
+    "task_success_count": 51,
+    "gate_accuracy": 1.0,
+    "gate_confusion": {
+      "answer_direct->answer_direct": 10,
+      "retrieve->retrieve": 45
+    },
+    "outcome_correct": 1.0,
+    "answerable_answered": 1.0,
+    "judge_verdicts": {
+      "correct": 37,
+      "incorrect": 2,
+      "partial": 2
+    },
+    "judge_correct_of_answerable": 0.9024,
+    "citation_hit_of_answerable": 0.9756,
+    "not_in_corpus_recall": 1.0,
+    "not_in_corpus_precision": 1.0,
+    "not_in_corpus_false_declines": 0,
+    "direct_correct": 1.0,
+    "direct_no_dollar": 1.0,
+    "version_check": 1.0,
+    "version_quoted": 1.0,
+    "version_in_prose": 1.0,
+    "source_line_violations": 0,
+    "leaks": 0,
+    "declined_rounds": 1,
+    "ungrounded_rounds": 0,
+    "rewrite_helped": 1,
+    "rescued_after_decline": 0
+  },
+  "judge_prompt": "judge_v2",
+  "judge_changes": [
+    "q022: correct -> incorrect",
+    "q034: incorrect -> partial",
+    "q042: partial -> correct"
+  ]
+}

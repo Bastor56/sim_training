@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:52:12.555+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v1",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"Assistant confirms every owner on the account must sign, matching the reference; extra procedural detail doesn't contradict it.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 779,
+    "output_tokens": 55
+  }
+}

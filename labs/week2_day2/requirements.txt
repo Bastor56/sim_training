@@ -1,0 +1,8 @@
+# Day 2 reuses Day 6's retrieval code and index unchanged (spec.md, decision 1),
+# so it needs exactly Day 6's pins: the same torch / sentence-transformers /
+# chromadb versions are what make the stored vectors and rerank scores valid.
+-r ../week2_day1/requirements.txt
+
+# The agent graph. Pinned to week 1's version (../week1_day4/requirements.txt)
+# so the low-level StateGraph pattern from days 3-4 carries over unchanged.
+langgraph==1.2.11

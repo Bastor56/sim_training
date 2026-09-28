@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:56:35.690+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Card Dispute Procedure (Rev 5): 1) Form: the agent completes Form HCU-DSP-114 (Card Transaction Dispute) during the initial contact (phone, branch, or secure message), capturing transaction date, amount, merchant descriptor, member's explanation, and card possession status. 2) Provisional credit: for debit card disputes, provisional credit is posted within 10 business days of receiving the dispute notice if the investigation isn't done by then (20 business days if the account was opened less than 30 days before the disputed transaction); the member is notified of the credit amount and date within 2 business days of posting. Credit card disputes don't get provisional credit — instead the disputed amount is suspended from the balance and excluded from finance charges while the investigation is open. 3) Investigation length: must be completed within 45 calendar days of receiving the dispute notice, extended to 90 calendar days for point-of-sale transactions, foreign-initiated transactions, or accounts opened within the previous 30 days. 4) Outcome notification: Card Services notifies the member in writing within 3 business days of completing the investigation. If resolved in the member's favor, provisional credit becomes final; if no error is found, the notice explains the findings, the member's right to request supporting documents, and the date provisional credit will be reversed (at least 5 business days after the notice is sent).\",\"cited_chunk_ids\":[\"card_dispute_procedure::layout::B_structure::0001\",\"card_dispute_procedure::layout::B_structure::0003\",\"card_dispute_procedure::layout::B_structure::0004\",\"card_dispute_procedure::layout::B_structure::0005\"],\"reason\":\"All four parts of the question (form, provisional credit, investigation timeframe, and outcome notification) are directly addressed by the Card Dispute Procedure passages provided.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2338,
+    "output_tokens": 617
+  }
+}

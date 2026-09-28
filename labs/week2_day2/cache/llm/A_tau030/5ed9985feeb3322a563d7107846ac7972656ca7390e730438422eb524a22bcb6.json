@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T23:05:12.714+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v1",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"retrieve\", \"reason\": \"The member is asking for a Harbor-specific mortgage rate, which depends on current rate sheets and product offerings that only Harbor's documents can provide.\", \"search_query\": \"30-year fixed mortgage rate\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 682,
+    "output_tokens": 55
+  }
+}

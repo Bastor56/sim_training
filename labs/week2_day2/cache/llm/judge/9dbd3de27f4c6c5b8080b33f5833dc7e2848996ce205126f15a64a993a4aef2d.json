@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:01:14.990+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v1",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"Assistant states provisional credit within 10 business days of receiving the dispute, matching the reference, with additional non-contradictory detail.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 945,
+    "output_tokens": 59
+  }
+}

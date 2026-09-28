@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:55:30.174+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Based on Q2 2026 data, average approval time for auto loans applied through a participating dealer (indirect channel) is 2.8 business days.\",\"cited_chunk_ids\":[\"auto_loan_comparison::layout::B_structure::0003\"],\"reason\":\"The chart in the evidence directly states the average approval time for the dealer (indirect) channel.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1460,
+    "output_tokens": 128
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:54:25.627+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"For a 60-month certificate, a $15,000 deposit falls in the $10,000-$49,999 tier, which earns 3.80% APY, per the Q3 2026 Deposit Rate Sheet (effective 2026-07-01 through 2026-09-30).\",\"cited_chunk_ids\":[\"deposit_rate_sheet_2026q3::layout::B_structure::0000\"],\"reason\":\"The rate sheet directly gives the 60-month certificate APY for the $10,000-$49,999 balance tier, which covers a $15,000 deposit.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1271,
+    "output_tokens": 196
+  }
+}

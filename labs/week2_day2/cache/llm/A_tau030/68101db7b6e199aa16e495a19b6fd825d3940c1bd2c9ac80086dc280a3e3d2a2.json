@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T23:06:17.067+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"answered\", \"answer\": \"The standard Courtesy Pay limit is $600 under the Overdraft Policy v3.\", \"cited_chunk_ids\": [\"overdraft_policy_v3::layout::B_structure::0003\"], \"reason\": \"The passage explicitly states the standard Courtesy Pay limit for eligible retail checking accounts is $600.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1672,
+    "output_tokens": 81
+  }
+}

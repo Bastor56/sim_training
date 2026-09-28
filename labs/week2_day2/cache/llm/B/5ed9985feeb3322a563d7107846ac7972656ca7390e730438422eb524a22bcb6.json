@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:54:51.676+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v1",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"retrieve\", \"reason\": \"The member is asking about Harbor's current mortgage rates, which are specific to the institution and would be found in rate sheets or product disclosures.\", \"search_query\": \"30-year fixed mortgage rate current\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 682,
+    "output_tokens": 57
+  }
+}

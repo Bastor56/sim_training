@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:53:54.533+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v1",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"partial\",\"reason\":\"The assistant includes the correct core fact (official check mailed within 7 business days to address on file) but adds many additional unverified conditions (30-day review, next-business-day disbursement, cash option, overdraft referral) not confirmed against the reference, which only states the simple check method without these extra procedural details.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 960,
+    "output_tokens": 111
+  }
+}

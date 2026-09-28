@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:42:10.716+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"Assistant states the form is completed during initial contact for every card dispute, matching the reference, with extra non-contradictory detail.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 964,
+    "output_tokens": 56
+  }
+}

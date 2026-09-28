@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T22:58:18.026+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"answered\", \"answer\": \"Under the Lost or Stolen Card procedure (version 2.2), a replacement card typically arrives within 7 to 10 business days by standard mail. If you need it sooner, expedited delivery is available for $35.00 and arrives in 2 business days.\", \"cited_chunk_ids\": [\"lost_stolen_card_script::layout::B_structure::0006\", \"fee_schedule_2026::layout::B_structure::0001\"], \"reason\": \"The contact centre script provides the standard delivery timeframe, and the fee schedule confirms the expedited delivery option with its timeframe and cost.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1625,
+    "output_tokens": 149
+  }
+}

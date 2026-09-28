@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:01:26.736+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v1",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"Matches the 3:00 p.m. Eastern Time domestic cutoff, with extra non-contradictory detail on international wires and other transfer types.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 935,
+    "output_tokens": 65
+  }
+}

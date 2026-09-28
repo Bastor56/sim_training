@@ -1,0 +1,28 @@
+{
+  "_about": "Per-model Claude API rates in USD per million tokens (MTok), copied from the live pricing page on the retrieval date. Cost per interaction is only as accurate as these rates, so they are pinned here and every call record carries pricing_version. Standard (global) first-party pricing: no batch discount, no fast mode, no inference_geo multiplier -- none of which this lab uses. Thinking tokens are billed as output tokens.",
+  "pricing_version": "2026-09-25",
+  "retrieved_on": "2026-09-25",
+  "source_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+  "unit": "USD per million tokens",
+  "models": {
+    "claude-haiku-4-5": {
+      "input": 1.00,
+      "output": 5.00,
+      "cache_write_5m": 1.25,
+      "cache_read": 0.10
+    },
+    "claude-sonnet-5": {
+      "input": 2.00,
+      "output": 10.00,
+      "cache_write_5m": 2.50,
+      "cache_read": 0.20,
+      "note": "$2/$10 was introductory pricing through 2026-08-31; the page states it is now the standard price and the planned $3/$15 increase will not occur."
+    },
+    "claude-opus-5": {
+      "input": 5.00,
+      "output": 25.00,
+      "cache_write_5m": 6.25,
+      "cache_read": 0.50
+    }
+  }
+}

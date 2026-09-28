@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:47:30.587+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"partial\",\"reason\":\"The assistant omits the specific 30-day review timeline for pending items, explicitly stating it cannot confirm that duration, which the reference requires.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1545,
+    "output_tokens": 62
+  }
+}

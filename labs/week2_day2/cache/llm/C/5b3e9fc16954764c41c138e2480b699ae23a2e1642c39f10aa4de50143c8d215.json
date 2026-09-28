@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:03:33.491+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Mortgage and Home Equity Rate Notice (version 2026-09, effective September 1, 2026), the 30-Year Fixed rate is 6.375% with an APR of 6.521% and 0.000 points. That quote assumes an owner-occupied, single-family primary residence, a loan amount of $350,000, a loan-to-value of 80% or less, a credit score of 740 or higher, and a 45-day rate lock. Rates can change daily without notice, so please confirm before you lock.\",\"cited_chunk_ids\":[\"mortgage_heloc_rate_notice::layout::B_structure::0000\"],\"reason\":\"The rate notice directly lists the 30-year fixed rate, APR, points and the assumptions behind the quote.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 844,
+    "output_tokens": 260
+  }
+}

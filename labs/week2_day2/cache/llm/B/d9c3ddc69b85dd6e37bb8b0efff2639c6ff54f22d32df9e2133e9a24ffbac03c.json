@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:57:32.886+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"An outgoing international wire from a Retail (personal) account costs $45.00 per wire, plus any intermediary or beneficiary bank charges deducted from the transferred amount, under the Wire Transfer Policy (Rev 2026-02).\",\"cited_chunk_ids\":[\"wire_transfer_policy::layout::B_structure::0005\"],\"reason\":\"The Wire Transfer Policy explicitly states the $45.00 fee for outgoing international wires from Retail accounts, plus intermediary/beneficiary charges.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2628,
+    "output_tokens": 187
+  }
+}

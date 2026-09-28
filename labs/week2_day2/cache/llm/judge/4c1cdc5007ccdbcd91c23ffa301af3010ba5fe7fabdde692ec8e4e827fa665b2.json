@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:45:36.309+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"All reference facts (form number, 10 business day provisional credit, 45/90 day investigation window, 3 business day outcome notice) are present and match, with extra non-contradicting details.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1407,
+    "output_tokens": 74
+  }
+}

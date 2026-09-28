@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:00:46.870+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"For a Share Certificate with a term longer than 12 months, the early withdrawal penalty is 180 days of dividends (terms of 12 months or less are 90 days). This is under the Share Certificate Account Disclosure, version DEP-DSC-017. The penalty is calculated on the amount withdrawn at the dividend rate in effect on the certificate, and it can reduce your principal if the dividends earned are less than the penalty. Note that early withdrawals of principal are only allowed as a full withdrawal. The penalty is waived if an owner dies or is declared legally incompetent by a court, and you also have a 10-day grace period after maturity to withdraw without penalty.\",\"cited_chunk_ids\":[\"share_certificate_disclosure::layout::B_structure::0004\",\"share_certificate_disclosure::layout::B_structure::0003\",\"share_certificate_disclosure::layout::B_structure::0005\"],\"reason\":\"The disclosure explicitly states the 180-day dividend penalty for terms longer than 12 months, plus related conditions.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 1344,
+    "output_tokens": 357
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:56:47.720+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Account Closure Procedure v1.4, closing a retail account follows these steps: 1) Verify the member's identity (two forms of ID in branch, or three-factor phone authentication); 2) Obtain a signed Form HCU-ACL-220 (Account Closure Request) from every owner - phone requests are allowed only for single-owner accounts, and the signed form must still be returned by mail or secure upload before disbursement can proceed; 3) Review pending items, holds and scheduled transfers and note them on the form; 4) Cancel debit cards, stop recurring transfers and remove bill pay payees; 5) Move the account to Closing status and record the disbursement method; 6) Deposit Operations completes the pending items review; 7) Deposit Operations disburses the remaining balance and sets the account to Closed; 8) A closure confirmation letter is sent and the form is retained in the member file.\\n\\nOn timelines: if the account has outstanding checks, pending ACH debits or unresolved card disputes, it is held in Closing status for a 30-day review period before final disbursement (during which deposits are rejected and presented items are paid only up to the remaining balance); accounts with no pending items may be disbursed the next business day. After the review period, remaining funds are disbursed by official check mailed within 7 business days to the address on file, unless the member requests a transfer to another Harbor member's account (with that member's consent) or a cash payout in branch (only if the balance is under $2,500). Dividends are paid through the date of closure.\\n\\nNote: every joint owner must consent to closure, and closing the Primary Share Account ends membership and cannot happen while the member has an open loan. If the account is overdrawn at closure, the closure cannot be completed - the member is referred to the Overdraft Policy and a recovery case is created instead.\",\"cited_chunk_ids\":[\"account_closure_procedure::layout::B_structure::0000\",\"account_closure_procedure::layout::B_structure::0001\",\"account_closure_procedure::layout::B_structure::0002\",\"account_closure_procedure::layout::B_structure::0003\",\"account_closure_procedure::layout::B_structure::0004\"],\"reason\":\"The Account Closure Procedure v1.4 passages together detail the closure steps, ownership/loan conditions, pending items review period, and disbursement timelines for retail accounts.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2253,
+    "output_tokens": 783
+  }
+}

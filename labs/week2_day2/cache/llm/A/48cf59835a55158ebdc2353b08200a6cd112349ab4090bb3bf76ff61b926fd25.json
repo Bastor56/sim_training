@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T22:37:44.333+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "rewrite_v1",
+  "purpose": "rewrite",
+  "stop_reason": "end_turn",
+  "text": "{\"search_query\": \"personal checking account wire transfer fee\", \"reason\": \"Reversed the order to prioritize personal account over domestic wire distinction, since previous results kept returning business account fees despite mentioning domestic wire first.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 664,
+    "output_tokens": 50
+  }
+}

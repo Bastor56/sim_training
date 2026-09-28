@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:52:34.264+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"You need to report an unauthorized or disputed card transaction within 60 days of the statement date on which it first appeared. Under the Card Dispute Procedure (Rev 5), disputes reported after that period are still logged, but Harbor's liability protections and your right to provisional credit may be limited.\",\"cited_chunk_ids\":[\"card_dispute_procedure::layout::B_structure::0001\"],\"reason\":\"The Card Dispute Procedure explicitly states the 60-day reporting window and the consequence of late reporting.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2287,
+    "output_tokens": 182
+  }
+}

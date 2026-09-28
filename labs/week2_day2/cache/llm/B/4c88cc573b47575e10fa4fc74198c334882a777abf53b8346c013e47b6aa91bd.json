@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:55:14.018+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"not_in_corpus\",\"answer\":\"\",\"cited_chunk_ids\":[],\"reason\":\"The chart with specific per-channel approval times is a model-generated figure caption, not verified source content, and the FAQ only gives a general 'within one business day' figure without breaking it down by channel, so no reliable evidence answers the specific mobile app timing.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1405,
+    "output_tokens": 117
+  }
+}

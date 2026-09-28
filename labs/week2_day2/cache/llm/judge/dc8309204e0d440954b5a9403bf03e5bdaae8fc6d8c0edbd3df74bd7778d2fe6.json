@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:54:48.531+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v1",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"States the maximum LTV as 110%, matching the reference, with no contradicting details.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 783,
+    "output_tokens": 43
+  }
+}

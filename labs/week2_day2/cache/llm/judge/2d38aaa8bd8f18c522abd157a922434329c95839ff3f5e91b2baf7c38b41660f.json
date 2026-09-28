@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:42:52.966+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"Assistant matches the reference's $35.00 fee and 2 business day delivery time exactly.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 952,
+    "output_tokens": 47
+  }
+}

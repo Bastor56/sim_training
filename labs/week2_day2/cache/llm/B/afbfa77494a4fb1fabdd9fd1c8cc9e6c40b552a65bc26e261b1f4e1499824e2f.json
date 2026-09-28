@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:52:42.389+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Card Dispute Procedure (Rev 5), if your investigation isn't finished quickly, Harbor posts provisional credit for the disputed amount within 10 business days of receiving your dispute notice (or within 20 business days if your account was opened less than 30 days before the disputed transaction). You'll be notified of the provisional credit amount and date within 2 business days of it posting. Note: for credit card disputes, provisional credit isn't used - instead the disputed amount is suspended from your balance and excluded from finance charges while the investigation is open.\",\"cited_chunk_ids\":[\"card_dispute_procedure::layout::B_structure::0003\"],\"reason\":\"The Provisional Credit section directly states the timeframes for crediting the disputed amount during investigation, including the exception for credit cards and new accounts.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2318,
+    "output_tokens": 279
+  }
+}

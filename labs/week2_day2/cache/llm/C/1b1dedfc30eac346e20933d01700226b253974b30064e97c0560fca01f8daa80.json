@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:04:59.017+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Overdraft Policy v3.0 (effective 2026-01-01), an Overdraft Transfer Protection transfer from your linked Primary Share (savings) account costs $5.00 per transfer, and only one transfer fee is charged per business day no matter how many items that transfer covers. (This fee was reduced in version 3.0 and is now charged once per day.) The Retail Schedule of Fees and Charges 2026 confirms these fees are set out in the Overdraft Policy.\",\"cited_chunk_ids\":[\"overdraft_policy_v3::layout::B_structure::0004\",\"overdraft_policy_v3::layout::B_structure::0009\",\"overdraft_policy_v3::layout::B_structure::0002\",\"fee_schedule_2026::layout::B_structure::0002\"],\"reason\":\"The Overdraft Policy v3.0 states the $5.00 per-transfer fee for transfers from a linked Primary Share (savings) account, with one fee per business day.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 1843,
+    "output_tokens": 336
+  }
+}

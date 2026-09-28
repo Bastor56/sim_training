@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:08:29.335+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v1",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\":\"answer_direct\",\"reason\":\"The meaning of the acronym APR is general knowledge that applies everywhere, not specific to Harbor.\",\"search_query\":\"\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 675,
+    "output_tokens": 38
+  }
+}

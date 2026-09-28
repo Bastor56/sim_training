@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:01:45.034+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"After five (5) consecutive failed sign-in attempts, your access is locked for 30 minutes (per the Mobile and Online Banking Help page). Once the 30 minutes is up you can try again — or you can skip the wait by using Forgot Password to reset your password right away. We'd send a one-time passcode to the phone or e-mail on file, and your new password must be at least 12 characters and can't match any of your last five. If it wasn't you making those attempts, please contact us, as someone else may be trying to get into your account.\",\"cited_chunk_ids\":[\"online_banking_help::layout::B_structure::0000\"],\"reason\":\"The help page directly states the 5-attempt limit and 30-minute lockout, plus the reset option.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 418,
+    "output_tokens": 249
+  }
+}

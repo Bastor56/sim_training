@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:01:59.528+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v1",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"States the same 15 calendar days grace period as the reference, with added non-contradictory detail.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 890,
+    "output_tokens": 45
+  }
+}

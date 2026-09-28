@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T16:39:05.715+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"For wire transfers, under the Wire Transfer Policy (Rev 2026-02, which applies to Retail accounts): a domestic wire must be received and verified by 3:00 p.m. Eastern Time on a business day to go out the same business day. For an international wire, the cutoff is 1:00 p.m. Eastern Time (delivery to the beneficiary can still take one to five business days). Requests after the cutoff, or on a non-business day, are processed the next business day. Note: these cutoffs cover wires only \\\\u2014 I don't have information here on cutoffs for other transfer methods such as ACH.\",\"cited_chunk_ids\":[\"wire_transfer_policy::layout::B_structure::0004\",\"wire_transfer_policy::layout::B_structure::0000\"],\"reason\":\"The policy states same-day cutoffs for domestic and international wires for retail members, though it doesn't cover non-wire transfer methods.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 583,
+    "output_tokens": 396
+  }
+}

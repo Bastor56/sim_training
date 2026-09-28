@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:58:29.589+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "rewrite_v1",
+  "purpose": "rewrite",
+  "stop_reason": "end_turn",
+  "text": "{\"search_query\": \"safe deposit box rental charges cost\", \"reason\": \"The fee schedule didn't score high enough before; trying synonyms like 'rental' and 'cost' instead of 'pricing' and 'annual' to match how Harbor's fee documents likely label this service.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 763,
+    "output_tokens": 67
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T23:00:40.093+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"answered\", \"answer\": \"When a member reports unauthorized transactions on a lost card, the agent must: (1) complete Form HCU-DSP-114 (Card Transaction Dispute), (2) read the compliance disclosure aloud (which states the member will not be responsible for unauthorized transactions made after the call, though liability for transactions before the call may depend on how quickly they reported the loss), and (3) transfer the call to the Fraud Response Team at extension 4417 using a warm transfer after summarizing the case. The member should be told, per the disclosure, that Harbor will investigate the disputed transactions and contact them in writing with results, and that they understand this information.\", \"cited_chunk_ids\": [\"card_dispute_procedure::layout::B_structure::0001\", \"lost_stolen_card_script::layout::B_structure::0005\", \"lost_stolen_card_script::layout::B_structure::0004\"], \"reason\": \"The passages provide clear procedural steps for agent actions (dispute form, disclosure, transfer) and specific language about what the member should be told regarding their liability and the investigation process.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1641,
+    "output_tokens": 252
+  }
+}

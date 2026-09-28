@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T22:27:44.902+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"answered\", \"answer\": \"When a member reports unauthorized transactions on a lost card, the agent must: (1) review recent transactions from the last 10 days with the member to identify unauthorized ones, (2) complete the compliance disclosure (read aloud verbatim) explaining the member will not be responsible for unauthorized transactions after the call and that Harbor will investigate, (3) then transfer the call to the Fraud Response Team at extension 4417 using a warm transfer, summarizing the case for the analyst. Additionally, per the Card Dispute Procedure, the agent must block the card immediately and order a replacement if fraud is suspected. The member should be told (verbatim per the script) that they will not be responsible for unauthorized transactions made after the call, that their liability for transactions before the call depends on how quickly they reported the loss (per their Electronic Fund Transfer Agreement), and that Harbor will investigate and contact them in writing with results.\", \"cited_chunk_ids\": [\"lost_stolen_card_script::layout::B_structure::0003\", \"lost_stolen_card_script::layout::B_structure::0004\", \"lost_stolen_card_script::layout::B_structure::0005\", \"card_dispute_procedure::layout::B_structure::0001\"], \"reason\": \"The passages provide the complete lost/stolen card script including agent steps and the required compliance disclosure to read to the member, plus the Card Dispute Procedure requirement to block and replace the card when fraud is suspected.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1641,
+    "output_tokens": 330
+  }
+}

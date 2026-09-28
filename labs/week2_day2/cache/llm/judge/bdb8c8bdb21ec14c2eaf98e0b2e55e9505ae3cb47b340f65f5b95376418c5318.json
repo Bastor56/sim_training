@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:49:16.511+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"partial\",\"reason\":\"The assistant omits both required facts of blocking the card in CardCenter and telling the member the replacement arrives in 7-10 business days, even though it correctly includes the transfer to Fraud Response Team at ext. 4417.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1155,
+    "output_tokens": 88
+  }
+}

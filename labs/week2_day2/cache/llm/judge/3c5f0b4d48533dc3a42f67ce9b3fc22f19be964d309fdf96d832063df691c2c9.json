@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:48:34.536+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"Assistant states the exact same core fact (official check mailed within 7 business days to address on file) and only adds extra unverifiable options without contradicting the reference.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 993,
+    "output_tokens": 66
+  }
+}

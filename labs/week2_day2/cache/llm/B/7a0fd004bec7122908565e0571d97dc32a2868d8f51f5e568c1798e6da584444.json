@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:58:57.738+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "direct_answer_v1",
+  "purpose": "direct_answer",
+  "stop_reason": "end_turn",
+  "text": "{\"answer\":\"Hi! Great to hear from you \\ni'm Harbor Credit Union's automated assistant. How can I help you today with your accounts, cards, loans, or other banking questions?\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 529,
+    "output_tokens": 66
+  }
+}

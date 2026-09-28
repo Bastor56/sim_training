@@ -1,0 +1,302 @@
+[
+  {
+    "case": "haiku #1",
+    "id": "q015",
+    "judge": "partial",
+    "second_grader": "correct",
+    "judge_reason": "Core fact (official check within 7 business days to address on file) matches, but the extra alternatives (transfer, cash payout) are additions not confirmable against the reference, though they don't contradict; however the reference doesn't mention a pending items review condition which is extra but not contradicting, so verdict is partial due to unverifiable added conditions not confirmed as matching reference.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required reference fact with additional non-contradictory relevant information"
+  },
+  {
+    "case": "haiku #2",
+    "id": "q022",
+    "judge": "incorrect",
+    "second_grader": "incorrect",
+    "judge_reason": "Assistant swapped the labels, stating 6.375% is the APR and 6.521% is the rate, contradicting the reference where 6.375% is the rate and 6.521% is the APR.",
+    "judge_v2": "incorrect",
+    "human": "incorrect",
+    "human_reason": "Assistant swapped the labels, incorrectly stating the rate and the APR"
+  },
+  {
+    "case": "haiku #3",
+    "id": "q034",
+    "judge": "incorrect",
+    "second_grader": "partial",
+    "judge_reason": "Assistant omits the required 7-10 business day replacement card arrival timeframe stated in the reference.",
+    "judge_v2": "partial",
+    "human": "incorrect",
+    "human_reason": "Response includes some useful additional information; however, it excludes the delivery time frame present in the reference answer"
+  },
+  {
+    "case": "haiku #4",
+    "id": "q035",
+    "judge": "incorrect",
+    "second_grader": "incorrect",
+    "judge_reason": "Assistant states payment is late if not received by the due date, omitting/contradicting the required 15-day grace period from the reference.",
+    "judge_v2": "incorrect",
+    "human": "incorrect",
+    "human_reason": "Response incorrectly omits grace period"
+  },
+  {
+    "case": "haiku #5",
+    "id": "q001",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "Assistant confirms form is completed during initial contact for card disputes, matching the reference; extra channel/version details don't contradict it.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact with additional non-contradictory relevant information"
+  },
+  {
+    "case": "haiku #6",
+    "id": "q008",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "Assistant states the same core fact of 10 business days for provisional credit, matching the reference, with extra non-contradictory details.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact with additional non-contradictory relevant information"
+  },
+  {
+    "case": "haiku #7",
+    "id": "q016",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "The core fact, $30.00 per request, matches the reference; additional details do not contradict it.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact with additional non-contradictory relevant information"
+  },
+  {
+    "case": "haiku #8",
+    "id": "q023",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "States 5.99% for the first 12 months, matching the reference; extra version detail does not contradict.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact with additional non-contradictory relevant information"
+  },
+  {
+    "case": "haiku #9",
+    "id": "q029",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "States three overdraft fees per business day, matching the reference, with extra consistent detail.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact with additional non-contradictory relevant information"
+  },
+  {
+    "case": "haiku #10",
+    "id": "q037",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "States the $45.00 per wire fee plus intermediary charges, matching the reference.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact with additional non-contradictory relevant information"
+  },
+  {
+    "case": "sonnet #1",
+    "id": "q015",
+    "judge": "partial",
+    "second_grader": "correct",
+    "judge_reason": "The assistant includes the correct core fact (official check mailed within 7 business days to address on file) but adds many additional unverified conditions (30-day review, next-business-day disbursement, cash option, overdraft referral) not confirmed against the reference, which only states the simple check method without these extra procedural details.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact with additional non-contradictory relevant information"
+  },
+  {
+    "case": "sonnet #2",
+    "id": "q020",
+    "judge": "partial",
+    "second_grader": "partial",
+    "judge_reason": "Assistant correctly states the base 4.49% APR for Tier A+ 37-60 months but adds extra discount details not in the reference, implying a lower final rate (4.14%) that isn't confirmed by the reference answer.",
+    "judge_v2": "correct",
+    "human": "partial",
+    "human_reason": "Response includes required fact but with information that contradicts the reference answer"
+  },
+  {
+    "case": "sonnet #3",
+    "id": "q034",
+    "judge": "incorrect",
+    "second_grader": "partial",
+    "judge_reason": "Reference states replacement arrives in 7 to 10 business days, but assistant's answer omits this timeframe entirely and instead discusses liability details not in the reference.",
+    "judge_v2": "partial",
+    "human": "incorrect",
+    "human_reason": "Response excludes required fact from reference answer"
+  },
+  {
+    "case": "sonnet #4",
+    "id": "q035",
+    "judge": "incorrect",
+    "second_grader": "partial",
+    "judge_reason": "Assistant fails to state the required late fee amount (5% of payment or $25, whichever is less), instead claiming it's not stated.",
+    "judge_v2": "partial",
+    "human": "incorrect",
+    "human_reason": "Response excludes required fact from reference answer"
+  },
+  {
+    "case": "sonnet #5",
+    "id": "q001",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "States the form is completed during the initial contact for card disputes, matching the reference, with added non-contradictory detail.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact from reference with additional non-contradictory relevant information"
+  },
+  {
+    "case": "sonnet #6",
+    "id": "q008",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "Assistant confirms the core 10 business day timeframe for provisional credit matching the reference, with additional non-contradictory details.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact from reference with additional non-contradictory relevant information"
+  },
+  {
+    "case": "sonnet #7",
+    "id": "q014",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "States the same 7 to 10 business days by standard mail as the reference, with extra non-contradictory detail.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact from reference with additional non-contradictory relevant information"
+  },
+  {
+    "case": "sonnet #8",
+    "id": "q022",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "States the same rate 6.375% and APR 6.521% as the reference, with extra non-contradictory detail.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact from reference with additional non-contradictory relevant information"
+  },
+  {
+    "case": "sonnet #9",
+    "id": "q029",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "States the maximum is 3 overdraft fees per business day, matching the reference, with consistent extra detail.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact from reference with additional non-contradictory relevant information"
+  },
+  {
+    "case": "sonnet #10",
+    "id": "q037",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "States the same $45.00 per wire fee plus intermediary charges as the reference, with no contradicting details.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact from reference with additional non-contradictory relevant information"
+  },
+  {
+    "case": "opus #1",
+    "id": "q033",
+    "judge": "incorrect",
+    "second_grader": "partial",
+    "judge_reason": "The assistant explicitly fails to state the 30-day review period, which is a required fact from the reference, instead saying it cannot confirm it.",
+    "judge_v2": "partial",
+    "human": "incorrect",
+    "human_reason": "Response excludes required fact from reference answer"
+  },
+  {
+    "case": "opus #2",
+    "id": "q034",
+    "judge": "partial",
+    "second_grader": "partial",
+    "judge_reason": "Assistant covers blocking and Fraud Response Team transfer correctly but explicitly fails to state the required 7\u201310 business day replacement card delivery time.",
+    "judge_v2": "partial",
+    "human": "partial",
+    "human_reason": "Response excludes required fact from reference answer"
+  },
+  {
+    "case": "opus #3",
+    "id": "q001",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "Both state the form is completed during initial contact for every card dispute; extra procedural detail does not contradict the reference.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact from reference with additional non-contradictory relevant information"
+  },
+  {
+    "case": "opus #4",
+    "id": "q006",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "States 180 days of dividends for terms over 12 months, matching the reference, with additional consistent detail.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact from reference with additional non-contradictory relevant information"
+  },
+  {
+    "case": "opus #5",
+    "id": "q010",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "States $5,000 per day matching the reference, with additional non-contradictory details.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact from reference with additional non-contradictory relevant information"
+  },
+  {
+    "case": "opus #6",
+    "id": "q014",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "States the same 7 to 10 business days by standard mail as the reference, with extra non-contradictory details.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact from reference with additional non-contradictory relevant information"
+  },
+  {
+    "case": "opus #7",
+    "id": "q018",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "States 4.05% APY matching the reference, with extra consistent detail.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact from reference with additional non-contradictory relevant information"
+  },
+  {
+    "case": "opus #8",
+    "id": "q022",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "States the same rate (6.375%) and APR (6.521%) as the reference, with extra non-contradicting detail.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact from reference with additional non-contradictory relevant information"
+  },
+  {
+    "case": "opus #9",
+    "id": "q026",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "Assistant states the same opening date, Monday, October 19, 2026, matching the reference, with extra non-contradictory detail.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact from reference with additional non-contradictory relevant information"
+  },
+  {
+    "case": "opus #10",
+    "id": "q030",
+    "judge": "correct",
+    "second_grader": "correct",
+    "judge_reason": "States $5.00 per transfer, once per day, matching the reference; extra policy details do not contradict it.",
+    "judge_v2": "correct",
+    "human": "correct",
+    "human_reason": "Response includes required fact from reference with additional non-contradictory relevant information"
+  }
+]

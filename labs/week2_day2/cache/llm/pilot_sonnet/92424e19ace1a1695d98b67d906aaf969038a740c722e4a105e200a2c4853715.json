@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T16:37:49.632+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Card Dispute Procedure (Rev 5), the agent completes Form HCU-DSP-114 (Card Transaction Dispute) during the initial contact with the member — whether that contact is by phone, in branch, or via secure message — as part of the dispute intake process, before routing the case to the Card Services dispute queue.\",\"cited_chunk_ids\":[\"card_dispute_procedure::layout::B_structure::0001\"],\"reason\":\"The procedure states the form is completed during the initial contact for every dispute.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1465,
+    "output_tokens": 182
+  }
+}

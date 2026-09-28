@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:52:04.305+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Every owner on the account must sign Form HCU-ACL-220 (Account Closure Request); the MSR obtains the signed form from all account owners before closure can proceed. This is per the Account Closure Procedure v1.4.\",\"cited_chunk_ids\":[\"account_closure_procedure::layout::B_structure::0002\"],\"reason\":\"Section 3 of the Account Closure Procedure explicitly states the form must be signed by every owner on the account.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1749,
+    "output_tokens": 160
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:57:11.391+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Loan Late Payment and Collections Policy v1.6, a consumer loan payment is considered late if it is not received within 15 calendar days (the grace period) after the due date shown on the billing statement. If the last day of that grace period falls on a weekend or a Federal Reserve holiday, the grace period extends to the next business day. Payments made within the grace period are treated as on-time for fee purposes, though interest still accrues daily on simple-interest loans. The passages provided describe the grace period and communications timeline but do not state the specific dollar amount or percentage of the late fee.\",\"cited_chunk_ids\":[\"loan_late_payment_policy::layout::B_structure::0002\"],\"reason\":\"The evidence defines the grace period/lateness threshold clearly, but no passage specifies the actual late fee amount.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2027,
+    "output_tokens": 279
+  }
+}

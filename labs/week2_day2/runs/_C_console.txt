@@ -1,0 +1,97 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 21732.15it/s]
+run 20260928-075936_opus_C: 55 items, generator=opus, namespace=C, tau=0.1, cache=read-write
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 26413.16it/s]
+  1 q001 ok  answered        rounds=1 $0.01643   10693 ms  judge=correct
+  2 q002 ok  answered        rounds=1 $0.00794    5529 ms  judge=correct
+  3 q003 ok  not_in_corpus   rounds=3 $0.00291   11559 ms  judge=-
+  4 q004 ok  answered        rounds=1 $0.01048    8242 ms  judge=correct
+  5 q005 ok  answered        rounds=1 $0.01694    7516 ms  judge=correct
+  6 q006 ok  answered        rounds=1 $0.01708    9530 ms  judge=correct
+  7 q007 ok  answered        rounds=1 $0.01499    8948 ms  judge=correct
+  8 q008 ok  answered        rounds=1 $0.01289    8860 ms  judge=correct
+  9 q009 ok  answered        rounds=1 $0.01358    9741 ms  judge=correct
+ 10 q010 ok  answered        rounds=1 $0.01376   10647 ms  judge=correct
+ 11 q011 ok  answered        rounds=1 $0.00974    7785 ms  judge=correct
+ 12 q012 ok  answered        rounds=1 $0.01379    8661 ms  judge=correct
+ 13 q013 ok  answered        rounds=1 $0.00986    7511 ms  judge=correct
+ 14 q014 ok  answered        rounds=1 $0.01557    8783 ms  judge=correct
+ 15 q015 ok  answered        rounds=1 $0.01299    8886 ms  judge=correct
+ 16 q016 ok  answered        rounds=1 $0.00805    5852 ms  judge=correct
+ 17 q017 ok  answered        rounds=1 $0.01126    6921 ms  judge=correct
+ 18 q018 ok  answered        rounds=1 $0.00858    6945 ms  judge=correct
+ 19 q019 ok  answered        rounds=1 $0.00937    7341 ms  judge=correct
+ 20 q020 ok  answered        rounds=1 $0.01374    8279 ms  judge=correct
+ 21 q021 ok  answered        rounds=1 $0.01344    7036 ms  judge=correct
+ 22 q022 ok  answered        rounds=1 $0.01207    7027 ms  judge=correct
+ 23 q023 ok  answered        rounds=1 $0.01454    9220 ms  judge=correct
+ 24 q024 ok  answered        rounds=1 $0.01257    8692 ms  judge=correct
+ 25 q025 ok  answered        rounds=1 $0.01177    8493 ms  judge=correct
+ 26 q026 ok  answered        rounds=1 $0.00757    6985 ms  judge=correct
+ 27 q027 ok  answered        rounds=1 $0.00737    6834 ms  judge=correct
+ 28 q028 ok  answered        rounds=1 $0.01782    8854 ms  judge=correct
+ 29 q029 ok  answered        rounds=1 $0.01758    8052 ms  judge=correct
+ 30 q030 ok  answered        rounds=1 $0.01900    8988 ms  judge=correct
+ 31 q031 ok  answered        rounds=1 $0.01860    8294 ms  judge=correct
+ 32 q032 ok  answered        rounds=1 $0.02957   12354 ms  judge=correct
+ 33 q033 --- answered        rounds=1 $0.02980   13799 ms  judge=incorrect
+ 34 q034 --- answered        rounds=1 $0.02892   12914 ms  judge=partial
+ 35 q035 ok  answered        rounds=1 $0.01795    9038 ms  judge=correct
+ 36 q036 ok  answered        rounds=1 $0.01288    6957 ms  judge=correct
+ 37 q037 ok  answered        rounds=1 $0.01595   11313 ms  judge=correct
+ 38 q038 ok  answered        rounds=1 $0.01471    7640 ms  judge=correct
+ 39 q039 ok  answered        rounds=1 $0.02074    8599 ms  judge=correct
+ 40 q040 ok  answered        rounds=1 $0.01005    7235 ms  judge=correct
+ 41 q041 ok  answered        rounds=1 $0.01243    7697 ms  judge=correct
+ 42 q042 ok  answered        rounds=1 $0.01571    7760 ms  judge=correct
+ 43 q043 ok  not_in_corpus   rounds=3 $0.00838   12833 ms  judge=-
+ 44 q044 ok  not_in_corpus   rounds=3 $0.01192   14406 ms  judge=-
+ 45 q045 ok  not_in_corpus   rounds=3 $0.00690   12520 ms  judge=-
+ 46 n001 ok  answered_direct rounds=0 $0.00620    4175 ms  judge=-
+ 47 n002 ok  answered_direct rounds=0 $0.00260    4186 ms  judge=-
+ 48 n003 ok  answered_direct rounds=0 $0.00413    4025 ms  judge=-
+ 49 n004 ok  answered_direct rounds=0 $0.00357    4313 ms  judge=-
+ 50 n005 ok  answered_direct rounds=0 $0.00265    3969 ms  judge=-
+ 51 n006 ok  answered_direct rounds=0 $0.00333    3569 ms  judge=-
+ 52 n007 ok  answered_direct rounds=0 $0.00297    4001 ms  judge=-
+ 53 n008 ok  answered_direct rounds=0 $0.00380    3845 ms  judge=-
+ 54 n009 ok  answered_direct rounds=0 $0.00371    3938 ms  judge=-
+ 55 n010 ok  answered_direct rounds=0 $0.00523    4431 ms  judge=-
+
+# 20260928-075936_opus_C
+
+- questions: 55 (errors: 0)
+- cost per interaction: mean $0.012116 | p50 $0.012432 | p95 $0.023194 | max $0.029799
+- latency per interaction: p50 8052.3 ms | p95 12857.22 ms | max 14405.6 ms (LLM mean 6354.9 ms, retrieval mean 1635.2 ms)
+- cost by purpose (sum): {'direct_answer': 0.029261, 'gate': 0.052174, 'generate': 0.576993, 'retrieve': 0.0, 'rewrite': 0.007965}
+- rounds distribution: {0: 10, 1: 41, 2: 0, 3: 4}
+- local cache hit rate: 0.0 of 117 LLM calls; provider cache read tokens: 41271
+- output tokens per generate call (mean, provider calls): 303.5
+- provider spend this run: $0.761909 (judge $0.095516); ledger total $2.084477
+
+## Quality
+
+- questions: 55
+- task_success: 0.9636
+- task_success_count: 53
+- gate_accuracy: 1.0
+- gate_confusion: {'answer_direct->answer_direct': 10, 'retrieve->retrieve': 45}
+- outcome_correct: 1.0
+- answerable_answered: 1.0
+- judge_verdicts: {'correct': 39, 'incorrect': 1, 'partial': 1}
+- judge_correct_of_answerable: 0.9512
+- citation_hit_of_answerable: 1.0
+- not_in_corpus_recall: 1.0
+- not_in_corpus_precision: 1.0
+- not_in_corpus_false_declines: 0
+- direct_correct: 1.0
+- direct_no_dollar: 1.0
+- version_check: 1.0
+- version_quoted: 0.75
+- version_in_prose: 0.75
+- source_line_violations: 0
+- leaks: 0
+- declined_rounds: 3
+- ungrounded_rounds: 0
+- rewrite_helped: 0
+- rescued_after_decline: 0
+

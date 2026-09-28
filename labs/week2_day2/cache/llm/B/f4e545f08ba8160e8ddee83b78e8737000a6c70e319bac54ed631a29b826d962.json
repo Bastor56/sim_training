@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:56:20.315+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v1",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"retrieve\", \"reason\": \"The member is asking about Harbor's Courtesy Pay limit, which is a specific product feature with a defined limit that varies by institution and changes over time.\", \"search_query\": \"Courtesy Pay limit\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 679,
+    "output_tokens": 55
+  }
+}

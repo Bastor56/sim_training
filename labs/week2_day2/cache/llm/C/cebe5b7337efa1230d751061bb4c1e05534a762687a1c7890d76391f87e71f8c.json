@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:02:45.990+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Expedited debit card replacement is $35.00, and the card is delivered in 2 business days (Schedule of Fees and Charges: Retail Accounts, version 2026). For comparison, standard replacement is $10.00 (first replacement each year free) and arrives in about 7\\ru201310 business days by regular mail.\",\"cited_chunk_ids\":[\"fee_schedule_2026::layout::B_structure::0001\",\"lost_stolen_card_script::layout::B_structure::0006\"],\"reason\":\"The retail fee schedule lists the expedited debit card replacement fee and delivery time.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 940,
+    "output_tokens": 207
+  }
+}

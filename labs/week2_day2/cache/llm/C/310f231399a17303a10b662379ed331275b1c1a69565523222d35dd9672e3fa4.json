@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:05:19.960+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Here's how a card dispute works under the Card Dispute Procedure, Rev 5 (effective 15 April 2026):\\n\\n1. Form: The agent completes Form HCU-DSP-114 (Card Transaction Dispute) during your first contact, whether by phone, in branch or secure message. It records the transaction date, amount, merchant descriptor, your explanation, and whether you still have the card. The agent verifies you with the three-factor authentication script, confirms the transaction, blocks and replaces the card if fraud is suspected, reads the dispute acknowledgment disclosure, and routes the case to the Card Services dispute queue. Disputes should be reported within 60 days of the statement date on which the transaction first appeared; later reports are still logged but liability protections and the right to provisional credit may be limited.\\n\\n2. Provisional credit: Posted within 10 business days of receiving the dispute notice if the investigation isn't finished by then, or within 20 business days if the account was opened less than 30 days before the first disputed transaction. You're notified of the amount and date within 2 business days of posting. For credit card disputes, no provisional credit is given; instead the disputed amount is suspended from the balance and excluded from finance charges while the investigation is open.\\n\\n3. Investigation length: Must be completed within 45 calendar days of receiving the dispute notice, extended to 90 calendar days for point-of-sale transactions, foreign-initiated transactions, and transactions on accounts opened in the previous 30 days. Any chargeback is submitted to the network no later than 120 calendar days after the transaction settlement date.\\n\\n4. Outcome notice: Card Services writes to you within 3 business days of completing the investigation. If the dispute is decided in your favour, any provisional credit becomes final. If Harbor finds no error occurred, the notice explains the findings, your right to request the documents relied upon, and the date provisional credit will be reversed \\\\u2014 at least 5 business days after the notice is sent.\",\"cited_chunk_ids\":[\"card_dispute_procedure::layout::B_structure::0001\",\"card_dispute_procedure::layout::B_structure::0003\",\"card_dispute_procedure::layout::B_structure::0004\",\"card_dispute_procedure::layout::B_structure::0005\"],\"reason\":\"The passages from the Card Dispute Procedure Rev 5 cover the form, provisional credit timing, investigation deadlines and outcome notification.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 1486,
+    "output_tokens": 828
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:56:56.565+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v1",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"retrieve\", \"reason\": \"The question asks about Harbor's specific procedures for handling lost-card calls and what information must be provided to members, which depends on Harbor's documented policies and scripts.\", \"search_query\": \"lost card unauthorized transactions agent procedure member notification new card\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 698,
+    "output_tokens": 63
+  }
+}

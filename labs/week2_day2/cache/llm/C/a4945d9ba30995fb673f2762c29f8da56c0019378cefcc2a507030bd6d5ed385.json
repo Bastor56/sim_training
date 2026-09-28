@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:03:04.808+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"On a 60-month share certificate with $15,000, you'd fall in the $10,000–$49,999 balance tier, which earns 3.80% APY under the Q3 2026 Deposit Rate Sheet (version Q3 2026). These rates are effective July 1, 2026 through September 30, 2026.\",\"cited_chunk_ids\":[\"deposit_rate_sheet_2026q3::layout::B_structure::0000\"],\"reason\":\"The rate sheet gives the 60-month APY for the $10,000–$49,999 tier, which covers a $15,000 deposit.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 419,
+    "output_tokens": 234
+  }
+}

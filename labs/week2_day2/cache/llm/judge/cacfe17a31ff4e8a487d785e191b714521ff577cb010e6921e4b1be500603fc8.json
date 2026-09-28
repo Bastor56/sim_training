@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:06:12.963+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v1",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"States 15 days grace period and 5% or $25.00 whichever is less, matching reference, with no contradicting extra facts.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1034,
+    "output_tokens": 56
+  }
+}

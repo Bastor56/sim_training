@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T16:37:58.531+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"For a domestic wire to another bank, send your request by 3:00 p.m. Eastern Time on a business day and it will be processed that same day, under the Wire Transfer Policy (Rev 2026-02). Requests received after 3:00 p.m., or on a non-business day, go out the next business day. If it's an international wire, the cutoff is earlier — 1:00 p.m. Eastern Time — for same-day release.\",\"cited_chunk_ids\":[\"wire_transfer_policy::layout::B_structure::0004\"],\"reason\":\"The Wire Transfer Policy specifies same-day cutoff times for domestic and international wires.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1435,
+    "output_tokens": 220
+  }
+}

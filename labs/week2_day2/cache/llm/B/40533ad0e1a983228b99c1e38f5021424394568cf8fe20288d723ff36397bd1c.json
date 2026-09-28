@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:59:24.021+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "direct_answer_v1",
+  "purpose": "direct_answer",
+  "stop_reason": "end_turn",
+  "text": "{\"answer\":\"Sure! Try something like: \\\"Could you please help me fix my card as soon as possible? I'd really appreciate it.\\\" Want help with anything else regarding your card?\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 543,
+    "output_tokens": 62
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T22:27:41.792+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v1",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"retrieve\", \"reason\": \"The question asks about Harbor's specific procedures for handling lost-card calls, including agent requirements and member communication—operational details that depend on Harbor's policies and scripts.\", \"search_query\": \"lost card unauthorized transactions agent procedures member communication new card\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 698,
+    "output_tokens": 63
+  }
+}

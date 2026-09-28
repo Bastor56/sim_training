@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:58:13.511+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v1",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"retrieve\", \"reason\": \"The member is asking about a specific Harbor error code and how to resolve it, which requires Harbor's troubleshooting procedures or technical documentation.\", \"search_query\": \"Bill pay error BP-503 workaround troubleshooting\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 687,
+    "output_tokens": 63
+  }
+}

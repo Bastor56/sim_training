@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:03:25.036+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Auto Loan Product Comparison (version 2026-09), the maximum loan-to-value for a used vehicle loan is 110% — for both terms up to 60 months and 61–72 months. (For comparison, new vehicles allow up to 125% and refinances up to 115%.) Keep in mind that rates and LTV terms depend on creditworthiness, vehicle age and term, and Tier C loans may require a larger down payment.\",\"cited_chunk_ids\":[\"auto_loan_comparison::layout::B_structure::0004\",\"auto_loan_comparison::layout::B_structure::0007\"],\"reason\":\"Table 1 of the Auto Loan Product Comparison directly states the 110% max LTV for used vehicle loans.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 1120,
+    "output_tokens": 257
+  }
+}

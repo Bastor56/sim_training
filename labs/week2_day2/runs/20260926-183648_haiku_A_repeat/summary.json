@@ -1,0 +1,81 @@
+{
+  "run_id": "20260926-183648_haiku_A_repeat",
+  "questions": 18,
+  "errors": 0,
+  "cost_per_interaction": {
+    "mean": null,
+    "p50": null,
+    "p95": null,
+    "max": null
+  },
+  "latency_ms": {
+    "p50": null,
+    "p95": null,
+    "max": null
+  },
+  "llm_latency_ms_mean": null,
+  "local_latency_ms_mean": null,
+  "interaction_cost_total": 0,
+  "cost_by_purpose_total": {},
+  "rounds_distribution": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0
+  },
+  "llm_calls": 40,
+  "local_cache_hit_rate": 0.45,
+  "provider_cache_read_tokens": 0,
+  "output_tokens_per_generate_mean": 101.3,
+  "provider_spend_this_run": 0.029607,
+  "judge_spend_this_run": 0,
+  "ledger_total_after_run": 0.433275,
+  "probes": {
+    "surface": {
+      "n": 8,
+      "ok": 8,
+      "results": [
+        "r001:hit",
+        "r002:hit",
+        "r003:hit",
+        "r004:hit",
+        "r005:hit",
+        "r006:hit",
+        "r007:hit",
+        "r008:hit"
+      ],
+      "within_question_hits": 8
+    },
+    "paraphrase": {
+      "n": 5,
+      "ok": 5,
+      "results": [
+        "r009:miss",
+        "r010:miss",
+        "r011:miss",
+        "r012:miss",
+        "r013:miss"
+      ],
+      "within_question_hits": 0
+    },
+    "tenant_swap": {
+      "n": 3,
+      "ok": 3,
+      "results": [
+        "r014:miss",
+        "r015:miss",
+        "r016:miss"
+      ],
+      "within_question_hits": 2
+    },
+    "corpus_change": {
+      "n": 2,
+      "ok": 2,
+      "results": [
+        "r017:miss",
+        "r018:miss"
+      ],
+      "within_question_hits": 0
+    }
+  }
+}

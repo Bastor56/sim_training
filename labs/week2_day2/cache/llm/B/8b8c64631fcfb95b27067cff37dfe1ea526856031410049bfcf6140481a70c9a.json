@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:53:40.098+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"A replacement card sent by standard mail typically arrives within 7 to 10 business days after it's ordered. If you need it faster, expedited delivery is available for a $35.00 fee and arrives in 2 business days (standard replacement is $10.00, with the first replacement each year free).\",\"cited_chunk_ids\":[\"lost_stolen_card_script::layout::B_structure::0006\",\"fee_schedule_2026::layout::B_structure::0001\"],\"reason\":\"The lost/stolen card script states standard delivery time, and the fee schedule confirms expedited delivery timing and costs.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2201,
+    "output_tokens": 204
+  }
+}

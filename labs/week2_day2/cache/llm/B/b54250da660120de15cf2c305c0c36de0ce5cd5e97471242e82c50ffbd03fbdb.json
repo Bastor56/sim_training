@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:55:43.250+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v1",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"retrieve\", \"reason\": \"The member is asking about a specific Harbor product deadline, which requires current Harbor policy or product disclosure information.\", \"search_query\": \"Summer Saver certificate open deadline enrollment period\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 681,
+    "output_tokens": 50
+  }
+}

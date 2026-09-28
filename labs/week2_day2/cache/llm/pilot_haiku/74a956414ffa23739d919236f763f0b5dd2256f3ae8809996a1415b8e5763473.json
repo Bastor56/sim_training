@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T16:03:30.898+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"answered\", \"answer\": \"An agent completes Form HCU-DSP-114 during the initial contact when a member reports an unauthorized or disputed card transaction, whether by phone, in branch, or through secure message.\", \"cited_chunk_ids\": [\"card_dispute_procedure::layout::B_structure::0001\"], \"reason\": \"The passage explicitly states when agents complete Form HCU-DSP-114 in the context of card dispute intake procedures.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1080,
+    "output_tokens": 108
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T23:00:01.339+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"answered\", \"answer\": \"Under the Overdraft Policy v3, Harbor can charge you a maximum of 3 overdraft fees in a single business day. Each item paid through Courtesy Pay is charged $29 per item, up to a maximum of three items per business day. Additionally, if you use Overdraft Transfer Protection, there is one transfer fee of $5.00 per business day regardless of how many transfers occur. So in total, you could be charged up to $87 in overdraft fees (3 × $29) plus $5 for Overdraft Transfer Protection in a single business day.\", \"cited_chunk_ids\": [\"overdraft_policy_v3::layout::B_structure::0004\"], \"reason\": \"The Overdraft Policy v3 explicitly states the per-item fee limit of three items per business day and the Overdraft Transfer Protection fee cap of once per business day.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1923,
+    "output_tokens": 206
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T22:57:00.751+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "rewrite_v1",
+  "purpose": "rewrite",
+  "stop_reason": "end_turn",
+  "text": "{\"search_query\": \"Velocity Rule VR-3 fraud detection transaction limits\", \"reason\": \"Broadened search to include fraud-related terminology that might appear alongside velocity rules in documents about transaction controls and security measures.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 746,
+    "output_tokens": 52
+  }
+}

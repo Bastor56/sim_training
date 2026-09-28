@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T23:04:13.769+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"answered\", \"answer\": \"Under the Loan Late Payment and Collections Policy v1.6, your account is reported as delinquent to credit reporting agencies once a payment is 30 or more days past due. However, the policy shows collection activities begin earlier: you'll receive a courtesy reminder on day 5, a late notice on day 16, and a collections call on day 30 after your due date.\", \"cited_chunk_ids\": [\"loan_late_payment_policy::layout::B_structure::0005\", \"loan_late_payment_policy::layout::B_structure::0004\"], \"reason\": \"The passages define when an account is officially delinquent (30+ days past due for credit reporting) and outline the collection timeline, directly answering the member's question about when a payment counts as behind.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1134,
+    "output_tokens": 187
+  }
+}

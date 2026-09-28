@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T13:48:40.664+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v2",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"correct\",\"reason\":\"Assistant states 4.05% APY matching the reference; the extra detail about the rate sheet version does not contradict anything in the reference.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 935,
+    "output_tokens": 59
+  }
+}

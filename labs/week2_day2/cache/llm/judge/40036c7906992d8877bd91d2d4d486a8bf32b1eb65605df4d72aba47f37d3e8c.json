@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T11:54:38.771+00:00",
+  "model_served": "claude-sonnet-5",
+  "prompt_version": "judge_v1",
+  "purpose": "judge",
+  "stop_reason": "end_turn",
+  "text": "{\"verdict\":\"partial\",\"reason\":\"Assistant correctly states the base 4.49% APR for Tier A+ 37-60 months but adds extra discount details not in the reference, implying a lower final rate (4.14%) that isn't confirmed by the reference answer.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 907,
+    "output_tokens": 89
+  }
+}

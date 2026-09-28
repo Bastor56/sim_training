@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-28T12:03:13.270+00:00",
+  "model_served": "claude-opus-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\":\"answered\",\"answer\":\"Under the Auto Loan Product Comparison v2026-09, a 48-month new car loan falls in the \\\"New vehicle, 37-60 mo\\\" band, where the Tier A+ rate (credit score 740+) is 4.49% APR. You can lower that with discounts: 0.25% off for automatic payments from a Harbor checking account, plus another 0.10% if you have a Premier Checking relationship — bringing it to 4.14% APR as the lowest available. Discounts can never take the rate below 3.99% APR. Maximum loan-to-value for a new vehicle is 125%.\",\"cited_chunk_ids\":[\"auto_loan_comparison::layout::B_structure::0004\"],\"reason\":\"The rate table gives the Tier A+ 37–60 month new vehicle rate and the applicable discounts and floor.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 852,
+    "input_tokens": 588,
+    "output_tokens": 375
+  }
+}

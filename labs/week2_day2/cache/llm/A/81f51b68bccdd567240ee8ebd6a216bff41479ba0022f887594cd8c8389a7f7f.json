@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-26T22:29:41.800+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "direct_answer_v1",
+  "purpose": "direct_answer",
+  "stop_reason": "end_turn",
+  "text": "{\"answer\": \"I'm here to help with banking questions about your accounts, cards, loans, and Harbor's policies—but I'm afraid cooking advice is outside my wheelhouse! Is there anything banking-related I can help you with today?\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 394,
+    "output_tokens": 54
+  }
+}
