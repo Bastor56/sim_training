@@ -1,0 +1,65 @@
+{
+  "run_id": "tooleval_final",
+  "questions": [
+    "t01",
+    "t02",
+    "t03",
+    "t04",
+    "t05",
+    "t06",
+    "t07",
+    "t08",
+    "t09",
+    "t10",
+    "t11",
+    "t12",
+    "t13",
+    "t14",
+    "t15"
+  ],
+  "today": "2026-09-28",
+  "discovery": {
+    "url": "http://127.0.0.1:8200/mcp",
+    "server": "harbor-mcp",
+    "server_version": "0.2.0",
+    "tools": [
+      "freeze_card",
+      "get_account",
+      "get_card_limits",
+      "get_member",
+      "list_cards",
+      "list_member_accounts",
+      "list_transactions"
+    ],
+    "tool_list_hash": "7fd22ec198fa2fa7"
+  },
+  "agent_fingerprint": "4df27f9aa16c1d17",
+  "prompts": {
+    "gate": "gate_v3",
+    "rewrite": "rewrite_v1",
+    "generate": "generate_v1",
+    "direct_answer": "direct_answer_v1",
+    "tool_select": "tool_select_v1",
+    "generate_from_tools": "generate_from_tools_v2"
+  },
+  "gate": {
+    "model": "claude-haiku-4-5",
+    "thinking": null,
+    "effort": null,
+    "max_tokens": 1024
+  },
+  "tool_select": {
+    "model": "claude-haiku-4-5",
+    "thinking": null,
+    "effort": null,
+    "max_tokens": 1024
+  },
+  "generator": {
+    "model": "claude-haiku-4-5",
+    "thinking": null,
+    "effort": null,
+    "max_tokens": 2048
+  },
+  "max_tool_rounds": 3,
+  "cache": "off"
+}

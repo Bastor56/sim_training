@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-29T23:40:03.992+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v2",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"use_tool\", \"reason\": \"The member is asking about their own spending pattern, which requires access to their transaction history.\", \"search_query\": \"\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1137,
+    "output_tokens": 40
+  }
+}

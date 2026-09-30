@@ -1,0 +1,30 @@
+{
+  "questions": 15,
+  "passed_excluding_known_gaps": "14/14",
+  "known_gaps": {
+    "t08": "fail: ['facts']"
+  },
+  "by_kind": {
+    "forbidden": "2/2",
+    "new_tool": "2/2",
+    "not_found": "1/1",
+    "single_read": "5/5",
+    "two_hop": "2/3",
+    "unavailable": "2/2"
+  },
+  "by_check": {
+    "gate": "15/15",
+    "tools": "15/15",
+    "outcome": "15/15",
+    "facts": "14/15",
+    "must_not": "15/15",
+    "source_line": "15/15",
+    "no_invented_ids": "15/15",
+    "no_forbidden_write": "15/15"
+  },
+  "gate_accuracy": "15/15",
+  "cost_usd_total": 0.15158,
+  "cost_usd_mean": 0.01011,
+  "latency_ms_p50": 5632.1,
+  "latency_ms_p95": 7895.4
+}

@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-29T23:40:43.069+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v2",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\": \"use_tool\", \"reason\": \"The member is asking about the status of their own payment cards, which can be retrieved from the card listing tool.\", \"search_query\": \"\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1133,
+    "output_tokens": 45
+  }
+}

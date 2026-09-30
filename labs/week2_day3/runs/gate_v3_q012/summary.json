@@ -1,0 +1,17 @@
+{
+  "questions": 5,
+  "correct": "5/5",
+  "correct_vs_day2_labels_raw": "5/5",
+  "relabels_applied": [
+    "q039"
+  ],
+  "by_set": {
+    "golden": "5/5"
+  },
+  "confusion": {
+    "retrieve -> retrieve": 5
+  },
+  "day2_questions_sent_to_tools": [],
+  "cost_usd": 0.00969,
+  "mean_input_tokens": 1630
+}

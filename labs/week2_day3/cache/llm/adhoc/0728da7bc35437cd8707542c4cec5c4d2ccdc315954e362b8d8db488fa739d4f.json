@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-29T23:52:44.223+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "generate_v1",
+  "purpose": "generate",
+  "stop_reason": "end_turn",
+  "text": "{\"status\": \"answered\", \"answer\": \"Your daily ATM withdrawal limit on your debit card is $500, under the Debit Card Limits and Controls policy effective 2026-02-02. However, if you have a Premier Checking account, you may have a higher limit based on your relationship with Harbor. You can check your current limits in the app under Card Controls — Limits.\", \"cited_chunk_ids\": [\"debit_card_limits::layout::B_structure::0001\"], \"reason\": \"The passage directly states the standard daily ATM cash withdrawal limit and notes that Premier Checking cardholders may have higher limits, with current limits available in the app.\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1782,
+    "output_tokens": 151
+  }
+}

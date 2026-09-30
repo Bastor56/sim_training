@@ -1,0 +1,19 @@
+{
+  "questions": 6,
+  "correct": "2/6",
+  "by_set": {
+    "golden": "2/6"
+  },
+  "confusion": {
+    "retrieve -> answer_direct": 1,
+    "retrieve -> retrieve": 2,
+    "retrieve -> use_tool": 3
+  },
+  "day2_questions_sent_to_tools": [
+    "q039#1",
+    "q039#2",
+    "q039#3"
+  ],
+  "cost_usd": 0.0112,
+  "mean_input_tokens": 1590
+}

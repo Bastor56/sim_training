@@ -1,0 +1,20 @@
+# Day 2 gate expectations that Day 3 changes ON PURPOSE (plan.md milestone 10, decision at the pause).
+#
+# Day 2's labels were written when the agent had no record tools. A relabel applies only when
+# its `requires_tool` is advertised by the server at run time, so with the tool gone the Day 2
+# label is back in force. scripts/gate_recheck.py reports the score against Day 2's labels
+# (raw) AND with these relabels, never just the relabelled one.
+version: 1
+created: "2026-09-28"
+relabels:
+  - id: q039
+    question: "What is the daily ATM cash withdrawal limit on my debit card?"
+    day2_expected: retrieve
+    day3_expected: use_tool
+    requires_tool: get_card_limits
+    reason: >-
+      "My debit card" asks for this member's own card. With get_card_limits advertised (harbor-mcp
+      0.2.0), the card's own limit is the correct answer (M-1001: $800.00) and Harbor's standard
+      limit in the Debit Card Limits document ($500) would be wrong for that member. Tool eval t14
+      asks the same question and expects use_tool; Day 2's label and t14 contradict each other.
+      The gate chose use_tool 4 times out of 4 (gate_recheck_1, gate_recheck_mismatches).

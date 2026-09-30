@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+runs/*/tmp/
+
+# Secrets and the live audit log stay on this machine (spec.md "Audit log",
+# "Backend credentials"). mcp_server/.env.example is the committed template.
+mcp_server/.env
+mcp_server/audit/
+
+# Committed on purpose: runs/spend_ledger.jsonl (every provider dollar spent today)

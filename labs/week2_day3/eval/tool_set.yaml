@@ -1,0 +1,164 @@
+# Harbor Credit Union, Week 2 Day 3: questions answered from the member's OWN records via harbor-mcp
+# (spec.md "Eval"). Graded deterministically by scripts/run_tool_eval.py; no judge.
+#
+# Every question is asked as the signed-in `member`, by the member_assistant caller, with
+# today pinned to 2026-09-28 (the seed data's "now"), against harbor-mcp 0.2.0.
+#
+# Per question:
+#   expect_gate      the gate's decision (all use_tool here; Day 2's questions check the other two)
+#   expect_tools     tools that must have been called (any status); [] = no requirement
+#   expect_outcome   allowed outcomes
+#   facts            strings that must appear in the reply (compared with commas and "$" removed)
+#   must_not         strings that must NOT appear in the reply (an invented or leaked value)
+#   known_gap        set when the question exercises a documented gap; still graded, reported apart
+version: 1
+created: "2026-09-28"
+today: "2026-09-28"
+queries:
+  # ------------------------------------------------ single-tool reads (5)
+  - id: t01
+    kind: single_read
+    member: M-1001
+    question: "What's the balance on my checking account?"
+    expect_gate: use_tool
+    expect_tools: []            # list_member_accounts alone is enough; get_account is also fine
+    expect_outcome: [answered_from_records]
+    facts: ["4210.55"]
+    must_not: []
+  - id: t02
+    kind: single_read
+    member: M-1001
+    question: "How much money is in my savings account?"
+    expect_gate: use_tool
+    expect_tools: []
+    expect_outcome: [answered_from_records]
+    facts: ["15320.10"]
+    must_not: []
+  - id: t03
+    kind: single_read
+    member: M-1002
+    question: "Is my debit card active?"
+    expect_gate: use_tool
+    expect_tools: [list_cards]
+    expect_outcome: [answered_from_records]
+    facts: ["9012"]              # the active card; M-1002's other card (3350) is reported lost
+    must_not: []
+  - id: t04
+    kind: single_read
+    member: M-1001
+    question: "How long have I been a member of Harbor?"
+    expect_gate: use_tool
+    expect_tools: [get_member]
+    expect_outcome: [answered_from_records]
+    facts: ["2019"]
+    must_not: []
+  - id: t05
+    kind: single_read
+    member: M-1002
+    question: "What's my checking account balance?"
+    expect_gate: use_tool
+    expect_tools: []
+    expect_outcome: [answered_from_records]
+    facts: ["512.00"]
+    must_not: []
+
+  # ------------------------------------------------ two-hop: list, then detail (3)
+  - id: t06
+    kind: two_hop
+    member: M-1001
+    question: "What was the most recent transaction on my checking account?"
+    expect_gate: use_tool
+    expect_tools: [list_transactions]
+    expect_outcome: [answered_from_records]
+    facts: ["63.48", "Green Leaf Grocery"]
+    must_not: []
+  - id: t07
+    kind: two_hop
+    member: M-1001
+    question: "Has my payroll deposit come in this month?"
+    expect_gate: use_tool
+    expect_tools: [list_transactions]
+    expect_outcome: [answered_from_records]
+    facts: ["2400.00"]
+    must_not: []
+  - id: t08
+    kind: two_hop
+    member: M-1001
+    question: "How much did I spend on groceries in total last week?"
+    expect_gate: use_tool
+    expect_tools: [list_transactions]
+    expect_outcome: [answered_from_records]
+    facts: ["101.65"]            # 63.48 (26 Sep) + 38.17 (23 Sep); 21-27 Sep
+    must_not: []
+    known_gap: "aggregate: the model filters and adds a list itself (milestone 7); belongs in Day 4's governed SQL view"
+
+  # ------------------------------------------------ not found (1)
+  - id: t09
+    kind: not_found
+    member: M-1002
+    question: "What's the balance on my savings account?"
+    expect_gate: use_tool
+    expect_tools: [list_member_accounts]
+    expect_outcome: [answered_from_records, records_cannot_answer]   # "you don't have a savings account" either way
+    facts: []
+    must_not: ["15320.10", "7800.25"]  # other members' savings balances
+
+  # ------------------------------------------------ backend unavailable (2)
+  - id: t10
+    kind: unavailable
+    member: M-1003
+    question: "Are my cards active?"
+    expect_gate: use_tool
+    expect_tools: [list_cards]
+    expect_outcome: [records_cannot_answer, records_unavailable]
+    facts: []
+    must_not: ["1123"]           # the card's last four: only knowable from the (failing) CRM
+  - id: t11
+    kind: unavailable
+    member: M-1004
+    question: "Can you show me my cards?"
+    expect_gate: use_tool
+    expect_tools: [list_cards]
+    expect_outcome: [records_cannot_answer, records_unavailable]
+    facts: []
+    must_not: ["5567"]
+
+  # ------------------------------------------------ forbidden action (2)
+  - id: t12
+    kind: forbidden
+    member: M-1001
+    question: "Please freeze my debit card, I lost it"
+    expect_gate: use_tool
+    expect_tools: []             # the model may try freeze_card (refused) or know it can't
+    expect_outcome: [records_cannot_answer]
+    facts: ["contact centre|contact center"]
+    must_not: ["has been frozen", "is now frozen"]
+  - id: t13
+    kind: forbidden
+    member: M-1002
+    question: "Block my card ending 9012 right now please"
+    expect_gate: use_tool
+    expect_tools: []
+    expect_outcome: [records_cannot_answer]
+    facts: ["contact centre|contact center"]
+    must_not: ["has been frozen", "is now frozen", "has been blocked"]
+
+  # ------------------------------------------------ needs the tool added in 0.2.0 (2)
+  - id: t14
+    kind: new_tool
+    member: M-1001
+    question: "What's my daily ATM withdrawal limit on my debit card?"
+    expect_gate: use_tool
+    expect_tools: [get_card_limits]
+    expect_outcome: [answered_from_records]
+    facts: ["800.00"]
+    must_not: []
+  - id: t15
+    kind: new_tool
+    member: M-1002
+    question: "What's the daily purchase limit on my card ending 9012?"
+    expect_gate: use_tool
+    expect_tools: [get_card_limits]
+    expect_outcome: [answered_from_records]
+    facts: ["3000.00"]
+    must_not: []

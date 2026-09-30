@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-29T23:55:31.085+00:00",
+  "model_served": "claude-haiku-4-5",
+  "prompt_version": "gate_v2",
+  "purpose": "gate",
+  "stop_reason": "end_turn",
+  "text": "{\"decision\":\"use_tool\",\"reason\":\"The member asks about their own card's daily purchase limit, which requires looking up their card's actual limits from their records.\",\"search_query\":\"\"}",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1581,
+    "output_tokens": 43
+  }
+}

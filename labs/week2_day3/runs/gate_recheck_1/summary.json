@@ -1,0 +1,21 @@
+{
+  "questions": 70,
+  "correct": "68/70",
+  "by_set": {
+    "golden": "43/45",
+    "no_retrieval": "10/10",
+    "tool": "15/15"
+  },
+  "confusion": {
+    "answer_direct -> answer_direct": 10,
+    "retrieve -> answer_direct": 1,
+    "retrieve -> retrieve": 43,
+    "retrieve -> use_tool": 1,
+    "use_tool -> use_tool": 15
+  },
+  "day2_questions_sent_to_tools": [
+    "q039"
+  ],
+  "cost_usd": 0.12923,
+  "mean_input_tokens": 1585
+}

@@ -1,0 +1,16 @@
+# Day 3 extends Day 2's agent (spec.md, decision 1), so it needs exactly Day 2's
+# pins: those keep the Day 6 index, rerank scores and LLM wrapper behaviour valid.
+-r ../week2_day2/requirements.txt
+
+# The MCP SDK, both halves (server + client). v2 line: its API differs from the
+# 1.x tutorials online (spec.md decision 6). Resolve checked against the pins above.
+mcp==2.2.0
+
+# Core banking (Postgres) driver, used only by mcp_server/.
+psycopg[binary]==3.3.6
+
+# The mock CRM (backends/mock_crm/) and the server's CRM client.
+# Same versions as week 1 (../week1_day4/requirements.txt).
+fastapi==0.141.1
+uvicorn==0.53.0
+httpx==0.28.1

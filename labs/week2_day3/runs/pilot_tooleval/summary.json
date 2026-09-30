@@ -1,0 +1,23 @@
+{
+  "questions": 3,
+  "passed_excluding_known_gaps": "3/3",
+  "known_gaps": {},
+  "by_kind": {
+    "single_read": "3/3"
+  },
+  "by_check": {
+    "gate": "3/3",
+    "tools": "3/3",
+    "outcome": "3/3",
+    "facts": "3/3",
+    "must_not": "3/3",
+    "source_line": "3/3",
+    "no_invented_ids": "3/3",
+    "no_forbidden_write": "3/3"
+  },
+  "gate_accuracy": "3/3",
+  "cost_usd_total": 0.02508,
+  "cost_usd_mean": 0.00836,
+  "latency_ms_p50": 4977.7,
+  "latency_ms_p95": 5735.3
+}

@@ -1,0 +1,23 @@
+{
+  "questions": 70,
+  "correct": "70/70",
+  "correct_vs_day2_labels_raw": "69/70",
+  "relabels_applied": [
+    "q039"
+  ],
+  "by_set": {
+    "golden": "45/45",
+    "no_retrieval": "10/10",
+    "tool": "15/15"
+  },
+  "confusion": {
+    "answer_direct -> answer_direct": 10,
+    "retrieve -> retrieve": 44,
+    "use_tool -> use_tool": 16
+  },
+  "day2_questions_sent_to_tools": [
+    "q039"
+  ],
+  "cost_usd": 0.13226,
+  "mean_input_tokens": 1622
+}
